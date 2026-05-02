@@ -1,0 +1,19 @@
+devices:
+  - device_id: EDGE-001
+    device_type: environmental_station
+    hardware_platform: RP2040
+    firmware_version: 1.0.0
+    deployment_region: North Field
+    active: true
+  - device_id: EDGE-002
+    device_type: vibration_monitor
+    hardware_platform: STM32
+    firmware_version: 1.2.1
+    deployment_region: Pump House
+    active: true
+  - device_id: EDGE-003
+    device_type: moisture_probe
+    hardware_platform: ESP32
+    firmware_version: 0.9.5
+    deployment_region: Research Plot
+    active: true

@@ -1,0 +1,10 @@
+calibration_manifest:
+  purpose: Track calibration status for field sensors.
+  required_metadata:
+    - sensor_id
+    - calibrated_at
+    - calibration_method
+    - offset_value
+    - scale_factor
+    - technician_or_process
+  governance_note: Calibration records should be retained with telemetry lineage.

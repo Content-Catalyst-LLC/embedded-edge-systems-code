@@ -1,0 +1,15 @@
+{
+  "model_name": "sensor_anomaly_tinyml_stub",
+  "task": "local anomaly scoring",
+  "input_features": [
+    "mean_value",
+    "standard_deviation",
+    "minimum_value",
+    "maximum_value",
+    "signal_energy",
+    "zero_crossing_rate"
+  ],
+  "intended_use": "educational scaffold for TinyML deployment patterns",
+  "deployment_target": "microcontroller or constrained edge device",
+  "notes": "Replace the stub with a quantized TinyML model for production use."
+}
