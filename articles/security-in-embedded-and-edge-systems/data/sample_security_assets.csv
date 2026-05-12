@@ -1,0 +1,6 @@
+device_id,site,device_class,hardware_trust,boot_integrity,identity_strength,update_readiness,runtime_isolation,monitoring_maturity,exposure,lifecycle_drift,support_state,firmware_version,secure_boot,rollback_ready
+gw-chi-001,chicago,gateway,0.90,0.88,0.86,0.84,0.78,0.82,0.20,0.12,supported,3.5.1,true,true
+sens-chi-014,chicago,sensor,0.72,0.70,0.68,0.64,0.55,0.58,0.36,0.28,supported,2.2.0,true,false
+plc-det-007,detroit,controller,0.84,0.86,0.82,0.62,0.70,0.66,0.45,0.34,limited-support,5.8.2,true,true
+cam-stl-021,stlouis,edge-ai-device,0.58,0.52,0.56,0.40,0.48,0.44,0.72,0.62,end-of-support,1.9.2,false,false
+edge-nyc-009,newyork,edge-server,0.92,0.90,0.88,0.86,0.84,0.86,0.18,0.10,supported,4.1.0,true,true

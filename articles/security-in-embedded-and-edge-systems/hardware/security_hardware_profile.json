@@ -1,0 +1,12 @@
+{
+  "device_id": "gw-chi-001",
+  "device_class": "edge-gateway",
+  "hardware_root_of_trust": true,
+  "secure_element": true,
+  "tpm": false,
+  "debug_interface_locked": true,
+  "secure_boot_supported": true,
+  "measured_boot_supported": true,
+  "trusted_recovery_supported": true,
+  "pynq_or_fpga_acceleration_supported": true
+}

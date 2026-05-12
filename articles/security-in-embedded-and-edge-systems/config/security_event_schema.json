@@ -1,0 +1,25 @@
+{
+  "schema_name": "embedded_edge_security_event",
+  "schema_version": "1.0.0",
+  "required_fields": [
+    "timestamp",
+    "device_id",
+    "event_type",
+    "severity",
+    "firmware_version",
+    "support_state",
+    "trust_state"
+  ],
+  "event_types": [
+    "boot_verified",
+    "boot_failed",
+    "firmware_integrity_failed",
+    "credential_rotated",
+    "authentication_failed",
+    "update_failed",
+    "rollback_triggered",
+    "recovery_completed",
+    "debug_interface_detected",
+    "end_of_support"
+  ]
+}

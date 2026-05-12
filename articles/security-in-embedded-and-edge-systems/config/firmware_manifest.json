@@ -1,0 +1,14 @@
+{
+  "firmware": {
+    "name": "edge_gateway_firmware",
+    "version": "3.5.1",
+    "target_device_class": "edge-gateway",
+    "target_hardware_revision": "rev-c",
+    "hash_algorithm": "sha256",
+    "hash": "example-placeholder-hash",
+    "signature_required": true,
+    "rollback_version": "3.4.9",
+    "recovery_image": "edge_gateway_recovery_3.4.9.img",
+    "anti_rollback": true
+  }
+}

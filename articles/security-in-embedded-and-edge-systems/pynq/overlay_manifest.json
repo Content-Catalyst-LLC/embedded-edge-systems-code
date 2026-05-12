@@ -1,0 +1,22 @@
+{
+  "overlay_name": "secure_stream_gate",
+  "overlay_version": "0.1.0",
+  "bitstream_file": "secure_stream_gate.bit",
+  "hardware_target": "pynq-compatible",
+  "interfaces": [
+    {"name": "sensor_stream", "type": "AXI-Stream", "direction": "input"},
+    {"name": "validated_stream", "type": "AXI-Stream", "direction": "output"},
+    {"name": "control", "type": "AXI-Lite", "direction": "bidirectional"}
+  ],
+  "integrity": {
+    "signature_required": true,
+    "hash_algorithm": "sha256",
+    "hash": "example-placeholder-bitstream-hash"
+  },
+  "governance": {
+    "requires_overlay_validation": true,
+    "requires_runtime_compatibility_check": true,
+    "fallback_overlay_version": "0.0.1",
+    "records_lifecycle_evidence": true
+  }
+}

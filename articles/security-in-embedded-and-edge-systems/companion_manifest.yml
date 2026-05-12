@@ -1,0 +1,30 @@
+article:
+  title: "Security in Embedded and Edge Systems"
+  slug: "security-in-embedded-and-edge-systems"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/security-in-embedded-and-edge-systems/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/security-in-embedded-and-edge-systems"
+
+workflows:
+  mathematical_lens: "Security readiness as embedded trust capacity"
+  python: "Embedded Security Readiness and Risk Scoring"
+  r: "Fleet Security Posture and Lifecycle Reporting"
+  sql: "Device security, firmware, credential, and recovery evidence schema"
+  c: "Constrained trust-state check"
+  cpp: "Gateway security policy and boundary check"
+  rust: "Lifecycle and credential policy validator"
+  go: "Security telemetry gateway"
+  micropython: "Device trust-state telemetry prototype"
+  tinyml: "Model integrity and fallback behavior scaffold"
+  pynq: "Overlay trust and compatibility validation"
+  hdl: "Hardware stream gate and security signal scaffold"
+
+governance_dimensions:
+  - hardware_trust
+  - boot_integrity
+  - identity_strength
+  - update_readiness
+  - runtime_isolation
+  - monitoring_maturity
+  - exposure
+  - lifecycle_drift

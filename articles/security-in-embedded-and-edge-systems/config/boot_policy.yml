@@ -1,0 +1,14 @@
+boot_policy:
+  policy_version: "1.0.0"
+  secure_boot_required: true
+  measured_boot_required: true
+  signed_bootloader_required: true
+  signed_kernel_or_runtime_required: true
+  anti_rollback_required: true
+  recovery_image_required: true
+  measurement_log_required: true
+
+failure_behavior:
+  invalid_signature: "boot_to_recovery"
+  failed_measurement: "quarantine"
+  missing_recovery_image: "manual_review"

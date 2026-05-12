@@ -1,0 +1,24 @@
+{
+  "model_name": "edge_security_anomaly_model",
+  "model_version": "0.1.0",
+  "runtime_target": "tinyml-portable",
+  "quantization": "int8",
+  "input_schema": {
+    "features": [
+      {"name": "auth_failure_rate", "type": "float32", "unit": "ratio"},
+      {"name": "network_exposure", "type": "float32", "unit": "ratio"},
+      {"name": "firmware_drift", "type": "float32", "unit": "ratio"}
+    ]
+  },
+  "integrity": {
+    "signature_required": true,
+    "hash_algorithm": "sha256",
+    "hash": "example-placeholder-model-hash"
+  },
+  "governance": {
+    "fallback_required": true,
+    "fallback_model_version": "0.0.1",
+    "requires_manifest_validation": true,
+    "requires_lifecycle_record": true
+  }
+}

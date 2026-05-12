@@ -1,0 +1,15 @@
+lifecycle_policy:
+  policy_version: "1.0.0"
+  identity_required: true
+  firmware_tracking_required: true
+  credential_rotation_required: true
+  support_state_tracking_required: true
+  rollback_or_recovery_required: true
+  decommissioning_record_required: true
+  end_of_support_operation_allowed: false
+
+exception_handling:
+  exceptions_allowed: true
+  approval_required: true
+  expiration_required: true
+  compensating_controls_required: true

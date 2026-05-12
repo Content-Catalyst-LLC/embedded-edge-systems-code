@@ -1,0 +1,25 @@
+runtime_policy:
+  policy_version: "1.0.0"
+  least_privilege_required: true
+  service_isolation_required: true
+  key_access_default: "deny"
+  actuator_access_default: "deny"
+  sensor_access_default: "deny"
+  network_access_default: "deny"
+
+services:
+  telemetry-agent:
+    sensor_access: true
+    network_access: true
+    key_access: false
+    actuator_access: false
+  update-agent:
+    sensor_access: false
+    network_access: true
+    key_access: true
+    actuator_access: false
+  control-service:
+    sensor_access: true
+    network_access: false
+    key_access: false
+    actuator_access: true

@@ -1,0 +1,16 @@
+{
+  "device_profile": {
+    "device_id": "gw-chi-001",
+    "device_class": "edge-gateway",
+    "hardware_root_of_trust": true,
+    "secure_boot": true,
+    "measured_boot": true,
+    "protected_key_storage": true,
+    "debug_interface_enabled": false,
+    "firmware_version": "3.5.1",
+    "support_state": "supported",
+    "rollback_ready": true,
+    "trusted_recovery_image": true,
+    "security_metadata_required": true
+  }
+}

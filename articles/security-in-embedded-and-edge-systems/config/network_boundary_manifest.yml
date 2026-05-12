@@ -1,0 +1,19 @@
+network_boundaries:
+  policy_version: "1.0.0"
+  mutual_authentication_required: true
+  encrypted_transport_required: true
+  replay_protection_required: true
+
+boundaries:
+  - name: "device-to-gateway"
+    protocol: "mqtts"
+    mutual_authentication: true
+    segmentation_required: true
+  - name: "gateway-to-cloud"
+    protocol: "https"
+    mutual_authentication: true
+    segmentation_required: true
+  - name: "management-plane"
+    protocol: "ssh-or-vpn"
+    mutual_authentication: true
+    privileged_access_review_required: true
