@@ -1,0 +1,16 @@
+{
+  "sensor_manifest": {
+    "device_class": "autonomous_mobile_robot",
+    "sensors": [
+      {"sensor_id": "depth-front-001", "type": "depth_camera", "sampling_hz": 20, "latency_ms": 18},
+      {"sensor_id": "prox-front-001", "type": "proximity", "sampling_hz": 50, "latency_ms": 5},
+      {"sensor_id": "imu-001", "type": "imu", "sampling_hz": 100, "latency_ms": 3}
+    ],
+    "freshness_requirements": {
+      "depth_camera_max_age_ms": 120,
+      "proximity_max_age_ms": 80,
+      "imu_max_age_ms": 50
+    },
+    "calibration_required": true
+  }
+}

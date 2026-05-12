@@ -1,0 +1,22 @@
+{
+  "model_name": "edge_obstacle_classifier",
+  "model_version": "0.1.0",
+  "runtime_target": "tinyml_or_edge_accelerator",
+  "input_schema": {
+    "features": [
+      {"name": "proximity_min_m", "type": "float32"},
+      {"name": "depth_obstacle_score", "type": "float32"},
+      {"name": "motion_context", "type": "float32"}
+    ]
+  },
+  "output_schema": {
+    "labels": ["clear", "obstacle", "hazard"],
+    "confidence_required": true
+  },
+  "governance": {
+    "confidence_threshold": 0.75,
+    "drift_monitoring_required": true,
+    "local_only_raw_sensor_default": true,
+    "runtime_assurance_required": true
+  }
+}

@@ -1,0 +1,28 @@
+runtime_assurance:
+  name: "autonomous_edge_safety_filter"
+  version: "1.0.0"
+  enabled: true
+
+checks:
+  confidence_check: true
+  latency_check: true
+  authority_check: true
+  safety_state_check: true
+  input_drift_check: true
+  belief_freshness_check: true
+
+thresholds:
+  minimum_confidence_for_nominal_action: 0.75
+  minimum_confidence_for_any_motion: 0.65
+  latency_budget_ms: 80
+  input_drift_warning: 0.25
+  input_drift_fault: 0.40
+  belief_max_age_ms: 250
+
+fallbacks:
+  low_confidence: "pause_and_request_review"
+  excessive_latency: "safe_stop"
+  authority_violation: "safe_stop"
+  drift_warning: "slow_down"
+  drift_fault: "pause_and_request_review"
+  degraded_safety_state: "safe_stop"

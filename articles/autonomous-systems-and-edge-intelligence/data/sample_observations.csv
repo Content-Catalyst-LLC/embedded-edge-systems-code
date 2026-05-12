@@ -1,0 +1,11 @@
+time_s,observation,observation_confidence,latency_ms,input_drift_score,environment_context
+0.0,clear,0.91,42,0.05,warehouse_day
+0.5,clear,0.88,45,0.06,warehouse_day
+1.0,obstacle,0.82,56,0.12,warehouse_day
+1.5,obstacle,0.78,61,0.16,warehouse_day
+2.0,clear,0.74,58,0.20,warehouse_day
+2.5,hazard,0.67,72,0.28,warehouse_shadow
+3.0,hazard,0.63,88,0.35,warehouse_shadow
+3.5,obstacle,0.70,66,0.22,warehouse_shadow
+4.0,clear,0.86,49,0.10,warehouse_day
+4.5,clear,0.90,44,0.07,warehouse_day

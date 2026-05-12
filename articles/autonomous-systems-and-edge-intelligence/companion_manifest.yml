@@ -1,0 +1,38 @@
+article:
+  title: "Autonomous Systems and Edge Intelligence"
+  slug: "autonomous-systems-and-edge-intelligence"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/autonomous-systems-and-edge-intelligence/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/autonomous-systems-and-edge-intelligence"
+
+technical_level: "advanced public engineering / graduate-oriented scaffold"
+
+workflows:
+  mathematical_lens: "Belief-state decision-making, runtime assurance, safety filtering, and edge authority"
+  python:
+    - "Autonomous Edge Decision Simulation with Belief, Latency, and Safety Bounds"
+    - "Runtime Assurance and Safety-Filtered Action Selection"
+    - "Autonomy Drift Monitoring and Mission Reliability Analysis"
+  r: "Autonomy Monitoring, Drift, and Mission Reliability Reporting"
+  sql: "Autonomy events, belief states, candidate actions, filtered actions, drift records, and intervention evidence"
+  c: "Constrained autonomy mode selection with confidence and fallback checks"
+  cpp: "Autonomy state machine and behavior selection scaffold"
+  rust: "Authority-bound and safety-envelope action validator"
+  go: "Autonomy event gateway and decision telemetry router"
+  micropython: "Local threshold autonomy and fallback telemetry prototype"
+  tinyml: "Local confidence-bounded classifier scaffold"
+  pynq: "Sensor-stream preprocessing and overlay validation"
+  hdl: "Timing monitor and safety gate scaffolds"
+
+governance_dimensions:
+  - belief_state
+  - decision_confidence
+  - candidate_action
+  - filtered_action
+  - autonomy_level
+  - safety_state
+  - latency_budget
+  - fallback_rate
+  - human_intervention_rate
+  - input_drift
+  - confidence_drift

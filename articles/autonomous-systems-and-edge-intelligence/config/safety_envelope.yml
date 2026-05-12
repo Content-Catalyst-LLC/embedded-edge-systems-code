@@ -1,0 +1,18 @@
+safety_envelope:
+  version: "1.0.0"
+  min_obstacle_distance_m: 0.8
+  max_speed_m_s: 1.2
+  max_speed_near_obstacle_m_s: 0.35
+  safe_stop_required_if_confidence_below: 0.65
+  human_review_required_if_confidence_below: 0.68
+  latency_budget_ms: 80
+  safety_state_allowed_for_motion:
+    - "normal"
+    - "warning"
+
+failure_behavior:
+  obstacle_distance_violation: "safe_stop"
+  low_confidence: "pause_and_request_review"
+  excessive_latency: "safe_stop"
+  degraded_safety_state: "safe_stop"
+  authority_violation: "safe_stop"

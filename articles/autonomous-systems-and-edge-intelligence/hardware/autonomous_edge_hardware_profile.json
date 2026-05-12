@@ -1,0 +1,11 @@
+{
+  "device_id": "amr-001-edge-node",
+  "hardware_class": "autonomous_mobile_robot_edge_compute",
+  "sensors": ["depth_camera", "proximity", "imu"],
+  "accelerators": ["npu", "fpga_optional"],
+  "pynq_or_fpga_acceleration_supported": true,
+  "tinyml_local_inference_supported": true,
+  "watchdog_supported": true,
+  "emergency_stop_supported": true,
+  "safety_gate_supported": true
+}

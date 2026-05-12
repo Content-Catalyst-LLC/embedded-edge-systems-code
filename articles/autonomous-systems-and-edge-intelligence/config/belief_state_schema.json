@@ -1,0 +1,18 @@
+{
+  "schema_name": "autonomous_edge_belief_state",
+  "schema_version": "1.0.0",
+  "state_variables": [
+    {"name": "clear_path_probability", "type": "float32", "range": [0, 1]},
+    {"name": "obstacle_probability", "type": "float32", "range": [0, 1]},
+    {"name": "hazard_probability", "type": "float32", "range": [0, 1]},
+    {"name": "belief_freshness_ms", "type": "float32"},
+    {"name": "decision_confidence", "type": "float32", "range": [0, 1]}
+  ],
+  "required_fields": [
+    "timestamp",
+    "device_id",
+    "belief_state",
+    "decision_confidence",
+    "belief_freshness_ms"
+  ]
+}

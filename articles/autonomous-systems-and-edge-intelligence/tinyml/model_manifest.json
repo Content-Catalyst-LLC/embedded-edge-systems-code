@@ -1,0 +1,23 @@
+{
+  "model_name": "edge_autonomy_obstacle_classifier",
+  "model_version": "0.1.0",
+  "runtime_target": "tinyml-portable",
+  "quantization": "int8",
+  "input_schema": {
+    "features": [
+      {"name": "proximity_min_m", "type": "float32", "unit": "meters"},
+      {"name": "depth_obstacle_score", "type": "float32", "unit": "ratio"},
+      {"name": "motion_context_score", "type": "float32", "unit": "ratio"}
+    ]
+  },
+  "output_schema": {
+    "labels": ["clear", "obstacle", "hazard"],
+    "confidence_required": true
+  },
+  "governance": {
+    "runtime_assurance_required": true,
+    "fallback_required": true,
+    "drift_monitoring_required": true,
+    "requires_manifest_validation": true
+  }
+}

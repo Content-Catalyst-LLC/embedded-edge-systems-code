@@ -1,0 +1,38 @@
+decision_policy:
+  name: "warehouse_obstacle_response_policy"
+  version: "1.0.0"
+  objective: "complete mission while preserving safe motion and bounded local authority"
+
+policy_rules:
+  - belief_state: "clear_path"
+    candidate_action: "continue"
+  - belief_state: "obstacle_present"
+    candidate_action: "reroute"
+  - belief_state: "hazard_possible"
+    candidate_action: "proceed_slow"
+  - belief_state: "hazard_likely"
+    candidate_action: "safe_stop"
+
+confidence_thresholds:
+  nominal_action_min_confidence: 0.75
+  fallback_required_below: 0.70
+  human_review_required_below: 0.68
+
+authority:
+  bounded_local:
+    allowed_actions:
+      - "continue"
+      - "slow_down"
+      - "reroute"
+      - "slow_reroute"
+      - "pause_and_request_review"
+      - "safe_stop"
+  supervised:
+    allowed_actions:
+      - "continue"
+      - "slow_down"
+      - "reroute"
+      - "slow_reroute"
+      - "pause_and_request_review"
+      - "safe_stop"
+      - "proceed_slow"

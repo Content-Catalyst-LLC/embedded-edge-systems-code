@@ -1,0 +1,25 @@
+compute_budget:
+  device_class: "autonomous_mobile_robot_edge_node"
+  latency_budget_ms:
+    sense: 15
+    infer: 25
+    estimate: 10
+    plan: 20
+    validate: 5
+    act: 5
+    total: 80
+  memory_budget_mb:
+    inference_runtime: 512
+    local_map: 256
+    autonomy_manager: 128
+  energy_budget_w:
+    average: 18
+    peak: 35
+  accelerator:
+    preferred: "npu_or_fpga"
+    fallback: "cpu"
+  scheduling:
+    safety_filter_priority: "critical"
+    local_control_priority: "critical"
+    perception_priority: "high"
+    telemetry_priority: "normal"

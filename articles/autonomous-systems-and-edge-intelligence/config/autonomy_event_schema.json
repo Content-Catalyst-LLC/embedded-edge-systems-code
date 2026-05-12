@@ -1,0 +1,23 @@
+{
+  "schema_name": "autonomous_edge_decision_event",
+  "schema_version": "1.0.0",
+  "required_fields": [
+    "timestamp",
+    "device_id",
+    "mission_type",
+    "autonomy_level",
+    "observation",
+    "belief_state",
+    "decision_confidence",
+    "candidate_action",
+    "filtered_action",
+    "action_type",
+    "latency_ms",
+    "latency_budget_ms",
+    "safety_state",
+    "human_intervention_required",
+    "input_drift_score",
+    "confidence_drift_score",
+    "mission_outcome"
+  ]
+}
