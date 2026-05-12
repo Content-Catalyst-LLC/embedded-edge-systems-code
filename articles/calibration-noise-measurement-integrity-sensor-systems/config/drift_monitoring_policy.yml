@@ -1,0 +1,6 @@
+drift_monitoring_policy:
+  version: "1.0.0"
+  drift_threshold_absolute: 2.0
+  drift_window_measurements: 30
+  recalibration_required_on_drift_warning: true
+  collocation_check_required: true

@@ -1,0 +1,15 @@
+quality_flag_policy:
+  version: "1.0.0"
+  flags:
+    valid: "Measurement is within calibration, range, timing, and validation requirements."
+    calibration_expired: "Calibration validity interval has passed."
+    stale: "Measurement is older than freshness requirement."
+    saturated: "Sensor or ADC range exceeded."
+    clipped: "Processing or acquisition clipped the signal."
+    low_snr: "Signal-to-noise ratio below requirement."
+    reference_warning: "Reference drift or instability detected."
+    drift_warning: "Trend suggests sensor or chain drift."
+    coefficient_mismatch: "Sensor, firmware, or channel does not match expected calibration state."
+    inferred: "Value was estimated from model or related sensors."
+    lineage_incomplete: "Required source, coefficient, timing, or quality metadata missing."
+    traceability_incomplete: "Calibration cannot be connected to required reference evidence."

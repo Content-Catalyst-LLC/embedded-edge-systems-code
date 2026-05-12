@@ -1,0 +1,12 @@
+traceability_record:
+  version: "1.0.0"
+  required_fields:
+    - traceability_record_id
+    - reference_device_id
+    - reference_certificate
+    - calibration_procedure
+    - calibration_operator
+    - uncertainty_statement
+    - validity_interval
+    - environmental_conditions
+  minimum_traceability_complete_rate: 0.95

@@ -1,0 +1,11 @@
+noise_budget_policy:
+  version: "1.0.0"
+  minimum_snr_db: 20
+  maximum_combined_uncertainty: 1.50
+  required_components:
+    - sensor
+    - reference
+    - afe
+    - adc
+    - calibration
+    - environmental

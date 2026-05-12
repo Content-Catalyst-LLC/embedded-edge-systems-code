@@ -1,0 +1,17 @@
+{
+  "schema_name": "sensor_inventory",
+  "required_fields": [
+    "sensor_id",
+    "site_id",
+    "sensor_family",
+    "channel_id",
+    "unit",
+    "valid_min",
+    "valid_max",
+    "owner",
+    "calibration_version",
+    "firmware_version",
+    "filter_version",
+    "traceability_record_id"
+  ]
+}

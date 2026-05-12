@@ -1,0 +1,27 @@
+{
+  "schema_name": "measurement_record",
+  "required_fields": [
+    "measurement_id",
+    "sensor_id",
+    "site_id",
+    "sensor_family",
+    "adc_counts",
+    "adc_bits",
+    "reference_voltage",
+    "gain_coefficient",
+    "offset_coefficient",
+    "reference_value",
+    "signal_rms",
+    "noise_rms",
+    "uncertainty_components",
+    "calibration_expired",
+    "coefficient_mismatch",
+    "stale",
+    "saturated",
+    "clipped",
+    "lineage_complete",
+    "traceability_complete",
+    "acquisition_time",
+    "processing_time"
+  ]
+}

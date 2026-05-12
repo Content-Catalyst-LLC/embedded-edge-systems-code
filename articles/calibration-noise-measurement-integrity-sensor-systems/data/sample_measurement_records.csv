@@ -1,0 +1,6 @@
+measurement_id,sensor_id,site_id,sensor_family,adc_counts,adc_bits,reference_voltage,gain_coefficient,offset_coefficient,reference_value,signal_rms,noise_rms,sensor_uncertainty,reference_uncertainty,afe_uncertainty,adc_uncertainty,calibration_uncertainty,environmental_uncertainty,calibration_expired,coefficient_mismatch,stale,saturated,clipped,lineage_complete,traceability_complete,acquisition_time,processing_time
+m-001,temp-001,site-a,temperature,21845,16,3.3,36.5,-10.0,100.0,1.20,0.03,0.20,0.10,0.05,0.03,0.15,0.10,false,false,false,false,false,true,true,2026-03-28T12:00:00Z,2026-03-28T12:00:01Z
+m-002,vib-001,site-a,vibration,12200,16,3.3,8.0,0.0,0.70,0.50,0.08,0.05,0.03,0.04,0.02,0.04,0.03,false,false,false,false,false,true,true,2026-03-28T12:00:00Z,2026-03-28T12:00:01Z
+m-003,temp-002,site-b,temperature,24000,16,3.3,36.5,-10.0,101.5,0.90,0.10,0.30,0.15,0.08,0.04,0.20,0.20,true,false,false,false,false,true,true,2026-03-28T12:05:00Z,2026-03-28T12:05:01Z
+m-004,vib-002,site-b,vibration,30000,16,3.3,8.0,0.0,1.00,0.30,0.12,0.07,0.03,0.04,0.02,0.05,0.04,false,false,false,false,false,true,true,2026-03-28T12:05:00Z,2026-03-28T12:05:01Z
+m-005,temp-003,site-c,temperature,65535,16,3.3,36.5,-10.0,95.0,1.00,0.30,0.50,0.20,0.10,0.08,0.40,0.30,true,true,false,true,true,false,false,2026-03-28T11:30:00Z,2026-03-28T12:10:00Z

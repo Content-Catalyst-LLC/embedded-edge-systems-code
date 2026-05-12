@@ -1,0 +1,15 @@
+calibration_manifest:
+  version: "1.0.0"
+  coefficient_binding_required: true
+  fields:
+    - sensor_id
+    - channel_id
+    - hardware_revision
+    - calibration_version
+    - gain_coefficient
+    - offset_coefficient
+    - calibration_date
+    - expiration_date
+    - reference_device_id
+    - uncertainty_statement
+    - coefficient_checksum

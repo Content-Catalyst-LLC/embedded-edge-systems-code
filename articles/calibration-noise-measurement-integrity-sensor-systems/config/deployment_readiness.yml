@@ -1,0 +1,15 @@
+deployment_readiness:
+  version: "1.0.0"
+  required_gates:
+    measurand_defined: true
+    calibration_manifest_complete: true
+    traceability_record_present: true
+    analog_front_end_validated: true
+    sampling_and_settling_tested: true
+    noise_budget_evaluated: true
+    wiring_installation_reviewed: true
+    firmware_provenance_preserved: true
+    quality_flags_implemented: true
+    quality_gates_enforced: true
+    uncertainty_carried_forward: true
+    recalibration_policy_defined: true

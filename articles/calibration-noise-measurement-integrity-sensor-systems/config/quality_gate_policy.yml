@@ -1,0 +1,26 @@
+quality_gate_policy:
+  version: "1.0.0"
+  allowed_uses:
+    valid:
+      - control
+      - analytics
+      - alarms
+      - reporting
+    stale:
+      - historical_display_with_age_marker
+    low_snr:
+      - low_confidence_trend_context
+    calibration_expired:
+      - provisional_trend_analysis
+    reference_warning:
+      - diagnostic_review
+    coefficient_mismatch:
+      - diagnostic_logging_only
+    saturated:
+      - range_exceeded_alarm
+    clipped:
+      - diagnostic_review
+    lineage_incomplete:
+      - diagnostic_review
+    traceability_incomplete:
+      - diagnostic_review

@@ -1,0 +1,40 @@
+{
+  "overlay_name": "measurement_integrity_acquisition_quality_overlay",
+  "overlay_version": "0.1.0",
+  "bitstream_file": "measurement_integrity_acquisition_quality.bit",
+  "hardware_target": "pynq-compatible",
+  "interfaces": [
+    {
+      "name": "adc_sample_stream",
+      "type": "AXI-Stream",
+      "direction": "input"
+    },
+    {
+      "name": "timestamp_counter",
+      "type": "AXI-Lite",
+      "direction": "bidirectional"
+    },
+    {
+      "name": "saturation_flag",
+      "type": "GPIO",
+      "direction": "output"
+    },
+    {
+      "name": "quality_frame",
+      "type": "AXI-Stream",
+      "direction": "output"
+    },
+    {
+      "name": "settling_window_valid",
+      "type": "GPIO",
+      "direction": "output"
+    }
+  ],
+  "validation": {
+    "records_timestamp": true,
+    "records_saturation": true,
+    "records_adc_valid_window": true,
+    "records_quality_frame": true,
+    "requires_fallback_path": true
+  }
+}

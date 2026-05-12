@@ -1,0 +1,6 @@
+sensor_id,site_id,sensor_family,channel_id,unit,valid_min,valid_max,owner,calibration_version,firmware_version,filter_version,traceability_record_id
+temp-001,site-a,temperature,ch-01,C,0,120,measurement-team,cal-2026-01,fw-1.0,filt-1.0,trace-001
+vib-001,site-a,vibration,ch-02,g,0,16,measurement-team,cal-2026-01,fw-1.0,filt-1.0,trace-002
+temp-002,site-b,temperature,ch-01,C,0,120,measurement-team,cal-2025-01,fw-1.1,filt-1.1,trace-003
+vib-002,site-b,vibration,ch-02,g,0,16,measurement-team,cal-2026-01,fw-1.1,filt-1.1,trace-004
+temp-003,site-c,temperature,ch-01,C,0,120,measurement-team,cal-2024-06,fw-0.9,filt-0.8,trace-005

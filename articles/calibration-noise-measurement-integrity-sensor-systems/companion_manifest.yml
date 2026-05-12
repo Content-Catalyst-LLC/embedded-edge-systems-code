@@ -1,0 +1,29 @@
+article:
+  title: "Calibration, Noise, and Measurement Integrity in Sensor Systems"
+  slug: "calibration-noise-measurement-integrity-sensor-systems"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/calibration-noise-and-measurement-integrity-in-sensor-systems/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/calibration-noise-measurement-integrity-sensor-systems"
+
+technical_level: "engineering-grade measurement-integrity scaffold"
+
+workflows:
+  mathematical_lens: "Calibration, noise, uncertainty, drift, confidence, and measurement trust"
+  python:
+    - "Sensor Calibration, Noise, and Measurement Integrity Analysis"
+    - "Measurement Quality Gate Evaluation"
+    - "Drift and Recalibration Monitoring"
+    - "Traceability and Calibration-Control Validation"
+    - "Deployment Readiness Gate"
+  r: "Sensor Fleet Calibration and Measurement Quality Reporting"
+  sql: "Sensor inventory, calibration records, measurement records, quality flags, traceability, and validation evidence"
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - micropython
+    - tinyml
+    - pynq
+    - hdl
+    - bash

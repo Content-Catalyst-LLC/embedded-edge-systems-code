@@ -1,0 +1,12 @@
+adc_sampling_plan:
+  version: "1.0.0"
+  adc_bits: 16
+  reference_voltage: 3.3
+  sampling_rate_hz: 1000
+  trigger_source: "timer"
+  channel_sequence:
+    - ch-01
+    - ch-02
+  settling_delay_us: 50
+  dummy_read_after_channel_switch: true
+  anti_alias_filter_cutoff_hz: 200

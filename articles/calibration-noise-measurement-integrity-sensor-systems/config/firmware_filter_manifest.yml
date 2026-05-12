@@ -1,0 +1,13 @@
+firmware_filter_manifest:
+  version: "1.0.0"
+  filters:
+    temperature:
+      filter_type: "moving_average"
+      window_samples: 8
+      latency_ms: 8
+      raw_value_retained: true
+    vibration:
+      filter_type: "band_limited_rms"
+      window_samples: 128
+      latency_ms: 128
+      raw_value_retained: true

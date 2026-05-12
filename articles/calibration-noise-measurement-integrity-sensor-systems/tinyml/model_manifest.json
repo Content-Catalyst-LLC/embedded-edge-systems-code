@@ -1,0 +1,30 @@
+{
+  "model_name": "measurement_quality_classifier_stub",
+  "model_version": "measurement-quality-0.1.0",
+  "runtime_target": "tinyml-portable",
+  "quantization": "int8",
+  "input_schema": {
+    "features": [
+      "expanded_uncertainty",
+      "snr_db",
+      "absolute_drift",
+      "calibration_age_days",
+      "lineage_complete",
+      "traceability_complete"
+    ]
+  },
+  "output_schema": {
+    "labels": [
+      "valid",
+      "low_snr",
+      "drift_warning",
+      "calibration_expired",
+      "coefficient_mismatch"
+    ]
+  },
+  "governance": {
+    "confidence_required": true,
+    "fallback_required": true,
+    "quality_gate_required": true
+  }
+}

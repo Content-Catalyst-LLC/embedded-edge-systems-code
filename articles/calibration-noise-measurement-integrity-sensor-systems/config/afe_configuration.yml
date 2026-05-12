@@ -1,0 +1,9 @@
+afe_configuration:
+  version: "1.0.0"
+  gain_stage_documented: true
+  input_buffer_required: true
+  reference_monitor_required: true
+  anti_alias_filter_required: true
+  settling_validation_required: true
+  protection_network_documented: true
+  common_mode_test_required: true
