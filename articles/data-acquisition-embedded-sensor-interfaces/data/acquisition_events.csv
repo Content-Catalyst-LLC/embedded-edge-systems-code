@@ -1,0 +1,7 @@
+event_id,device_id,site_id,channel_id,physical_quantity,units,acquisition_time,processing_time,value,raw_code,reference_mv,calibration_version,quality_flag,timestamp_jitter_ms,buffer_age_ms,bus_retries,adc_overrun,stale_read
+evt-001,node-001,site-a,temp-01,temperature,celsius,2026-03-28T12:00:00.000Z,2026-03-28T12:00:00.012Z,22.4,2311,3300,cal-2026-01,valid,0.3,3,0,false,false
+evt-002,node-001,site-a,press-01,pressure,kpa,2026-03-28T12:00:00.100Z,2026-03-28T12:00:00.126Z,101.7,1984,3300,cal-2026-01,valid,0.8,4,0,false,false
+evt-003,node-001,site-a,current-01,current,ampere,2026-03-28T12:00:00.200Z,2026-03-28T12:00:00.251Z,8.9,3560,3300,cal-2026-01,saturation_warning,1.2,8,0,false,false
+evt-004,node-002,site-b,vibration-01,vibration,g,2026-03-28T12:00:00.000Z,2026-03-28T12:00:00.220Z,0.74,2890,2500,cal-2025-11,jitter_warning,9.6,84,1,false,false
+evt-005,node-002,site-b,temp-01,temperature,celsius,2026-03-28T12:00:01.000Z,2026-03-28T12:00:02.500Z,22.2,2302,3300,cal-2025-11,stale_warning,3.1,400,3,false,true
+evt-006,node-003,site-c,humidity-01,humidity,percent,2026-03-28T12:00:00.000Z,2026-03-28T12:00:00.040Z,54.2,1760,3300,cal-2026-02,valid,0.5,6,0,false,false

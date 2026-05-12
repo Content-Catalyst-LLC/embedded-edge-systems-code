@@ -1,0 +1,13 @@
+{
+  "model_name": "acquisition_anomaly_stub",
+  "purpose": "Classify acquisition windows as normal, jitter_warning, stale_warning, or saturation_warning",
+  "input_features": [
+    "timestamp_jitter_ms",
+    "buffer_age_ms",
+    "bus_retries",
+    "raw_code_delta",
+    "reference_mv"
+  ],
+  "runtime": "tinyml_stub",
+  "notes": "Use only after measurement-quality evidence is preserved; do not replace explicit quality flags."
+}

@@ -1,0 +1,25 @@
+article:
+  title: "Data Acquisition and Embedded Sensor Interfaces"
+  slug: "data-acquisition-embedded-sensor-interfaces"
+  series: "Embedded and Edge Systems"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/data-acquisition-embedded-sensor-interfaces"
+
+technical_level: "engineering-grade embedded measurement and acquisition scaffold"
+
+workflows:
+  mathematical_lens: "Sampling, quantization, settling, total error, timestamp jitter, and measurement lineage"
+  python:
+    - "Sensor Acquisition Integrity and Sampling-Chain Simulation"
+    - "ADC quantization, timestamp jitter, settling error, buffer drops, and quality flags"
+  r: "Fleet-Level Sensor Quality and Measurement Reliability Reporting"
+  sql: "Measurement events, acquisition configuration, calibration records, quality checks, and runtime evidence"
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - micropython
+    - tinyml
+    - pynq
+    - hdl
+    - bash

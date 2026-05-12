@@ -1,0 +1,28 @@
+{
+  "manifest_version": "1.0.0",
+  "article": "data-acquisition-embedded-sensor-interfaces",
+  "interfaces": [
+    {
+      "name": "internal_adc_sequence",
+      "type": "adc",
+      "channels": ["temp-01", "press-01", "current-01"],
+      "reference_mv": 3300,
+      "trigger": "timer",
+      "buffering": "dma_circular"
+    },
+    {
+      "name": "condition_monitor_spi",
+      "type": "spi",
+      "channels": ["vibration-01"],
+      "max_clock_hz": 8000000,
+      "status_validation": true
+    },
+    {
+      "name": "environmental_i2c",
+      "type": "i2c",
+      "channels": ["humidity-01"],
+      "clock_hz": 400000,
+      "bus_recovery": true
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+channel_id,device_class,interface_type,sample_rate_hz,signal_bandwidth_hz,adc_bits,reference_mv,source_impedance_ohm,settling_required_us,calibration_interval_days
+temp-01,environmental-node,adc,1,0.1,12,3300,1000,25,180
+press-01,industrial-node,adc,10,2,12,3300,5000,80,180
+current-01,power-monitor,adc,1000,200,12,3300,100,10,90
+vibration-01,condition-monitor,spi,3200,1200,16,2500,50,5,90
+humidity-01,environmental-node,i2c,1,0.05,14,3300,0,0,365

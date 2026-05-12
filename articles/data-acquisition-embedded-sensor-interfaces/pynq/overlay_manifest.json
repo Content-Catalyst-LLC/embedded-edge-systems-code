@@ -1,0 +1,6 @@
+{
+  "overlay_name": "acquisition_timestamp_and_buffer_overlay",
+  "purpose": "Demonstrate hardware-assisted acquisition timestamping, stream-valid framing, and buffer accounting.",
+  "interfaces": ["AXI Stream", "GPIO trigger", "DMA"],
+  "outputs": ["sample_counter", "timestamp_counter", "valid_frame_count", "drop_count"]
+}

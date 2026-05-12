@@ -1,0 +1,14 @@
+acquisition_policy:
+  version: "1.0.0"
+  timestamp_jitter_warning_ms: 5
+  timestamp_jitter_fail_ms: 20
+  max_buffer_age_ms: 250
+  max_bus_retries: 2
+  require_calibration_version: true
+  quality_flags:
+    - valid
+    - saturation_warning
+    - jitter_warning
+    - stale_warning
+    - calibration_warning
+    - invalid
