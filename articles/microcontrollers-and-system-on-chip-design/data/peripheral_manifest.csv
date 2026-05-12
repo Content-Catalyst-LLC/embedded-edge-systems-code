@@ -1,0 +1,11 @@
+requirement_id,device_class,peripheral,quantity_required,criticality,notes
+req-001,battery_sensor_node,adc,4,required,multi-channel environmental sensing
+req-002,battery_sensor_node,i2c,1,required,sensor bus
+req-003,battery_sensor_node,spi,1,required,external storage or radio
+req-004,battery_sensor_node,rtc,1,required,low-power wake timing
+req-005,industrial_controller,can,1,required,industrial field communication
+req-006,industrial_controller,pwm_timer,6,required,actuator and motor-control timing
+req-007,environmental_gateway,ethernet,1,required,backhaul connectivity
+req-008,environmental_gateway,wireless,1,required,field node communications
+req-009,local_inference_node,accelerator,1,preferred,local inference support
+req-010,motor_control_node,dma,4,required,low-latency data movement

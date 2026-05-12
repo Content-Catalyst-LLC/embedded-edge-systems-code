@@ -1,0 +1,7 @@
+platform_id,platform_name,platform_type,cpu_mhz,cores,flash_kb,sram_kb,external_memory_supported,bus_bandwidth_mb_s,active_ma,sleep_ua,wake_latency_ms,adc_channels,timers,dma_channels,uart,spi,i2c,can,ethernet,wireless,secure_boot,key_storage,crypto_accel,debug_lock,accelerator,software_stack,cost_tier,lifecycle_support_score
+plt-001,low_power_mcu_a,mcu,80,1,512,128,false,80,9.0,2.5,3,8,8,6,2,2,2,1,false,none,true,true,true,true,none,bare_metal_or_rtos,low,8
+plt-002,control_mcu_b,mcu,160,1,1024,256,false,120,22.0,6.0,5,12,10,8,4,3,3,2,false,none,true,true,true,true,dsp,rtos,medium,8
+plt-003,wireless_mcu_c,mcu,96,1,1024,320,false,100,18.0,3.0,4,10,8,6,2,2,2,1,false,ble,true,true,true,true,none,rtos,medium,7
+plt-004,edge_soc_d,soc,1200,4,4096,1024,true,2400,420.0,350.0,80,4,12,8,4,3,3,1,true,wifi_eth,true,true,true,true,npu,embedded_linux,high,7
+plt-005,gateway_soc_e,soc,1800,4,8192,2048,true,4800,650.0,800.0,120,2,8,10,4,4,4,1,true,wifi_bt_eth,true,true,true,true,gpu_npu,embedded_linux,high,9
+plt-006,hybrid_control_soc_f,hybrid,600,2,2048,768,true,900,120.0,80.0,18,8,12,8,3,3,3,2,true,subghz,true,true,true,true,dsp_npu,rtos_or_linux,medium_high,8

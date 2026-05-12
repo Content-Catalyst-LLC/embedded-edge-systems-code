@@ -1,0 +1,30 @@
+platform_policy:
+  version: "1.0.0"
+  article: "microcontrollers-and-system-on-chip-design"
+  minimum_margins:
+    cpu_utilization_max: 0.70
+    memory_margin_kb_min: 64
+    bandwidth_margin_mb_s_min: 50
+    lifecycle_support_score_min: 7
+  required_review_dimensions:
+    - compute
+    - memory
+    - peripherals
+    - pin_package
+    - timing
+    - dma
+    - bus_interconnect
+    - power
+    - security
+    - software_ecosystem
+    - lifecycle
+  security:
+    require_secure_boot_for_field_devices: true
+    require_key_storage_for_connected_devices: true
+    require_debug_lock_for_deployed_devices: true
+    require_rollback_for_ota_updates: true
+  lifecycle:
+    require_reset_cause_diagnostics: true
+    require_update_manifest: true
+    require_field_telemetry: true
+    require_recovery_runbook: true

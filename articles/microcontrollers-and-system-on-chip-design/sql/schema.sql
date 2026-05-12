@@ -1,0 +1,83 @@
+CREATE TABLE candidate_platforms (
+  platform_id TEXT PRIMARY KEY,
+  platform_name TEXT NOT NULL,
+  platform_type TEXT NOT NULL,
+  cpu_mhz REAL,
+  cores INTEGER,
+  flash_kb INTEGER,
+  sram_kb INTEGER,
+  external_memory_supported BOOLEAN,
+  bus_bandwidth_mb_s REAL,
+  active_ma REAL,
+  sleep_ua REAL,
+  wake_latency_ms REAL,
+  adc_channels INTEGER,
+  timers INTEGER,
+  dma_channels INTEGER,
+  uart INTEGER,
+  spi INTEGER,
+  i2c INTEGER,
+  can INTEGER,
+  ethernet BOOLEAN,
+  wireless TEXT,
+  secure_boot BOOLEAN,
+  key_storage BOOLEAN,
+  crypto_accel BOOLEAN,
+  debug_lock BOOLEAN,
+  accelerator TEXT,
+  software_stack TEXT,
+  cost_tier TEXT,
+  lifecycle_support_score INTEGER
+);
+
+CREATE TABLE device_requirements (
+  device_class TEXT PRIMARY KEY,
+  required_cpu_mhz REAL,
+  required_flash_kb INTEGER,
+  required_sram_kb INTEGER,
+  required_bandwidth_mb_s REAL,
+  max_active_ma REAL,
+  max_sleep_ua REAL,
+  max_wake_latency_ms REAL,
+  min_adc_channels INTEGER,
+  min_timers INTEGER,
+  min_dma_channels INTEGER,
+  needs_can BOOLEAN,
+  needs_ethernet BOOLEAN,
+  needs_wireless BOOLEAN,
+  needs_secure_boot BOOLEAN,
+  needs_key_storage BOOLEAN,
+  needs_accelerator BOOLEAN,
+  required_lifecycle_score INTEGER
+);
+
+CREATE TABLE silicon_fit_results (
+  result_id TEXT PRIMARY KEY,
+  device_class TEXT NOT NULL,
+  platform_id TEXT NOT NULL,
+  fit_score REAL,
+  compute_margin_mhz REAL,
+  flash_margin_kb REAL,
+  sram_margin_kb REAL,
+  bandwidth_margin_mb_s REAL,
+  active_current_margin_ma REAL,
+  sleep_current_margin_ua REAL,
+  wake_latency_margin_ms REAL,
+  peripheral_fit BOOLEAN,
+  security_fit BOOLEAN,
+  lifecycle_fit BOOLEAN,
+  recommended BOOLEAN
+);
+
+CREATE TABLE platform_lifecycle_events (
+  event_id TEXT PRIMARY KEY,
+  platform_id TEXT NOT NULL,
+  device_id TEXT,
+  firmware_version TEXT,
+  event_time TIMESTAMP NOT NULL,
+  event_type TEXT NOT NULL,
+  reset_cause TEXT,
+  update_result TEXT,
+  diagnostic_status TEXT,
+  security_state TEXT
+);

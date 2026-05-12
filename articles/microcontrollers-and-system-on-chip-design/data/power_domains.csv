@@ -1,0 +1,11 @@
+platform_id,domain_name,active_ma,sleep_ua,wake_latency_ms,retained_state,notes
+plt-001,cpu_core,4.0,0.8,1,true,low-power MCU core
+plt-001,analog_frontend,2.0,0.1,2,false,ADC and reference domain
+plt-001,radio_domain,10.0,1.5,5,false,optional radio domain
+plt-004,cpu_cluster,240.0,120.0,50,true,application processor domain
+plt-004,npu_domain,160.0,5.0,20,false,local inference accelerator
+plt-004,network_domain,80.0,60.0,30,true,connectivity domain
+plt-005,cpu_cluster,320.0,200.0,70,true,gateway CPU cluster
+plt-005,gpu_npu_domain,250.0,20.0,35,false,accelerator domain
+plt-006,control_core,30.0,10.0,8,true,RTOS control domain
+plt-006,analytics_domain,90.0,40.0,20,false,edge analytics domain

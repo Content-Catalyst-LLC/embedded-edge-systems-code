@@ -1,0 +1,7 @@
+platform_id,secure_boot,key_storage,crypto_accel,debug_lock,rollback_supported,ota_update_ready,provisioning_support,diagnostic_reset_cause,field_telemetry_ready,security_risk
+plt-001,true,true,true,true,true,true,true,true,true,low
+plt-002,true,true,true,true,true,true,true,true,true,low
+plt-003,true,true,true,true,false,true,true,true,true,medium
+plt-004,true,true,true,true,true,true,true,true,true,low
+plt-005,true,true,true,true,true,true,true,true,true,low
+plt-006,true,true,true,true,true,true,true,true,true,low

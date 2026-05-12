@@ -1,0 +1,25 @@
+article:
+  title: "Microcontrollers and System-on-Chip Design"
+  slug: "microcontrollers-and-system-on-chip-design"
+  series: "Embedded and Edge Systems"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/microcontrollers-and-system-on-chip-design"
+
+technical_level: "engineering-grade embedded silicon platform selection scaffold"
+
+workflows:
+  mathematical_lens: "CPU utilization, memory margin, bandwidth margin, daily energy, and weighted silicon-fit scoring"
+  python:
+    - "Silicon-Fit, Power, Memory, and Peripheral-Constraint Modeling"
+    - "Candidate platform comparison across compute, memory, I/O, timing, power, security, and lifecycle criteria"
+  r: "Platform Portfolio and Device-Class Comparison"
+  sql: "Platform, peripheral, memory, power, security, lifecycle, and telemetry evidence schema"
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - micropython
+    - tinyml
+    - pynq
+    - hdl
+    - bash

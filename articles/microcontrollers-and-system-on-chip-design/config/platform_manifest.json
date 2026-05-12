@@ -1,0 +1,24 @@
+{
+  "manifest_version": "1.0.0",
+  "article": "microcontrollers-and-system-on-chip-design",
+  "platform_selection_dimensions": [
+    "compute",
+    "memory",
+    "i_o",
+    "timing",
+    "dma",
+    "bus_interconnect",
+    "power",
+    "security",
+    "software_ecosystem",
+    "lifecycle"
+  ],
+  "candidate_requirements": {
+    "compute": ["cpu_mhz", "cores", "accelerator"],
+    "memory": ["flash_kb", "sram_kb", "external_memory_supported"],
+    "i_o": ["adc_channels", "timers", "dma_channels", "uart", "spi", "i2c", "can", "ethernet", "wireless"],
+    "power": ["active_ma", "sleep_ua", "wake_latency_ms"],
+    "security": ["secure_boot", "key_storage", "crypto_accel", "debug_lock"],
+    "lifecycle": ["rollback_supported", "ota_update_ready", "diagnostic_reset_cause", "field_telemetry_ready"]
+  }
+}

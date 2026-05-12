@@ -1,0 +1,6 @@
+{
+  "overlay_name": "soc_platform_capability_overlay",
+  "purpose": "Demonstrate hardware-assisted register blocks, event counters, DMA readiness, and accelerator integration for SoC-oriented embedded platforms.",
+  "interfaces": ["AXI Lite", "AXI Stream", "GPIO", "DMA"],
+  "outputs": ["event_count", "dma_transfer_count", "accelerator_ready", "platform_status"]
+}

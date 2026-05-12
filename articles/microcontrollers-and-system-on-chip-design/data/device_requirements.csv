@@ -1,0 +1,6 @@
+device_class,required_cpu_mhz,required_flash_kb,required_sram_kb,required_bandwidth_mb_s,max_active_ma,max_sleep_ua,max_wake_latency_ms,min_adc_channels,min_timers,min_dma_channels,needs_can,needs_ethernet,needs_wireless,needs_secure_boot,needs_key_storage,needs_accelerator,required_lifecycle_score
+battery_sensor_node,48,256,64,30,15,5,10,4,4,2,false,false,true,true,true,false,7
+industrial_controller,120,512,128,80,60,50,10,8,8,4,true,false,false,true,true,false,8
+environmental_gateway,800,2048,512,800,800,1000,150,2,4,4,false,true,true,true,true,true,8
+local_inference_node,400,1024,512,600,250,200,50,2,6,4,false,false,true,true,true,true,8
+motor_control_node,160,512,128,100,80,20,5,6,10,4,true,false,false,true,true,false,8
