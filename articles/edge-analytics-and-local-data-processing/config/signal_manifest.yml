@@ -1,0 +1,35 @@
+signal_manifest:
+  version: "1.0.0"
+  signals:
+    vibration-main:
+      sensor_id: "accel-001"
+      signal_family: "vibration"
+      unit: "g"
+      sampling_rate_hz: 2000
+      expected_range: [-16, 16]
+      calibration_required: true
+      expected_quality: "valid"
+    thermal-line:
+      sensor_id: "temp-002"
+      signal_family: "temperature"
+      unit: "celsius"
+      sampling_rate_hz: 1
+      expected_range: [-40, 125]
+      calibration_required: true
+      expected_quality: "valid"
+    current-main:
+      sensor_id: "current-002"
+      signal_family: "power"
+      unit: "ampere"
+      sampling_rate_hz: 1
+      expected_range: [0, 100]
+      calibration_required: true
+      expected_quality: "valid"
+    water-level:
+      sensor_id: "level-003"
+      signal_family: "environmental"
+      unit: "meter"
+      sampling_rate_hz: 1
+      expected_range: [0, 10]
+      calibration_required: true
+      expected_quality: "valid"

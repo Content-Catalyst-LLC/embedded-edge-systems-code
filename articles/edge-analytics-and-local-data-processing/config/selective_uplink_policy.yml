@@ -1,0 +1,37 @@
+selective_uplink_policy:
+  version: "1.0.0"
+  modes:
+    immediate:
+      description: "urgent event records forwarded as soon as connected"
+    deferred:
+      description: "routine summaries buffered and sent later"
+    sampled:
+      description: "normal records forwarded at sampling interval"
+    summarized:
+      description: "raw windows reduced into features or summaries"
+    suppressed:
+      description: "records not forwarded but reason retained"
+  routing:
+    fault:
+      uplink_mode: "immediate"
+      retain_raw_window: true
+      priority: "high"
+    warning:
+      uplink_mode: "immediate"
+      retain_raw_window: true
+      priority: "medium"
+    degraded:
+      uplink_mode: "immediate"
+      retain_raw_window: true
+      priority: "medium"
+    normal:
+      uplink_mode: "sampled"
+      retain_raw_window: false
+      priority: "low"
+  required_evidence:
+    - uplink_mode
+    - forwarding_policy_version
+    - drop_reason
+    - raw_window_pointer
+    - feature_version
+    - rule_version

@@ -1,0 +1,27 @@
+{
+  "schema_name": "edge_analytics_feature_schema",
+  "schema_version": "1.0.0",
+  "features": [
+    {"name": "rms", "signal_family": "vibration", "type": "float32", "unit": "g"},
+    {"name": "peak", "signal_family": "vibration", "type": "float32", "unit": "g"},
+    {"name": "crest_factor", "signal_family": "vibration", "type": "float32", "unit": "ratio"},
+    {"name": "spectral_energy", "signal_family": "vibration", "type": "float32", "unit": "normalized"},
+    {"name": "bandpower_low", "signal_family": "vibration", "type": "float32", "unit": "normalized"},
+    {"name": "bandpower_high", "signal_family": "vibration", "type": "float32", "unit": "normalized"},
+    {"name": "mean_temperature", "signal_family": "temperature", "type": "float32", "unit": "celsius"},
+    {"name": "peak_current", "signal_family": "power", "type": "float32", "unit": "ampere"},
+    {"name": "mean_level", "signal_family": "environmental", "type": "float32", "unit": "meter"}
+  ],
+  "required_metadata": [
+    "window_id",
+    "signal_id",
+    "sensor_id",
+    "site_id",
+    "gateway_id",
+    "feature_version",
+    "window_start",
+    "window_end",
+    "quality_flag",
+    "missing_sample_rate"
+  ]
+}

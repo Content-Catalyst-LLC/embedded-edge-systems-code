@@ -1,0 +1,7 @@
+event_id,replay_batch_id,idempotency_key,sequence_number,event_time,processing_time,upload_time,upstream_ingest_time,late_arrival,duplicate_detected,gap_detected,correction_record,reconciliation_status
+evt-001,batch-001,evt-001-key,1,2026-03-28T12:00:00Z,2026-03-28T12:00:00Z,2026-03-28T12:00:01Z,2026-03-28T12:00:02Z,false,false,false,false,none
+evt-002,batch-001,evt-002-key,2,2026-03-28T12:01:00Z,2026-03-28T12:01:00Z,2026-03-28T12:01:01Z,2026-03-28T12:01:02Z,false,false,false,false,none
+evt-003,batch-002,evt-003-key,1,2026-03-28T12:02:00Z,2026-03-28T12:02:01Z,2026-03-28T12:05:30Z,2026-03-28T12:05:35Z,true,false,false,false,late_accepted
+evt-004,batch-002,evt-004-key,2,2026-03-28T12:03:00Z,2026-03-28T12:03:00Z,,2026-03-28T12:08:00Z,true,false,true,false,gap_recorded
+evt-004-dup,batch-002,evt-004-key,2,2026-03-28T12:03:00Z,2026-03-28T12:03:00Z,,2026-03-28T12:08:30Z,true,true,true,false,deduplicated
+evt-005-correction,batch-003,evt-005-key-correction,3,2026-03-28T12:04:00Z,2026-03-28T12:10:00Z,2026-03-28T12:10:02Z,2026-03-28T12:10:05Z,true,false,false,true,correction_appended

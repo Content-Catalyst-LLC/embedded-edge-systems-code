@@ -1,0 +1,16 @@
+replay_policy:
+  version: "1.0.0"
+  processing_semantics: "effectively_once_with_idempotency_keys"
+  required_fields:
+    - event_id
+    - idempotency_key
+    - replay_batch_id
+    - sequence_number
+    - event_time
+    - processing_time
+    - upload_time
+    - upstream_ingest_time
+  duplicate_behavior: "deduplicate_and_record"
+  late_arrival_behavior: "preserve_event_time_and_mark_late"
+  partial_backfill_behavior: "record_gap_and_completeness_flag"
+  correction_behavior: "append_correction_not_silent_overwrite"

@@ -1,0 +1,29 @@
+article:
+  title: "Edge Analytics and Local Data Processing"
+  slug: "edge-analytics-and-local-data-processing"
+  series: "Embedded and Edge Systems"
+  repository_root: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code"
+  article_repository_path: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/edge-analytics-and-local-data-processing"
+
+companion_stack:
+  analytics:
+    - python
+    - r
+    - sql
+    - notebooks
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - bash
+  embedded:
+    - micropython
+    - tinyml
+  acceleration:
+    - pynq
+    - hdl
+  governance:
+    - analytics_runtime
+    - replay_backfill
+    - security

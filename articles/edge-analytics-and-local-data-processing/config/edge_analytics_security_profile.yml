@@ -1,0 +1,18 @@
+edge_analytics_security_profile:
+  version: "1.0.0"
+  controls:
+    signed_config_bundles: true
+    signed_rule_updates: true
+    secure_uplink_transport: true
+    replay_integrity_records: true
+    local_buffer_access_control: true
+    retention_limits: true
+    drop_reason_preservation: true
+    selective_uplink_review: true
+  risks:
+    - unauthorized_rule_change
+    - local_buffer_tampering
+    - replay_injection
+    - telemetry_suppression
+    - privacy_leakage_through_features
+    - opaque_local_decision_logic

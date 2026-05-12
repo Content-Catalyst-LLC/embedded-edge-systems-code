@@ -1,0 +1,19 @@
+analytics_runtime:
+  version: "0.1.0"
+  components:
+    - signal_validator
+    - preprocessing_stage
+    - window_manager
+    - feature_extractor
+    - event_logic_engine
+    - local_inference_stub
+    - buffer_manager
+    - replay_manager
+    - selective_uplink_router
+    - analytics_health_monitor
+  required_outputs:
+    - analytics_events
+    - signal_windows
+    - replay_records
+    - slo_records
+    - readiness_records

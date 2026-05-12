@@ -1,0 +1,22 @@
+buffer_policy:
+  version: "1.0.0"
+  max_buffer_records: 500
+  high_watermark_records: 200
+  retention:
+    raw_windows:
+      incident_s: 86400
+      normal_s: 600
+    features:
+      incident_s: 604800
+      normal_s: 86400
+    events:
+      incident_s: 2592000
+      normal_s: 604800
+  priority_queues:
+    fault:
+      drop_policy: "never_drop_before_normal"
+    warning:
+      drop_policy: "drop_after_fault_if_pressure"
+    normal:
+      drop_policy: "drop_oldest_under_pressure"
+  preserve_drop_reason: true

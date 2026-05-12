@@ -1,0 +1,13 @@
+deployment_readiness:
+  version: "1.0.0"
+  required_gates:
+    signal_manifest_complete: true
+    preprocessing_validated: true
+    window_policy_approved: true
+    feature_parity_passed: true
+    event_logic_tested: true
+    retention_policy_deployed: true
+    selective_uplink_tested: true
+    replay_semantics_tested: true
+    analytics_slos_monitored: true
+    rollback_path_ready: true

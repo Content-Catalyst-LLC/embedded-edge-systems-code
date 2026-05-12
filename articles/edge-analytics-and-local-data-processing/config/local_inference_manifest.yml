@@ -1,0 +1,21 @@
+local_inference_manifest:
+  version: "model-optional-0.1"
+  model_name: "edge_event_classifier_stub"
+  enabled: true
+  input_features:
+    - rms
+    - peak
+    - crest_factor
+    - spectral_energy
+    - bandpower_low
+    - bandpower_high
+  confidence_threshold: 0.80
+  fallback_behavior:
+    low_confidence: "use_rule_based_event_logic_and_uplink_for_review"
+    unhealthy_sensor: "suppress_or_qualify_local_inference"
+  required_telemetry:
+    - model_version
+    - feature_version
+    - confidence
+    - fallback_used
+    - runtime_backend

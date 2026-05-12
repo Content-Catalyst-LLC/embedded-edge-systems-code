@@ -1,0 +1,43 @@
+article:
+  title: "Edge Analytics and Local Data Processing"
+  slug: "edge-analytics-and-local-data-processing"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/edge-analytics-and-local-data-processing/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/edge-analytics-and-local-data-processing"
+
+technical_level: "engineering-grade edge analytics and local stream-processing scaffold"
+
+workflows:
+  mathematical_lens: "Windows, local latency, compression, freshness, buffer backlog, edge utility, analytics quality"
+  python:
+    - "Edge Stream Analytics, Windowing, and Selective Uplink Simulation"
+    - "Late Data, Replay, Deduplication, and Backfill Integrity Validation"
+    - "Analytics SLO and Capacity-Budget Checks"
+    - "Lineage, Freshness, and Feature-Completeness Analysis"
+    - "Deployment Readiness Gate"
+  r: "Edge Analytics Fleet Reporting and Local Data Quality Analysis"
+  sql: "Signal manifests, windows, features, events, buffers, replay records, uplink records, SLO checks"
+  c: "Rolling windows, RMS/peak features, thresholding, local event flags"
+  cpp: "Edge analytics runtime state machine and event-qualification abstraction"
+  rust: "Feature schema, event contract, replay policy, and uplink policy validator"
+  go: "Analytics event router, selective uplink service, and local health API scaffold"
+  micropython: "Local windowing, feature extraction, and threshold detection prototype"
+  tinyml: "On-device anomaly classification and confidence-aware event detection"
+  pynq: "Low-latency stream preprocessing and feature-window validation"
+  hdl: "Stream timestamping, window counters, feature accumulation, event triggers, telemetry framing"
+
+engineering_dimensions:
+  - acquisition_integrity
+  - preprocessing_contract
+  - event_time_windowing
+  - feature_schema
+  - event_logic
+  - buffering
+  - replay_backfill_integrity
+  - selective_uplink
+  - freshness
+  - lineage
+  - analytics_slo
+  - deployment_readiness
+  - local_inference
+  - fleet_monitoring

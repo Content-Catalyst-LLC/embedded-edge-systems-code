@@ -1,0 +1,31 @@
+event_logic_manifest:
+  version: "rules-1.0"
+  states:
+    - normal
+    - warning
+    - degraded
+    - fault
+  rules:
+    vibration_warning:
+      signal_family: "vibration"
+      condition: "rms > 0.45 or peak > 0.80"
+      state: "warning"
+      immediate_uplink: true
+      retain_raw_window: true
+    vibration_fault:
+      signal_family: "vibration"
+      condition: "rms > 0.65 and spectral_energy > 0.70"
+      state: "fault"
+      immediate_uplink: true
+      retain_raw_window: true
+    data_quality_degraded:
+      condition: "missing_sample_rate > 0.05 or feature_complete == false"
+      state: "degraded"
+      immediate_uplink: true
+      retain_raw_window: true
+    environmental_warning:
+      signal_family: "environmental"
+      condition: "mean_level > 5.0"
+      state: "warning"
+      immediate_uplink: true
+      retain_raw_window: false

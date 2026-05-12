@@ -1,0 +1,25 @@
+preprocessing_contract:
+  version: "1.0.0"
+  validation:
+    reject_invalid_units: true
+    preserve_original_units: true
+    missing_sample_policy: "flag_and_compute_when_below_threshold"
+    max_missing_sample_rate: 0.05
+    outlier_policy: "winsorize_for_summary_preserve_raw_pointer"
+  transformations:
+    vibration:
+      filter: "bandpass"
+      normalize: true
+      denoise: true
+    temperature:
+      filter: "rolling_median"
+      normalize: false
+      denoise: true
+    power:
+      filter: "range_check"
+      normalize: false
+      denoise: true
+    environmental:
+      filter: "rolling_average"
+      normalize: false
+      denoise: true

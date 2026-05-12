@@ -1,0 +1,11 @@
+analytics_slo:
+  version: "1.0.0"
+  p95_local_latency_ms: 100
+  max_stale_output_rate: 0.05
+  min_feature_completeness_rate: 0.98
+  min_lineage_completeness_rate: 0.98
+  max_buffer_backlog_records: 200
+  max_replay_lag_s: 300
+  min_drop_transparency_rate: 0.99
+  max_missing_sample_rate: 0.05
+  max_duplicate_replay_rate: 0.01

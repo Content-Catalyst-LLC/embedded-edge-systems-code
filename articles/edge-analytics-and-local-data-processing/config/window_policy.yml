@@ -1,0 +1,25 @@
+window_policy:
+  version: "1.0.0"
+  event_time: true
+  watermark_s: 5
+  policies:
+    vibration:
+      window_type: "sliding"
+      window_size_s: 2
+      overlap: 0.50
+      late_data_behavior: "mark_late_and_preserve_event_time"
+    temperature:
+      window_type: "tumbling"
+      window_size_s: 60
+      overlap: 0.00
+      late_data_behavior: "mark_late_and_preserve_event_time"
+    power:
+      window_type: "tumbling"
+      window_size_s: 30
+      overlap: 0.00
+      late_data_behavior: "mark_late_and_preserve_event_time"
+    environmental:
+      window_type: "tumbling"
+      window_size_s: 60
+      overlap: 0.00
+      late_data_behavior: "mark_late_and_preserve_event_time"
