@@ -1,0 +1,9 @@
+event_id,device_id,driver_id,firmware_version,board_revision,event_time,lifecycle_state,event_type,latency_ms,result,error_code,reset_cause
+evt-001,node-001,drv-001,fw-1.4.0,rev-a,2026-03-28T12:00:00Z,init,driver_init,18,success,none,power_on
+evt-002,node-001,drv-001,fw-1.4.0,rev-a,2026-03-28T12:01:00Z,active,read,12,success,none,none
+evt-003,node-002,drv-002,fw-1.4.0,rev-a,2026-03-28T12:05:00Z,active,tx,305,timeout,bus_timeout,none
+evt-004,node-003,drv-003,fw-2.0.1,rev-b,2026-03-28T12:10:00Z,update,firmware_update,2400,success,none,none
+evt-005,node-004,drv-001,fw-2.0.1,rev-b,2026-03-28T12:15:00Z,resume,resume_from_sleep,86,failure,resume_state_invalid,watchdog
+evt-006,node-004,drv-001,fw-2.0.1,rev-b,2026-03-28T12:15:03Z,recovery,driver_reset,140,success,none,watchdog
+evt-007,node-005,drv-005,fw-2.1.0,rev-c,2026-03-28T12:20:00Z,suspended,wake_event,4,success,none,none
+evt-008,node-006,drv-004,fw-2.1.0,rev-c,2026-03-28T12:25:00Z,active,isr_event,2,success,none,none

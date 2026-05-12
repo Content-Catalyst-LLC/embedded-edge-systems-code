@@ -1,0 +1,6 @@
+{
+  "overlay_name": "firmware_event_trace_overlay",
+  "purpose": "Demonstrate hardware-assisted event counting, interrupt tracing, and timestamping for firmware/device-control diagnostics.",
+  "interfaces": ["AXI Lite", "GPIO interrupt", "timer"],
+  "outputs": ["interrupt_count", "driver_event_count", "fault_event_count", "timestamp_counter"]
+}

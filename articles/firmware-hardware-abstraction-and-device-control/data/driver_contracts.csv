@@ -1,0 +1,6 @@
+driver_id,device_name,bus,interrupt_line,owner_layer,blocking_behavior,isr_safe,timeout_ms,power_managed,suspend_resume_supported,error_semantics
+drv-001,temp_sensor_i2c,i2c1,irq-07,sensor_driver,nonblocking,false,50,true,true,typed_error_codes
+drv-002,radio_spi,spi2,irq-12,radio_driver,blocking_with_timeout,false,250,true,true,typed_error_codes
+drv-003,storage_qspi,qspi0,none,storage_driver,blocking_with_timeout,false,500,true,false,typed_error_codes
+drv-004,adc_sampler,adc1,irq-03,acquisition_driver,nonblocking,true,10,false,false,status_flags
+drv-005,gpio_wake,gpio,irq-01,wake_driver,nonblocking,true,5,true,true,status_flags

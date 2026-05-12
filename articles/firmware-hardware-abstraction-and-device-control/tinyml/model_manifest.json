@@ -1,0 +1,14 @@
+{
+  "model_name": "firmware_anomaly_screening_stub",
+  "purpose": "Screen local firmware telemetry for driver or lifecycle anomalies",
+  "input_features": [
+    "bus_timeout_count",
+    "driver_error_count",
+    "suspend_resume_failure_count",
+    "watchdog_reset_count",
+    "interrupt_count_24h",
+    "rollback_count"
+  ],
+  "classes": ["normal", "driver_risk", "update_risk", "resume_risk"],
+  "notes": "TinyML anomaly screening should complement explicit driver contracts and diagnostics, not replace them."
+}

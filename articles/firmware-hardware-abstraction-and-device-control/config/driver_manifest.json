@@ -1,0 +1,40 @@
+{
+  "manifest_version": "1.0.0",
+  "article": "firmware-hardware-abstraction-and-device-control",
+  "drivers": [
+    {
+      "driver_id": "drv-001",
+      "device_name": "temp_sensor_i2c",
+      "bus": "i2c1",
+      "owner_layer": "sensor_driver",
+      "interrupts": ["irq-07"],
+      "power_states": ["init", "active", "suspended", "resume", "fault", "recovery"],
+      "api_contract": {
+        "blocking_behavior": "nonblocking",
+        "isr_safe_functions": ["read_cached_status"],
+        "timeout_ms": 50,
+        "error_semantics": "typed_error_codes"
+      }
+    },
+    {
+      "driver_id": "drv-002",
+      "device_name": "radio_spi",
+      "bus": "spi2",
+      "owner_layer": "radio_driver",
+      "interrupts": ["irq-12"],
+      "power_states": ["init", "active", "suspended", "resume", "fault", "recovery"],
+      "api_contract": {
+        "blocking_behavior": "blocking_with_timeout",
+        "isr_safe_functions": [],
+        "timeout_ms": 250,
+        "error_semantics": "typed_error_codes"
+      }
+    }
+  ],
+  "register_access_policy": {
+    "application_direct_register_access": false,
+    "driver_direct_register_access": true,
+    "hal_direct_register_access": true,
+    "require_code_review_for_register_mutation": true
+  }
+}

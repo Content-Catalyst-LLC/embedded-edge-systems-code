@@ -1,0 +1,7 @@
+record_id,device_id,firmware_version,board_revision,record_time,boot_count,watchdog_resets,brownout_count,bus_timeouts,driver_errors,suspend_resume_failures,interrupt_count_24h,update_attempts,update_successes,rollback_count
+rec-001,node-001,fw-1.4.0,rev-a,2026-03-28T00:00:00Z,8,0,0,1,0,0,1200,1,1,0
+rec-002,node-002,fw-1.4.0,rev-a,2026-03-28T00:00:00Z,12,1,0,9,4,0,1800,1,1,0
+rec-003,node-003,fw-2.0.1,rev-b,2026-03-28T00:00:00Z,5,0,1,0,0,0,980,2,2,0
+rec-004,node-004,fw-2.0.1,rev-b,2026-03-28T00:00:00Z,27,3,0,4,6,5,2400,1,1,0
+rec-005,node-005,fw-2.1.0,rev-c,2026-03-28T00:00:00Z,4,0,0,0,0,0,760,1,1,0
+rec-006,node-006,fw-2.1.0,rev-c,2026-03-28T00:00:00Z,18,2,1,2,3,1,3100,2,1,1

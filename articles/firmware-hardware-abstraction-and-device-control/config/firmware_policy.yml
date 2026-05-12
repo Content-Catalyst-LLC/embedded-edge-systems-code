@@ -1,0 +1,36 @@
+firmware_policy:
+  version: "1.0.0"
+  article: "firmware-hardware-abstraction-and-device-control"
+  register_access:
+    application_direct_register_access: false
+    driver_direct_register_access: true
+    hal_direct_register_access: true
+    require_code_review_for_register_mutation: true
+  driver_contracts:
+    require_timeout_semantics: true
+    require_error_codes: true
+    require_isr_safety_statement: true
+    require_suspend_resume_statement: true
+  lifecycle_states:
+    - reset
+    - init
+    - configured
+    - active
+    - idle
+    - suspended
+    - resume
+    - fault
+    - recovery
+    - update
+    - rollback
+    - disabled
+  diagnostics:
+    preserve_reset_cause: true
+    track_bus_timeouts: true
+    track_driver_errors: true
+    track_update_outcomes: true
+    track_suspend_resume_failures: true
+  update_policy:
+    require_manifest: true
+    require_rollback: true
+    require_interrupted_update_test: true

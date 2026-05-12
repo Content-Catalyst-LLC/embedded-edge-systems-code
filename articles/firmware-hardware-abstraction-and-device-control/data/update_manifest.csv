@@ -1,0 +1,4 @@
+update_id,firmware_version,target_board_revision,requires_bootloader_version,rollback_supported,interrupted_update_tested,driver_contract_version,compatibility_status
+upd-001,fw-1.4.0,rev-a,boot-1.0,true,true,drivers-1.0,compatible
+upd-002,fw-2.0.1,rev-b,boot-1.1,true,true,drivers-2.0,compatible
+upd-003,fw-2.1.0,rev-c,boot-1.2,true,false,drivers-2.1,needs_interrupted_update_test

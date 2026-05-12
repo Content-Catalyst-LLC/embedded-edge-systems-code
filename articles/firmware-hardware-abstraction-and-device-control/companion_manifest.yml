@@ -1,0 +1,25 @@
+article:
+  title: "Firmware, Hardware Abstraction, and Device Control"
+  slug: "firmware-hardware-abstraction-and-device-control"
+  series: "Embedded and Edge Systems"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/firmware-hardware-abstraction-and-device-control"
+
+technical_level: "engineering-grade firmware architecture and device-control scaffold"
+
+workflows:
+  mathematical_lens: "Control-path latency, abstraction overhead, device-state coverage, fault-detection coverage, and portability ratio"
+  python:
+    - "Driver State, Timing, and Fault-Path Simulation"
+    - "Device lifecycle, suspend/resume, bus-timeout, and update-compatibility modeling"
+  r: "Firmware Telemetry and Driver Reliability Reporting"
+  sql: "Driver contract, device lifecycle, reset, interrupt, update, and diagnostic evidence schema"
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - micropython
+    - tinyml
+    - pynq
+    - hdl
+    - bash
