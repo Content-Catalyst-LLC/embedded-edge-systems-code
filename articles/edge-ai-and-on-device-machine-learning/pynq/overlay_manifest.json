@@ -1,0 +1,20 @@
+{
+  "overlay_name": "edge_ai_feature_preprocessor",
+  "overlay_version": "0.1.0",
+  "bitstream_file": "edge_ai_feature_preprocessor.bit",
+  "hardware_target": "pynq-compatible",
+  "interfaces": [
+    {"name": "sensor_stream", "type": "AXI-Stream", "direction": "input"},
+    {"name": "feature_window_stream", "type": "AXI-Stream", "direction": "output"},
+    {"name": "timestamp_counter", "type": "AXI-Lite", "direction": "bidirectional"},
+    {"name": "inference_trigger", "type": "GPIO", "direction": "output"},
+    {"name": "telemetry_frame", "type": "AXI-Stream", "direction": "output"}
+  ],
+  "validation": {
+    "requires_overlay_validation": true,
+    "records_timing_evidence": true,
+    "records_backend_delta": true,
+    "records_feature_schema_version": true,
+    "requires_fallback_path": true
+  }
+}

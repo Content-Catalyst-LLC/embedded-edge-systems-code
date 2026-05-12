@@ -1,0 +1,38 @@
+device_capability_profile:
+  version: "1.0.0"
+  device_classes:
+    mcu:
+      flash_budget_kb: 512
+      ram_budget_kb: 128
+      p95_latency_budget_ms: 30
+      energy_budget_mj: 2.0
+      supported_runtime: "tflite-micro"
+      accelerator: "none"
+    gateway:
+      flash_budget_kb: 8192
+      ram_budget_kb: 4096
+      p95_latency_budget_ms: 40
+      energy_budget_mj: 8.0
+      supported_runtime: "onnxruntime"
+      accelerator: "cpu"
+    npu_device:
+      flash_budget_kb: 4096
+      ram_budget_kb: 2048
+      p95_latency_budget_ms: 20
+      energy_budget_mj: 4.0
+      supported_runtime: "lite_rt"
+      accelerator: "npu"
+    dsp_device:
+      flash_budget_kb: 2048
+      ram_budget_kb: 1024
+      p95_latency_budget_ms: 25
+      energy_budget_mj: 3.0
+      supported_runtime: "vendor_dsp_runtime"
+      accelerator: "dsp"
+    pynq_device:
+      flash_budget_kb: 4096
+      ram_budget_kb: 2048
+      p95_latency_budget_ms: 20
+      energy_budget_mj: 4.0
+      supported_runtime: "pynq_overlay"
+      accelerator: "fpga"

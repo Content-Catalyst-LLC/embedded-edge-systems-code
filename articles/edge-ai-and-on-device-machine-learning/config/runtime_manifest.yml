@@ -1,0 +1,32 @@
+runtime_manifest:
+  version: "1.0.0"
+  supported_backends:
+    tflite-micro:
+      target: "mcu"
+      memory_planning: "static_tensor_arena"
+      accelerator: "none"
+    onnxruntime:
+      target: "gateway"
+      memory_planning: "dynamic_or_configured"
+      accelerator: "cpu"
+    lite_rt:
+      target: "npu_device"
+      memory_planning: "runtime_backend"
+      accelerator: "npu"
+    vendor_dsp_runtime:
+      target: "dsp_device"
+      memory_planning: "vendor_runtime"
+      accelerator: "dsp"
+    pynq_overlay:
+      target: "pynq_device"
+      memory_planning: "hardware_software_partitioned"
+      accelerator: "fpga"
+  required_validation:
+    - operator_compatibility
+    - numerical_parity
+    - p95_latency
+    - p99_latency
+    - worst_case_latency
+    - memory_budget
+    - sustained_load
+    - fallback_path

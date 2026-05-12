@@ -1,0 +1,27 @@
+decision_policy:
+  version: "policy-1.0"
+  confidence_threshold: 0.80
+  backend_delta_tolerance: 0.025
+  actions:
+    normal:
+      action: "no_action"
+      local_authority_required: false
+    warning:
+      action: "uplink_for_review"
+      local_authority_required: false
+    fault:
+      action: "local_alarm"
+      local_authority_required: true
+  fallback_rules:
+    low_confidence:
+      condition: "confidence < confidence_threshold"
+      action: "fallback_more_samples"
+    unhealthy_sensor:
+      condition: "sensor_health != healthy"
+      action: "suppress_local_action_and_uplink"
+    stale_model:
+      condition: "model_version != approved_model_version"
+      action: "restrict_action_and_flag_version_skew"
+    backend_mismatch:
+      condition: "backend_output_delta > backend_delta_tolerance"
+      action: "restrict_action_and_request_backend_review"

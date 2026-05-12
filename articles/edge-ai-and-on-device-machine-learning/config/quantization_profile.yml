@@ -1,0 +1,19 @@
+quantization_profile:
+  version: "1.0.0"
+  model_name: "vibration_edge_anomaly_classifier"
+  source_precision: "float32"
+  deployment_precision: "int8"
+  calibration_dataset: "representative_vibration_windows_v1"
+  max_allowed_metric_delta: 0.03
+  tracked_metrics:
+    - accuracy
+    - precision
+    - recall
+    - false_positive_rate
+    - false_negative_rate
+    - calibration_error
+  required_outputs:
+    - conversion_log
+    - quantized_model_artifact
+    - pre_post_metric_comparison
+    - backend_validation_report

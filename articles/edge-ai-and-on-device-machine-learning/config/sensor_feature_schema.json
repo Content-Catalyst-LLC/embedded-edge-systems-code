@@ -1,0 +1,28 @@
+{
+  "schema_name": "vibration_feature_window",
+  "schema_version": "1.0.0",
+  "input_channels": [
+    {"name": "accel_x", "unit": "g", "type": "float32"},
+    {"name": "accel_y", "unit": "g", "type": "float32"},
+    {"name": "accel_z", "unit": "g", "type": "float32"}
+  ],
+  "sampling_rate_hz": 2000,
+  "window_length_samples": 512,
+  "window_overlap": 0.50,
+  "features": [
+    {"name": "rms", "type": "float32"},
+    {"name": "peak", "type": "float32"},
+    {"name": "crest_factor", "type": "float32"},
+    {"name": "spectral_energy", "type": "float32"},
+    {"name": "bandpower_low", "type": "float32"},
+    {"name": "bandpower_high", "type": "float32"}
+  ],
+  "required_metadata": [
+    "device_id",
+    "sensor_id",
+    "window_id",
+    "acquisition_time",
+    "feature_version",
+    "sensor_health"
+  ]
+}

@@ -1,0 +1,28 @@
+model_budget:
+  version: "1.0.0"
+  model_name: "vibration_edge_anomaly_classifier"
+  approved_model_version: "model-1.2"
+  max_model_size_kb:
+    mcu: 128
+    gateway: 4096
+    npu_device: 2048
+    dsp_device: 1536
+    pynq_device: 2048
+  max_tensor_arena_kb:
+    mcu: 48
+    gateway: 1024
+    npu_device: 512
+    dsp_device: 384
+    pynq_device: 512
+  p95_latency_budget_ms:
+    mcu: 30
+    gateway: 40
+    npu_device: 20
+    dsp_device: 25
+    pynq_device: 20
+  energy_budget_mj:
+    mcu: 2.0
+    gateway: 8.0
+    npu_device: 4.0
+    dsp_device: 3.0
+    pynq_device: 4.0

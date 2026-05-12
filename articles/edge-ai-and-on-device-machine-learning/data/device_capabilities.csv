@@ -1,0 +1,6 @@
+device_class,flash_budget_kb,ram_budget_kb,cpu_mhz,accelerator,p95_latency_budget_ms,energy_budget_mj,supported_runtime
+mcu,512,128,120,none,30,2.0,tflite-micro
+gateway,8192,4096,1200,cpu,40,8.0,onnxruntime
+npu_device,4096,2048,600,npu,20,4.0,lite_rt
+dsp_device,2048,1024,400,dsp,25,3.0,vendor_dsp_runtime
+pynq_device,4096,2048,650,fpga,20,4.0,pynq_overlay

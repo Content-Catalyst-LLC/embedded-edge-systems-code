@@ -1,0 +1,33 @@
+{
+  "schema_name": "edge_ai_inference_event",
+  "schema_version": "1.0.0",
+  "required_fields": [
+    "timestamp",
+    "device_id",
+    "site_id",
+    "device_class",
+    "runtime_backend",
+    "model_version",
+    "approved_model_version",
+    "feature_version",
+    "latency_ms",
+    "confidence",
+    "confidence_threshold",
+    "predicted_class",
+    "sensor_health",
+    "fallback_used",
+    "drift_proxy",
+    "backend_output_delta",
+    "backend_delta_tolerance",
+    "memory_ok",
+    "latency_ok",
+    "decision_policy_version",
+    "local_action"
+  ],
+  "field_definitions": {
+    "runtime_backend": "target execution path such as CPU, NPU, DSP, FPGA/PYNQ, or TFLite Micro",
+    "backend_output_delta": "difference between reference and target-runtime model output",
+    "fallback_used": "whether local action was suppressed or modified by confidence, health, version, or backend policy",
+    "drift_proxy": "summary measure comparing field features with expected training feature distribution"
+  }
+}

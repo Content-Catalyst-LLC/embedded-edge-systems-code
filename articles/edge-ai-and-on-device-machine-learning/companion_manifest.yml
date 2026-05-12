@@ -1,0 +1,43 @@
+article:
+  title: "Edge AI and On-Device Machine Learning"
+  slug: "edge-ai-and-on-device-machine-learning"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/edge-ai-and-on-device-machine-learning/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/edge-ai-and-on-device-machine-learning"
+
+technical_level: "engineering-grade embedded AI and on-device ML scaffold"
+
+workflows:
+  mathematical_lens: "Latency, memory, quantization error, backend deviation, confidence policy, drift proxies"
+  python:
+    - "Edge AI Model Budgeting, Quantization, and Deployment Simulation"
+    - "Runtime and Accelerator Backend Validation"
+    - "Confidence, Fallback, and Local Decision Simulation"
+    - "Fleet Drift, Version-Skew, and Monitoring Analysis"
+    - "Deployment Readiness Gate"
+  r: "Edge AI Fleet Monitoring and Model Performance Reporting"
+  sql: "Inference events, model inventory, feature summaries, backend validation, deployment readiness, drift records"
+  c: "Feature extraction, thresholding, memory-budget checks, local action"
+  cpp: "Inference runtime state machine and decision-policy abstraction"
+  rust: "Model budget, inference-event, runtime, and deployment-readiness validator"
+  go: "Inference event router, model inventory, and fleet health API scaffold"
+  micropython: "Sensor windowing, feature extraction, and local classification prototype"
+  tinyml: "Quantized model manifest and local anomaly classifier scaffold"
+  pynq: "Low-latency preprocessing and backend validation scaffold"
+  hdl: "Stream timestamping, feature windowing, inference trigger, telemetry framing"
+
+engineering_dimensions:
+  - device_capability_profile
+  - model_budget
+  - sensor_feature_schema
+  - quantization_profile
+  - runtime_manifest
+  - backend_validation
+  - confidence_policy
+  - fallback_policy
+  - deployment_readiness
+  - model_lifecycle
+  - fleet_monitoring
+  - drift_proxy
+  - secure_update
+  - rollback_readiness

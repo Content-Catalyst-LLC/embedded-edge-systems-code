@@ -1,0 +1,27 @@
+fleet_monitoring_plan:
+  version: "1.0.0"
+  monitoring_modes:
+    raw_data_monitoring:
+      enabled: "sampled_or_incident_triggered"
+      purpose: "debugging_relabeling_incident_review"
+    feature_summary_monitoring:
+      enabled: true
+      purpose: "drift_proxy_without_raw_upload"
+    confidence_distribution_monitoring:
+      enabled: true
+      purpose: "calibration_and_uncertainty_shift_detection"
+    class_rate_monitoring:
+      enabled: true
+      purpose: "behavior_shift_detection"
+    fallback_rate_monitoring:
+      enabled: true
+      purpose: "confidence_sensor_policy_runtime_issue_detection"
+    version_skew_monitoring:
+      enabled: true
+      purpose: "rollout_and_incident_reconstruction"
+  alert_thresholds:
+    fallback_rate: 0.10
+    low_confidence_rate: 0.15
+    model_skew_rate: 0.05
+    backend_delta_p95: 0.025
+    p95_latency_violation_rate: 0.05

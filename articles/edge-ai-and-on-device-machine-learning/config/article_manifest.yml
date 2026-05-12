@@ -1,0 +1,29 @@
+article:
+  title: "Edge AI and On-Device Machine Learning"
+  slug: "edge-ai-and-on-device-machine-learning"
+  series: "Embedded and Edge Systems"
+  repository_root: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code"
+  article_repository_path: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/edge-ai-and-on-device-machine-learning"
+
+companion_stack:
+  analytics:
+    - python
+    - r
+    - sql
+    - notebooks
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - bash
+  embedded:
+    - micropython
+    - tinyml
+  acceleration:
+    - pynq
+    - hdl
+  governance:
+    - model_lifecycle
+    - runtime_validation
+    - security

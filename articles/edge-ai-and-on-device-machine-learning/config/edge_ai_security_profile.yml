@@ -1,0 +1,18 @@
+edge_ai_security_profile:
+  version: "1.0.0"
+  controls:
+    signed_model_artifacts: true
+    signed_runtime_updates: true
+    secure_update_transport: true
+    rollback_verification: true
+    runtime_integrity_checks: true
+    model_version_pinning: true
+    local_decision_boundary_policy: true
+    selective_uplink_review: true
+  risks:
+    - model_substitution
+    - update_channel_compromise
+    - adversarial_input
+    - privacy_leakage_through_outputs
+    - runtime_tampering
+    - overbroad_local_authority

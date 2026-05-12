@@ -1,0 +1,26 @@
+{
+  "model_name": "vibration_edge_anomaly_classifier",
+  "model_version": "model-1.2",
+  "runtime_target": "tflite-micro-compatible",
+  "quantization": "int8",
+  "input_schema": {
+    "features": [
+      {"name": "rms", "type": "float32"},
+      {"name": "peak", "type": "float32"},
+      {"name": "crest_factor", "type": "float32"},
+      {"name": "spectral_energy", "type": "float32"},
+      {"name": "bandpower_low", "type": "float32"},
+      {"name": "bandpower_high", "type": "float32"}
+    ]
+  },
+  "output_schema": {
+    "labels": ["normal", "warning", "fault"]
+  },
+  "governance": {
+    "model_version_telemetry_required": true,
+    "confidence_required": true,
+    "fallback_required": true,
+    "rollback_required": true,
+    "runtime_validation_required": true
+  }
+}

@@ -1,0 +1,7 @@
+device_id,site_id,device_class,approved_model_version,deployed_model_version,active_model_version,decision_used_model_version,runtime_backend,rollout_ring,rollback_ready
+dev-ai-001,site-a,mcu,model-1.2,model-1.2,model-1.2,model-1.2,tflite-micro,canary,true
+dev-ai-002,site-a,mcu,model-1.2,model-1.1,model-1.1,model-1.1,tflite-micro,pilot,true
+dev-ai-003,site-b,gateway,model-1.2,model-1.2,model-1.2,model-1.2,cpu,regional,true
+dev-ai-004,site-b,npu_device,model-1.2,model-1.2,model-1.2,model-1.2,npu,regional,true
+dev-ai-005,site-c,dsp_device,model-1.2,model-1.2,model-1.2,model-1.2,dsp,fleet,false
+dev-ai-006,site-c,pynq_device,model-1.2,model-1.2,model-1.2,model-1.2,pynq_fpga,fleet,true

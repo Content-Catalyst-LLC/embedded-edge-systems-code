@@ -1,0 +1,19 @@
+backend_validation:
+  version: "1.0.0"
+  reference_backend: "float32_reference"
+  target_backends:
+    - cpu
+    - npu
+    - dsp
+    - pynq_fpga
+    - tflite_micro
+  max_backend_output_delta: 0.025
+  require_class_agreement: true
+  required_tests:
+    - reference_vs_quantized
+    - quantized_vs_cpu
+    - quantized_vs_npu
+    - quantized_vs_dsp
+    - quantized_vs_pynq
+    - sustained_inference
+    - backend_fallback

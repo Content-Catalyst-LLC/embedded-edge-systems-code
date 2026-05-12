@@ -1,0 +1,23 @@
+model_lifecycle:
+  model_name: "vibration_edge_anomaly_classifier"
+  approved_model_version: "model-1.2"
+  previous_model_version: "model-1.1"
+  training_data_lineage: "vibration_training_windows_v3"
+  evaluation_report: "evaluation_report_model_1_2.md"
+  quantization_profile: "quantization_profile.yml"
+  rollout_policy:
+    rings:
+      - canary
+      - pilot
+      - regional
+      - fleet
+    halt_conditions:
+      - "fallback_rate_above_threshold"
+      - "backend_validation_failure"
+      - "latency_budget_violation"
+      - "confidence_drift_detected"
+      - "incident_rate_increase"
+  rollback_policy:
+    rollback_to: "model-1.1"
+    signed_rollback_required: true
+    rollback_test_required: true

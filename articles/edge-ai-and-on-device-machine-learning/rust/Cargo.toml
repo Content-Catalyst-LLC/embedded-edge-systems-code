@@ -1,0 +1,6 @@
+[package]
+name = "edge_ai_deployment_validator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

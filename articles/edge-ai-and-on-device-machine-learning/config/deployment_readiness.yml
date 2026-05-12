@@ -1,0 +1,13 @@
+deployment_readiness:
+  version: "1.0.0"
+  required_gates:
+    model_artifact_signed: true
+    runtime_compatible: true
+    memory_budget_passed: true
+    latency_budget_passed: true
+    quantization_regression_passed: true
+    backend_parity_passed: true
+    decision_policy_deployed: true
+    telemetry_schema_deployed: true
+    monitoring_dashboard_ready: true
+    rollback_tested: true
