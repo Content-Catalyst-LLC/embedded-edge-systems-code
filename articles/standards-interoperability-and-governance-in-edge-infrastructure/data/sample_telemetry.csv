@@ -1,0 +1,6 @@
+timestamp,device_id,metric,value,unit,quality_flag
+2026-03-28T12:00:00Z,gw-chi-001,latency_ms,18.4,ms,good
+2026-03-28T12:00:01Z,sens-chi-014,temperature,22.7,celsius,good
+2026-03-28T12:00:02Z,plc-det-007,cycle_time_ms,41.2,ms,warning
+2026-03-28T12:00:03Z,cam-stl-021,inference_latency_ms,96.5,ms,warning
+2026-03-28T12:00:04Z,gw-nyc-009,packet_loss_percent,0.8,percent,good

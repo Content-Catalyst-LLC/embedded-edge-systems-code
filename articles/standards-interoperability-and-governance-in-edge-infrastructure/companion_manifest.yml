@@ -1,0 +1,25 @@
+article:
+  title: "Standards, Interoperability, and Governance in Edge Infrastructure"
+  slug: "standards-interoperability-and-governance-in-edge-infrastructure"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/standards-interoperability-and-governance-in-edge-infrastructure/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/standards-interoperability-and-governance-in-edge-infrastructure"
+
+workflows:
+  mathematical_lens: "Interoperability as governance capacity"
+  python: "Interoperability Risk Scoring Across Edge Device Fleets"
+  r: "Standards Adoption and Governance Reporting for Edge Estates"
+  sql: "Edge infrastructure governance data model"
+  c: "Conformance watchdog for constrained edge systems"
+  cpp: "Semantic gateway profile validation"
+  rust: "Lifecycle policy validator"
+  go: "Telemetry gateway governance service"
+  tinyml: "Policy-aware TinyML inference stub"
+
+governance_dimensions:
+  - protocol_conformance
+  - semantic_alignment
+  - lifecycle_control
+  - trust_security_baseline
+  - operational_accountability
+  - unmanaged_divergence

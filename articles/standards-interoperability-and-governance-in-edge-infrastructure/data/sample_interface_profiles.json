@@ -1,0 +1,19 @@
+{
+  "profiles": [
+    {
+      "name": "ETSI-MEC-inspired",
+      "required_fields": ["device_id", "site", "service_api", "lifecycle_state", "support_state"],
+      "security_requirements": ["device_identity", "secure_update", "audit_log"]
+    },
+    {
+      "name": "W3C-WoT-profile",
+      "required_fields": ["thing_description", "properties", "actions", "events"],
+      "security_requirements": ["authentication", "authorization", "transport_security"]
+    },
+    {
+      "name": "OPC-UA-profile",
+      "required_fields": ["node_id", "namespace", "browse_name", "data_type"],
+      "security_requirements": ["certificate", "secure_channel", "access_control"]
+    }
+  ]
+}

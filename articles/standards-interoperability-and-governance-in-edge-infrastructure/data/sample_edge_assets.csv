@@ -1,0 +1,6 @@
+device_id,site,vendor,device_class,standard_profile,protocol_conformance,semantic_alignment,lifecycle_control,security_baseline,operational_accountability,unmanaged_divergence,support_state,firmware_version,schema_version
+gw-chi-001,chicago,VendorA,gateway,ETSI-MEC-inspired,0.92,0.88,0.84,0.90,0.86,0.10,supported,3.4.1,v2
+sens-chi-014,chicago,VendorB,sensor,W3C-WoT-profile,0.84,0.79,0.70,0.76,0.72,0.22,supported,2.1.8,v2
+plc-det-007,detroit,VendorC,controller,OPC-UA-profile,0.89,0.91,0.66,0.82,0.78,0.28,limited-support,5.8.0,v1
+cam-stl-021,stlouis,VendorD,edge-ai-device,custom-api,0.61,0.54,0.48,0.59,0.52,0.46,end-of-support,1.9.2,v1
+gw-nyc-009,newyork,VendorA,gateway,oneM2M-inspired,0.90,0.86,0.82,0.88,0.84,0.12,supported,3.5.0,v2

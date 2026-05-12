@@ -1,0 +1,15 @@
+{
+  "device_profile": {
+    "device_id": "gw-chi-001",
+    "device_class": "gateway",
+    "processor": "ARM Cortex-A class",
+    "memory_mb": 2048,
+    "storage_gb": 32,
+    "network_interfaces": ["ethernet", "wifi", "lte"],
+    "supported_profiles": ["ETSI-MEC-inspired", "W3C-WoT-profile"],
+    "secure_boot": true,
+    "remote_update": true,
+    "local_inference": true,
+    "governance_metadata_required": true
+  }
+}
