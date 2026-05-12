@@ -1,0 +1,14 @@
+{
+  "device_id": "embedded-control-node-001",
+  "hardware_class": "microcontroller_or_edge_control_node",
+  "control_loop": "motor-speed",
+  "sensors": ["encoder", "current_sensor", "temperature_sensor"],
+  "actuators": ["pwm_motor_driver"],
+  "timers": ["hardware_timer_control_loop", "watchdog_timer"],
+  "buses": ["spi", "i2c", "can_optional"],
+  "pynq_or_fpga_acceleration_supported": true,
+  "tinyml_anomaly_detection_supported": true,
+  "watchdog_supported": true,
+  "emergency_stop_supported": true,
+  "safety_gate_supported": true
+}

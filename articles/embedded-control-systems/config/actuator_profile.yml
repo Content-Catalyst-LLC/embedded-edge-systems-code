@@ -1,0 +1,19 @@
+actuators:
+  - actuator_id: "motor-driver-001"
+    loop_id: "motor-speed"
+    command_min: 0.0
+    command_max: 1.0
+    slew_rate_limit_per_cycle: 0.25
+    max_current_a: 4.0
+    thermal_limit_c: 80.0
+    dead_zone: 0.02
+    driver_latency_ms: 0.2
+  - actuator_id: "pump-driver-001"
+    loop_id: "pump-pressure"
+    command_min: 0.0
+    command_max: 1.0
+    slew_rate_limit_per_cycle: 0.15
+    max_current_a: 2.0
+    thermal_limit_c: 70.0
+    dead_zone: 0.03
+    driver_latency_ms: 0.3

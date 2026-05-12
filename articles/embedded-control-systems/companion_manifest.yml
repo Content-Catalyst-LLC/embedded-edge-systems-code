@@ -1,0 +1,38 @@
+article:
+  title: "Embedded Control Systems for Real-Time Physical Regulation"
+  slug: "embedded-control-systems"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/embedded-control-systems/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/embedded-control-systems"
+
+technical_level: "advanced public engineering / graduate-oriented scaffold"
+
+workflows:
+  mathematical_lens: "Discrete-time feedback, stability, saturation, safety filtering, and timing validity"
+  python:
+    - "Embedded Control Simulation with Saturation, Delay, and Jitter"
+    - "DC Motor Speed-Control Loop with Safety Filtering"
+    - "Timing Budget and Deadline-Slack Analysis"
+  r: "Control-Loop Performance and Reliability Reporting"
+  sql: "Control-loop events, estimator residuals, candidate commands, filtered commands, timing records, and safety transitions"
+  c: "Embedded PID loop with anti-windup, command clipping, and watchdog checks"
+  cpp: "Supervisory control state machine and command validation"
+  rust: "Timing-budget and safety-envelope validator"
+  go: "Control event gateway and timing telemetry router"
+  micropython: "Microcontroller sensor-control-actuator prototype"
+  tinyml: "Local control-loop anomaly detection scaffold"
+  pynq: "Low-latency signal preprocessing and overlay validation"
+  hdl: "PWM generator, quadrature decoder, timing monitor, and safety gate scaffolds"
+
+governance_dimensions:
+  - control_error
+  - estimator_residual
+  - candidate_command
+  - filtered_command
+  - saturation_rate
+  - loop_period
+  - loop_jitter
+  - deadline_slack
+  - safety_filter_reason_code
+  - supervisory_state
+  - failure_containment

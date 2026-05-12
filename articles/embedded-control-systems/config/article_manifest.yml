@@ -1,0 +1,32 @@
+article:
+  title: "Embedded Control Systems for Real-Time Physical Regulation"
+  slug: "embedded-control-systems"
+  series: "Embedded and Edge Systems"
+  repository_root: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code"
+  article_repository_path: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/embedded-control-systems"
+
+companion_stack:
+  analytics:
+    - python
+    - r
+    - sql
+    - notebooks
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - bash
+  embedded:
+    - firmware
+    - hardware
+    - micropython
+    - tinyml
+  acceleration:
+    - pynq
+    - hdl
+  governance:
+    - yaml
+    - json
+    - tests
+    - documentation

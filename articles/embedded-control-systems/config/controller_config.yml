@@ -1,0 +1,19 @@
+controller:
+  name: "dc-motor-pid-controller"
+  version: "1.0.0"
+  sampling_period_s: 0.001
+  gains:
+    kp: 0.0025
+    ki: 0.018
+    kd: 0.00008
+  command_limits:
+    min: 0.0
+    max: 1.0
+  anti_windup: true
+  derivative_filter_enabled: true
+  fallback_mode: "hold_then_safe_stop"
+
+tracking:
+  max_abs_error_rpm_warning: 80
+  max_abs_error_rpm_fault: 160
+  max_saturation_rate: 0.20

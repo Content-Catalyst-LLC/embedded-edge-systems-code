@@ -1,0 +1,41 @@
+supervisory_state_machine:
+  version: "1.0.0"
+  states:
+    - startup
+    - calibration
+    - open_loop_test
+    - closed_loop_nominal
+    - warning
+    - degraded_control
+    - safe_stop
+    - fault_latch
+    - recovery
+
+transitions:
+  - from: startup
+    to: calibration
+    condition: initialization_complete
+  - from: calibration
+    to: open_loop_test
+    condition: calibration_valid
+  - from: open_loop_test
+    to: closed_loop_nominal
+    condition: actuator_response_valid
+  - from: closed_loop_nominal
+    to: warning
+    condition: elevated_error_or_jitter_or_saturation
+  - from: warning
+    to: degraded_control
+    condition: margin_continues_to_erode
+  - from: degraded_control
+    to: safe_stop
+    condition: safety_constraint_violated
+  - from: safe_stop
+    to: fault_latch
+    condition: repeated_or_serious_violation
+  - from: fault_latch
+    to: recovery
+    condition: authorized_reset
+  - from: recovery
+    to: calibration
+    condition: recovery_checks_pass

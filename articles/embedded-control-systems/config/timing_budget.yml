@@ -1,0 +1,16 @@
+timing_budget:
+  loop_id: "motor-speed"
+  deadline_ms: 1.5
+  stages:
+    sensor_acquisition_ms: 0.20
+    adc_or_encoder_processing_ms: 0.15
+    filtering_or_estimation_ms: 0.20
+    control_compute_ms: 0.20
+    safety_filter_ms: 0.10
+    bus_transmission_ms: 0.20
+    actuator_update_ms: 0.15
+    watchdog_margin_ms: 0.30
+  jitter:
+    max_allowed_jitter_ms: 0.35
+    warning_jitter_ms: 0.25
+    fault_jitter_ms: 0.50

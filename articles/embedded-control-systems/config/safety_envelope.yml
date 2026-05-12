@@ -1,0 +1,21 @@
+safety_envelope:
+  version: "1.0.0"
+  speed_min_rpm: 0
+  speed_max_rpm: 1800
+  command_min: 0.0
+  command_max: 1.0
+  current_max_a: 4.0
+  temperature_warning_c: 70.0
+  temperature_fault_c: 80.0
+  control_error_warning_rpm: 80
+  control_error_fault_rpm: 160
+  deadline_slack_warning_ms: 0.20
+  deadline_slack_fault_ms: 0.0
+
+failure_behavior:
+  command_bound_violation: "clip_command"
+  thermal_warning: "thermal_derate"
+  thermal_fault: "safe_stop"
+  deadline_miss: "safe_stop"
+  stale_measurement: "safe_stop"
+  estimator_residual_fault: "degraded_control"

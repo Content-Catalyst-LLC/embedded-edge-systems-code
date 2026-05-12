@@ -1,0 +1,24 @@
+{
+  "model_name": "embedded_control_loop_anomaly_detector",
+  "model_version": "0.1.0",
+  "runtime_target": "tinyml-portable",
+  "quantization": "int8",
+  "input_schema": {
+    "features": [
+      {"name": "abs_control_error", "type": "float32", "unit": "rpm"},
+      {"name": "saturation_flag", "type": "float32", "unit": "binary"},
+      {"name": "loop_jitter_ms", "type": "float32", "unit": "milliseconds"},
+      {"name": "deadline_slack_ms", "type": "float32", "unit": "milliseconds"},
+      {"name": "temperature_c", "type": "float32", "unit": "celsius"}
+    ]
+  },
+  "output_schema": {
+    "labels": ["normal", "warning", "fault"]
+  },
+  "governance": {
+    "runtime_supervision_required": true,
+    "fallback_required": true,
+    "requires_manifest_validation": true,
+    "records_lifecycle_evidence": true
+  }
+}

@@ -1,0 +1,4 @@
+actuator_id,loop_id,command_min,command_max,slew_rate_limit,max_current_a,thermal_limit_c,dead_zone,driver_latency_ms
+motor-driver-001,motor-speed,0.0,1.0,0.25,4.0,80.0,0.02,0.2
+pump-driver-001,pump-pressure,0.0,1.0,0.15,2.0,70.0,0.03,0.3
+heater-driver-001,thermal-control,0.0,1.0,0.10,5.0,90.0,0.01,0.5

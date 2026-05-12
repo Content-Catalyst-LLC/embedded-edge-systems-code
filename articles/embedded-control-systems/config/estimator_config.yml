@@ -1,0 +1,12 @@
+estimator:
+  name: "first-order-speed-filter"
+  version: "1.0.0"
+  state_vector:
+    - speed_rpm
+  observation_vector:
+    - encoder_speed_rpm
+  update_period_s: 0.001
+  filter_alpha: 0.25
+  residual_warning_rpm: 80
+  residual_fault_rpm: 160
+  freshness_limit_ms: 3.0

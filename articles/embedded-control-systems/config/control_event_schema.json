@@ -1,0 +1,29 @@
+{
+  "schema_name": "embedded_control_loop_event",
+  "schema_version": "1.0.0",
+  "required_fields": [
+    "timestamp",
+    "device_id",
+    "loop_id",
+    "operating_mode",
+    "setpoint",
+    "measurement",
+    "estimate",
+    "control_error",
+    "candidate_command",
+    "filtered_command",
+    "saturated",
+    "deadline_missed",
+    "loop_jitter_ms",
+    "deadline_slack_ms",
+    "safety_state",
+    "supervisory_state",
+    "safety_filter_reason"
+  ],
+  "field_definitions": {
+    "candidate_command": "nominal controller output before runtime supervision",
+    "filtered_command": "command allowed after safety filtering and actuator limits",
+    "deadline_slack_ms": "remaining deadline margin after loop execution",
+    "safety_filter_reason": "reason code explaining allowed, clipped, modified, rejected, or fallback behavior"
+  }
+}

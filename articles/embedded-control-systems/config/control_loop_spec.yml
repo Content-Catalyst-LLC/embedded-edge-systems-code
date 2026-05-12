@@ -1,0 +1,12 @@
+control_loop_spec:
+  loop_id: "motor-speed"
+  controlled_variable: "speed_rpm"
+  measured_variable: "encoder_speed_rpm"
+  estimated_variable: "filtered_speed_rpm"
+  command_variable: "pwm_duty_cycle"
+  nominal_period_ms: 1.0
+  deadline_ms: 1.5
+  max_allowed_jitter_ms: 0.35
+  control_task_priority: "critical"
+  watchdog_enabled: true
+  watchdog_timeout_ms: 3.0
