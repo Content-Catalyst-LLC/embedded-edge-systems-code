@@ -1,0 +1,6 @@
+{
+  "overlay_name": "rtos_timing_trace_overlay",
+  "purpose": "Demonstrate hardware-assisted timestamp capture, ISR event counting, queue-depth monitoring, and deadline flagging.",
+  "interfaces": ["AXI Lite", "GPIO interrupt", "timer", "event inputs"],
+  "outputs": ["timestamp_counter", "interrupt_count", "deadline_miss_count", "queue_depth_counter"]
+}

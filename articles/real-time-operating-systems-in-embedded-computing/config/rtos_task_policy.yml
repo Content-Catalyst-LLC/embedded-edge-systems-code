@@ -1,0 +1,39 @@
+rtos_policy:
+  version: "1.0.0"
+  article: "real-time-operating-systems-in-embedded-computing"
+  scheduling:
+    model: "fixed_priority_preemptive"
+    require_priority_rationale: true
+    require_response_time_review: true
+    require_slack_margin_review: true
+  task_contracts:
+    require_period_or_trigger: true
+    require_deadline: true
+    require_wcet_estimate: true
+    require_stack_budget: true
+    require_criticality_class: true
+    require_watchdog_progress_rule: true
+  interrupt_policy:
+    max_isr_duration_us: 250
+    require_deferred_work_for_nonurgent_processing: true
+    require_isr_trace_counters: true
+  synchronization:
+    require_lock_order_policy: true
+    require_priority_inversion_review: true
+    require_bounded_blocking: true
+  memory:
+    minimum_stack_watermark_bytes: 512
+    prefer_static_allocation: true
+    require_queue_high_water_marks: true
+  power:
+    require_idle_residency_tracking: true
+    tickless_idle_allowed: true
+    require_timer_wakeup_review: true
+  telemetry:
+    required_fields:
+      - deadline_misses_24h
+      - queue_overflows_24h
+      - min_stack_watermark_bytes
+      - max_isr_time_us
+      - idle_residency_pct
+      - watchdog_resets

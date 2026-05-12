@@ -1,0 +1,9 @@
+trace_id,device_id,firmware_version,record_time,task_name,activation_ms,start_ms,finish_ms,deadline_ms,deadline_miss,queue_depth,stack_watermark_bytes,isr_count,isr_time_us,idle_residency_pct,watchdog_resets
+tr-001,node-001,fw-1.4.0,2026-03-28T12:00:00Z,control_loop,0,1,5,20,false,2,640,8,120,78.2,0
+tr-002,node-001,fw-1.4.0,2026-03-28T12:00:00Z,sensor_acquisition,0,6,12,40,false,4,880,8,120,78.2,0
+tr-003,node-002,fw-1.4.0,2026-03-28T12:00:00Z,radio_service,0,10,190,150,true,14,560,40,1600,44.5,1
+tr-004,node-002,fw-1.4.0,2026-03-28T12:00:00Z,control_loop,20,24,43,40,true,8,392,40,1600,44.5,1
+tr-005,node-003,fw-2.0.1,2026-03-28T12:00:00Z,diagnostics,0,700,735,800,false,1,1280,6,80,91.2,0
+tr-006,node-004,fw-2.0.1,2026-03-28T12:00:00Z,storage_writer,0,85,510,400,true,22,512,14,320,63.9,0
+tr-007,node-005,fw-2.1.0,2026-03-28T12:00:00Z,watchdog_supervisor,0,2,4,80,false,0,768,4,44,93.4,0
+tr-008,node-006,fw-2.1.0,2026-03-28T12:00:00Z,sensor_acquisition,50,53,61,90,false,3,896,7,100,88.5,0

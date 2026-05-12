@@ -1,0 +1,7 @@
+task_id,task_name,criticality,priority,period_ms,deadline_ms,wcet_ms,blocking_ms,stack_bytes,queue_in,queue_out,watchdog_required
+tsk-001,control_loop,hard,1,20,20,3.5,0.8,2048,sensor_queue,actuator_queue,true
+tsk-002,sensor_acquisition,firm,2,50,40,4.2,0.5,2048,none,sensor_queue,true
+tsk-003,radio_service,soft,4,200,150,18.0,5.0,4096,telemetry_queue,none,false
+tsk-004,diagnostics,best_effort,6,1000,800,22.0,3.0,3072,diagnostic_queue,telemetry_queue,false
+tsk-005,storage_writer,soft,5,500,400,30.0,12.0,4096,storage_queue,none,false
+tsk-006,watchdog_supervisor,hard,0,100,80,1.5,0.1,1024,none,none,true

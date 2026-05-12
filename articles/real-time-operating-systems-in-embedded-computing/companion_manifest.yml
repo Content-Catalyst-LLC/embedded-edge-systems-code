@@ -1,0 +1,25 @@
+article:
+  title: "Real-Time Operating Systems in Embedded Computing"
+  slug: "real-time-operating-systems-in-embedded-computing"
+  series: "Embedded and Edge Systems"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/real-time-operating-systems-in-embedded-computing"
+
+technical_level: "engineering-grade RTOS timing architecture scaffold"
+
+workflows:
+  mathematical_lens: "Utilization, fixed-priority response time, blocking, jitter, slack margin, and queue-depth dynamics"
+  python:
+    - "Scheduling, Deadline, and Jitter Simulation"
+    - "Priority inversion, queue pressure, overload, ISR interference, and slack-margin modeling"
+  r: "Runtime Trace and Fleet Timing Analysis"
+  sql: "Task, deadline, queue, stack, ISR, power, watchdog, and runtime evidence schema"
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - micropython
+    - tinyml
+    - pynq
+    - hdl
+    - bash

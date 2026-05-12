@@ -1,0 +1,6 @@
+record_id,device_id,firmware_version,queue_name,record_time,depth,high_water_mark,capacity,producer_task,consumer_task,overflow_count,stale_drop_count
+q-001,node-001,fw-1.4.0,sensor_queue,2026-03-28T12:00:00Z,2,4,16,sensor_acquisition,control_loop,0,0
+q-002,node-002,fw-1.4.0,telemetry_queue,2026-03-28T12:00:00Z,14,16,16,diagnostics,radio_service,2,3
+q-003,node-003,fw-2.0.1,diagnostic_queue,2026-03-28T12:00:00Z,1,3,12,diagnostics,radio_service,0,0
+q-004,node-004,fw-2.0.1,storage_queue,2026-03-28T12:00:00Z,22,24,24,sensor_acquisition,storage_writer,5,2
+q-005,node-005,fw-2.1.0,actuator_queue,2026-03-28T12:00:00Z,0,2,8,control_loop,device_control,0,0

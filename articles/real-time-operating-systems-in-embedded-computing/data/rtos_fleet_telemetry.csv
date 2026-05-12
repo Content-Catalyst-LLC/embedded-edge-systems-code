@@ -1,0 +1,7 @@
+record_id,device_id,firmware_version,board_revision,record_time,deadline_misses_24h,queue_overflows_24h,min_stack_watermark_bytes,max_isr_time_us,context_switches_24h,idle_residency_pct,watchdog_resets,brownout_count,tickless_idle_enabled
+rec-001,node-001,fw-1.4.0,rev-a,2026-03-28T00:00:00Z,0,0,640,120,18000,78.2,0,0,true
+rec-002,node-002,fw-1.4.0,rev-a,2026-03-28T00:00:00Z,14,2,392,1600,34000,44.5,1,0,false
+rec-003,node-003,fw-2.0.1,rev-b,2026-03-28T00:00:00Z,0,0,1280,80,12000,91.2,0,0,true
+rec-004,node-004,fw-2.0.1,rev-b,2026-03-28T00:00:00Z,5,5,512,320,22500,63.9,0,1,true
+rec-005,node-005,fw-2.1.0,rev-c,2026-03-28T00:00:00Z,0,0,768,44,9800,93.4,0,0,true
+rec-006,node-006,fw-2.1.0,rev-c,2026-03-28T00:00:00Z,1,0,896,100,14600,88.5,0,0,true

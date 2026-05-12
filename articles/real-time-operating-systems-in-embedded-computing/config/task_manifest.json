@@ -1,0 +1,47 @@
+{
+  "manifest_version": "1.0.0",
+  "article": "real-time-operating-systems-in-embedded-computing",
+  "scheduler": {
+    "model": "fixed_priority_preemptive",
+    "tickless_idle_enabled": true,
+    "time_slicing_equal_priority": false
+  },
+  "tasks": [
+    {
+      "task_id": "tsk-001",
+      "task_name": "control_loop",
+      "criticality": "hard",
+      "priority": 1,
+      "period_ms": 20,
+      "deadline_ms": 20,
+      "wcet_ms": 3.5,
+      "blocking_ms": 0.8,
+      "stack_bytes": 2048,
+      "watchdog_required": true
+    },
+    {
+      "task_id": "tsk-002",
+      "task_name": "sensor_acquisition",
+      "criticality": "firm",
+      "priority": 2,
+      "period_ms": 50,
+      "deadline_ms": 40,
+      "wcet_ms": 4.2,
+      "blocking_ms": 0.5,
+      "stack_bytes": 2048,
+      "watchdog_required": true
+    },
+    {
+      "task_id": "tsk-003",
+      "task_name": "radio_service",
+      "criticality": "soft",
+      "priority": 4,
+      "period_ms": 200,
+      "deadline_ms": 150,
+      "wcet_ms": 18.0,
+      "blocking_ms": 5.0,
+      "stack_bytes": 4096,
+      "watchdog_required": false
+    }
+  ]
+}

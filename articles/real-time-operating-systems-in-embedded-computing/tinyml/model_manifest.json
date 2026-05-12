@@ -1,0 +1,14 @@
+{
+  "model_name": "rtos_timing_anomaly_screening_stub",
+  "purpose": "Screen local RTOS telemetry for timing degradation and runtime pressure",
+  "input_features": [
+    "deadline_misses_24h",
+    "queue_overflows_24h",
+    "min_stack_watermark_bytes",
+    "max_isr_time_us",
+    "idle_residency_pct",
+    "watchdog_resets"
+  ],
+  "classes": ["normal", "deadline_risk", "queue_risk", "stack_risk", "isr_risk", "power_risk"],
+  "notes": "TinyML anomaly screening should complement explicit schedulability analysis and trace evidence, not replace them."
+}
