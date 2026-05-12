@@ -1,0 +1,13 @@
+{
+  "model_name": "low_power_event_screening_stub",
+  "purpose": "Screen local signals to reduce unnecessary wakeups and transmissions",
+  "input_features": [
+    "sensor_delta",
+    "wake_source_code",
+    "battery_v",
+    "recent_false_wake_count",
+    "link_quality"
+  ],
+  "classes": ["sleep_continue", "sample_now", "transmit_now", "low_energy_defer"],
+  "notes": "TinyML event screening should complement explicit power policy, wake-source rules, and measurement-quality checks."
+}

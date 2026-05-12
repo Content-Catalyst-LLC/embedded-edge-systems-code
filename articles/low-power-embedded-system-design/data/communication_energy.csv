@@ -1,0 +1,5 @@
+profile_id,radio_type,tx_energy_mj,rx_energy_mj,retry_energy_mj,reconnect_energy_mj,notes
+comm-001,lora,48,15,42,5,long-range low-data-rate burst
+comm-002,ble,12,7,10,18,short-range low-energy connection
+comm-003,wifi,120,60,95,180,association can dominate energy
+comm-004,cellular,450,180,400,1200,reconnect and coverage quality dominate

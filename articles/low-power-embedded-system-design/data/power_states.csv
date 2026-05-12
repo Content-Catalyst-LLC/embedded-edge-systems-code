@@ -1,0 +1,10 @@
+state_id,state_name,current_ma,voltage_v,duration_s,description
+st-001,active_sensing,8.5,3.3,2.0,MCU active with sensor rail and ADC enabled
+st-002,compute,6.2,3.3,0.8,Local processing and quality checks
+st-003,store,4.8,3.3,0.4,Local flash or FRAM write window
+st-004,radio_tx,85.0,3.3,0.6,Wireless transmit burst
+st-005,radio_rx,24.0,3.3,0.4,Receive window or acknowledgement listen
+st-006,sleep,0.012,3.3,890.0,RTC retained, GPIO wake enabled
+st-007,wake_overhead,5.2,3.3,0.3,Clock start and peripheral resume
+st-008,deep_sleep,0.003,3.3,3600.0,Reduced retention with RTC wake only
+st-009,low_energy_degraded,0.006,3.3,1800.0,Reduced sampling and heartbeat-only telemetry

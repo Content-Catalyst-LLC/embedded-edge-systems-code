@@ -1,0 +1,36 @@
+{
+  "manifest_version": "1.0.0",
+  "article": "low-power-embedded-system-design",
+  "power_states": [
+    {
+      "state": "active_sensing",
+      "retention": ["ram", "rtc", "configuration"],
+      "peripherals_enabled": ["sensor_rail", "adc", "i2c", "timer"],
+      "wake_sources": []
+    },
+    {
+      "state": "sleep",
+      "retention": ["rtc", "small_ram_bank", "gpio_wake"],
+      "peripherals_enabled": ["rtc", "wake_gpio"],
+      "wake_sources": ["rtc_alarm", "gpio_interrupt", "sensor_threshold"]
+    },
+    {
+      "state": "deep_sleep",
+      "retention": ["rtc", "backup_registers"],
+      "peripherals_enabled": ["rtc"],
+      "wake_sources": ["rtc_alarm", "watchdog"]
+    },
+    {
+      "state": "low_energy_degraded",
+      "retention": ["rtc", "diagnostic_counters"],
+      "peripherals_enabled": ["rtc", "battery_monitor"],
+      "wake_sources": ["rtc_alarm", "maintenance_command"]
+    }
+  ],
+  "brownout_policy": {
+    "storage_write_inhibit_voltage": 3.45,
+    "brownout_voltage_threshold": 3.30,
+    "preserve_reset_cause": true,
+    "require_state_validation_after_reset": true
+  }
+}

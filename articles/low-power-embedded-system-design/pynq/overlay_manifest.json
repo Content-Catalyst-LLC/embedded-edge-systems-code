@@ -1,0 +1,6 @@
+{
+  "overlay_name": "low_power_wake_filter_overlay",
+  "purpose": "Demonstrate hardware-assisted wake filtering, event counting, and timestamping before waking a higher-power processor.",
+  "interfaces": ["AXI Lite", "GPIO wake_source", "timer"],
+  "outputs": ["wake_count", "valid_event_count", "false_wake_count", "timestamp_counter"]
+}

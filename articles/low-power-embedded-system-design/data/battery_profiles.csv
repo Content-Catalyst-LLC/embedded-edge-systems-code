@@ -1,0 +1,5 @@
+battery_id,chemistry,nominal_voltage_v,capacity_mah,usable_derating_factor,temp_c,self_discharge_pct_per_month,pulse_current_limit_ma
+bat-001,li_so_cl2,3.6,8500,0.82,-10,1.0,100
+bat-002,li_ion,3.7,2200,0.88,20,3.0,1200
+bat-003,alkaline,3.0,3000,0.65,0,2.0,300
+bat-004,supercap,2.7,500,0.55,20,12.0,2000

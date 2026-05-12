@@ -1,0 +1,30 @@
+power_policy:
+  version: "1.0.0"
+  article: "low-power-embedded-system-design"
+  target_lifetime_days: 540
+  minimum_sleep_residency_pct: 92
+  maximum_false_wake_count_24h: 10
+  maximum_retry_count_24h: 8
+  low_battery_voltage_warning: 3.55
+  brownout_voltage_threshold: 3.30
+  storage_write_inhibit_voltage: 3.45
+  degraded_mode:
+    reduced_sampling_interval_s: 3600
+    heartbeat_only: true
+    defer_nonessential_uploads: true
+  wake_sources:
+    - rtc_alarm
+    - sensor_threshold
+    - gpio_interrupt
+    - watchdog
+    - maintenance_command
+  required_telemetry:
+    - battery_v
+    - state_of_charge_pct
+    - wake_count_24h
+    - false_wake_count_24h
+    - sleep_residency_pct
+    - tx_count_24h
+    - retry_count_24h
+    - brownout_count
+    - firmware_version

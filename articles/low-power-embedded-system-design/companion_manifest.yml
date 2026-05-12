@@ -1,0 +1,25 @@
+article:
+  title: "Low-Power Embedded System Design"
+  slug: "low-power-embedded-system-design"
+  series: "Embedded and Edge Systems"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/low-power-embedded-system-design"
+
+technical_level: "engineering-grade low-power embedded systems scaffold"
+
+workflows:
+  mathematical_lens: "Duty cycle, average current, quiescent current, communication energy, lifetime, and energy per useful event"
+  python:
+    - "Power Budget, Duty Cycle, and Lifetime Simulation"
+    - "Regulator/leakage sensitivity, radio retry cost, wake storm, and brownout reserve modeling"
+  r: "Fleet Power Reporting and Battery-Risk Review"
+  sql: "Power-state, wake-source, telemetry, battery, brownout, and maintenance evidence schema"
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - micropython
+    - tinyml
+    - pynq
+    - hdl
+    - bash
