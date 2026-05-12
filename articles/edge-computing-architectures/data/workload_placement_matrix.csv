@@ -1,0 +1,7 @@
+workload_id,workload_name,workload_family,latency_sensitivity,raw_data_volume,privacy_requirement,offline_requirement,trust_requirement,management_burden,preferred_layer,assigned_layer,approved_version,active_version
+wl-001,sensor-acquisition,sensing,0.95,0.40,0.70,0.95,0.80,0.25,device,device,fw-1.0,fw-1.0
+wl-002,protocol-translation,protocol-translation,0.70,0.70,0.60,0.85,0.75,0.45,gateway,gateway,gw-2.1,gw-2.1
+wl-003,site-anomaly-detection,site-analytics,0.85,0.80,0.75,0.90,0.85,0.60,local-edge,local-edge,edge-3.2,edge-3.1
+wl-004,fleet-model-training,fleet-governance,0.20,0.50,0.40,0.20,0.90,0.80,cloud,cloud,cloud-5.0,cloud-5.0
+wl-005,regional-routing,regional-coordination,0.55,0.45,0.50,0.40,0.80,0.65,regional-edge,regional-edge,regional-1.0,regional-1.0
+wl-006,local-dashboard,site-ops,0.70,0.35,0.70,0.85,0.70,0.50,local-edge,local-edge,edge-3.2,edge-3.2

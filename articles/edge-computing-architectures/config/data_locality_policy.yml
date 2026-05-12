@@ -1,0 +1,9 @@
+data_locality_policy:
+  version: "1.0.0"
+  raw_data:
+    video: "retain_local"
+    vibration: "retain_incident_windows_local"
+    audio: "retain_local_or_redact"
+    telemetry: "summarize_and_forward"
+  upstream_allowed: ["event_records", "feature_summaries", "fleet_health", "trust_state", "rollback_status"]
+  required_metadata: ["source_id", "acquisition_time", "processing_time", "upload_time", "ingestion_time", "policy_version", "drop_reason"]

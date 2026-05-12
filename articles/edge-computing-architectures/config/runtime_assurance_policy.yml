@@ -1,0 +1,20 @@
+runtime_assurance_policy:
+  version: "1.0.0"
+  required_monitors: ["heartbeat", "watchdog", "cpu_utilization", "memory_utilization", "storage_utilization", "thermal_state", "queue_depth", "clock_drift", "workload_restart_count", "trust_state"]
+  thresholds:
+    max_cpu_utilization: 0.85
+    max_memory_utilization: 0.85
+    max_storage_utilization: 0.90
+    max_clock_drift_ms: 50
+    max_watchdog_resets_per_hour: 1
+    max_buffer_backlog: 250
+  degraded_modes:
+    shed_noncritical_workloads: true
+    preserve_sensing: true
+    preserve_local_alarm: true
+    preserve_priority_buffering: true
+    restrict_local_authority_if_untrusted: true
+  fail_safe:
+    stop_untrusted_high_authority_actions: true
+  fail_operational:
+    continue_preapproved_low_risk_functions: true

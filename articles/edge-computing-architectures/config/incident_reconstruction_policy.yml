@@ -1,0 +1,22 @@
+incident_reconstruction_policy:
+  version: "1.0.0"
+  required_evidence:
+    - topology_snapshot
+    - workload_placement_record
+    - active_version
+    - approved_version
+    - local_decision_trace
+    - acquisition_time
+    - processing_time
+    - buffer_entry_time
+    - upload_time
+    - ingestion_time
+    - trust_state
+    - runtime_assurance_state
+    - watchdog_report
+    - degraded_mode_trace
+    - buffer_ledger
+    - replay_batch
+    - idempotency_key
+    - gap_record
+    - rollback_record

@@ -1,0 +1,14 @@
+deployment_readiness:
+  version: "1.0.0"
+  required_gates:
+    topology_manifest_complete: true
+    workload_placement_justified: true
+    latency_budget_passed: true
+    offline_mode_tested: true
+    runtime_assurance_tested: true
+    selective_uplink_tested: true
+    security_posture_verified: true
+    fleet_inventory_deployed: true
+    rollback_path_ready: true
+    observability_schema_deployed: true
+    incident_reconstruction_ready: true

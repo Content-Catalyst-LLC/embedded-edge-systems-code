@@ -1,0 +1,5 @@
+event_id,site_id,asset_id,workload_id,event_time,processing_time,buffer_entry_time,upload_time,ingestion_time,event_type,local_decision_authorized,buffer_backlog,replay_batch_id,idempotency_key,gap_detected,duplicate_detected,degraded_mode,trust_state
+evt-001,site-b,gw-002,wl-002,2026-03-28T12:00:00Z,2026-03-28T12:00:01Z,2026-03-28T12:00:01Z,,2026-03-28T12:45:01Z,buffered_event,true,120,batch-001,evt-001-key,false,false,true,verified
+evt-002,site-b,edge-002,wl-003,2026-03-28T12:10:00Z,2026-03-28T12:10:01Z,2026-03-28T12:10:02Z,,2026-03-28T12:45:05Z,local_alarm,true,260,batch-001,evt-002-key,false,false,true,verified
+evt-003,site-b,gw-002,wl-002,2026-03-28T12:20:00Z,2026-03-28T12:20:01Z,2026-03-28T12:20:02Z,,2026-03-28T12:45:09Z,gap_record,true,300,batch-001,evt-003-key,true,false,true,verified
+evt-003-dup,site-b,gw-002,wl-002,2026-03-28T12:20:00Z,2026-03-28T12:20:01Z,2026-03-28T12:20:02Z,,2026-03-28T12:45:20Z,gap_record,true,300,batch-001,evt-003-key,true,true,true,verified

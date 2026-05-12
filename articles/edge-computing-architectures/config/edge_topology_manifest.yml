@@ -1,0 +1,8 @@
+edge_topology_manifest:
+  version: "1.0.0"
+  layers:
+    device: ["sensing", "actuation", "local_safety", "watchdog_behavior", "simple_inference"]
+    gateway: ["protocol_translation", "buffering", "child_device_coordination", "local_filtering", "selective_uplink"]
+    local_edge: ["site_analytics", "local_dashboard", "event_processing", "raw_window_retention", "operator_visibility"]
+    regional_edge: ["regional_routing", "low_latency_multi_site_coordination", "policy_cache"]
+    cloud: ["fleet_management", "model_training", "identity_governance", "archival_storage", "cross_site_analytics"]

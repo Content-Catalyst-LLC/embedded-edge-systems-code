@@ -1,0 +1,12 @@
+offline_mode_policy:
+  version: "1.0.0"
+  expected_outage_hours: 1
+  continue_during_outage: ["sensing", "local_alarm", "buffering", "local_dashboard", "essential_rule_logic"]
+  degrade_during_outage: ["cloud_dependent_optimization", "noncritical_video_summary", "model_update"]
+  stop_during_outage: ["cloud_required_policy_change", "unapproved_remote_action"]
+  reconnect_behavior:
+    replay_with_event_time: true
+    preserve_upload_time: true
+    preserve_ingestion_time: true
+    require_idempotency_keys: true
+    record_gaps: true

@@ -1,0 +1,8 @@
+deployment_rollout_plan:
+  version: "1.0.0"
+  rollout_rings: ["canary", "pilot_site", "regional", "fleet"]
+  health_gates: ["latency_budget_passed", "offline_mode_passed", "runtime_assurance_passed", "trust_verified", "no_critical_watchdog_resets", "rollback_ready"]
+  rollback:
+    automatic_on_failed_health_gate: true
+    preserve_previous_version: true
+    require_rollback_test: true

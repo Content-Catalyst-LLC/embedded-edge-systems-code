@@ -1,0 +1,29 @@
+{
+  "model_name": "edge_architecture_event_classifier_stub",
+  "model_version": "edge-architecture-event-0.1.0",
+  "runtime_target": "tinyml-portable",
+  "quantization": "int8",
+  "input_schema": {
+    "features": [
+      "latency_ms",
+      "buffer_backlog",
+      "cpu_utilization",
+      "memory_utilization",
+      "watchdog_resets",
+      "clock_drift_ms"
+    ]
+  },
+  "output_schema": {
+    "labels": [
+      "normal",
+      "degraded",
+      "fail_safe",
+      "fail_operational"
+    ]
+  },
+  "governance": {
+    "confidence_required": true,
+    "fallback_required": true,
+    "runtime_assurance_required": true
+  }
+}

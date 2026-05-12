@@ -1,0 +1,29 @@
+{
+  "schema_name": "edge_architecture_telemetry",
+  "schema_version": "1.0.0",
+  "required_fields": [
+    "asset_id",
+    "site_id",
+    "layer",
+    "hardware_class",
+    "workload_family",
+    "connectivity_state",
+    "health_state",
+    "latency_ms",
+    "latency_budget_ms",
+    "buffer_backlog",
+    "offline_ready",
+    "active_version",
+    "approved_version",
+    "trust_state",
+    "runtime_assurance_state",
+    "watchdog_resets",
+    "cpu_utilization",
+    "memory_utilization",
+    "storage_utilization",
+    "thermal_state",
+    "clock_drift_ms",
+    "rollback_ready",
+    "owner"
+  ]
+}

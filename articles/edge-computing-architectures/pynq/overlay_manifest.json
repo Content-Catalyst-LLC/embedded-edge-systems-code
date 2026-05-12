@@ -1,0 +1,44 @@
+{
+  "overlay_name": "edge_architecture_stream_accelerator",
+  "overlay_version": "0.1.0",
+  "bitstream_file": "edge_architecture_stream_accelerator.bit",
+  "hardware_target": "pynq-compatible",
+  "interfaces": [
+    {
+      "name": "sensor_stream",
+      "type": "AXI-Stream",
+      "direction": "input"
+    },
+    {
+      "name": "gateway_stream",
+      "type": "AXI-Stream",
+      "direction": "output"
+    },
+    {
+      "name": "timestamp_counter",
+      "type": "AXI-Lite",
+      "direction": "bidirectional"
+    },
+    {
+      "name": "event_trigger",
+      "type": "GPIO",
+      "direction": "output"
+    },
+    {
+      "name": "watchdog_heartbeat",
+      "type": "GPIO",
+      "direction": "output"
+    },
+    {
+      "name": "telemetry_frame",
+      "type": "AXI-Stream",
+      "direction": "output"
+    }
+  ],
+  "validation": {
+    "records_timing_evidence": true,
+    "records_runtime_assurance_state": true,
+    "records_trust_state": true,
+    "requires_fallback_path": true
+  }
+}

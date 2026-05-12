@@ -1,0 +1,11 @@
+latency_bandwidth_budget:
+  version: "1.0.0"
+  budgets:
+    device_to_local_action_ms: 50
+    device_to_gateway_ms: 100
+    device_to_local_edge_ms: 150
+    site_to_cloud_ms: 1000
+  bandwidth:
+    min_uplink_reduction_rate: 0.60
+    preserve_priority_events: true
+    preserve_drop_reasons: true

@@ -1,0 +1,4 @@
+runtime_assurance:
+  version: "0.1.0"
+  monitors: ["heartbeat", "watchdog", "cpu", "memory", "storage", "thermal", "queue_depth", "clock_drift", "restart_count", "trust_state"]
+  modes: ["normal", "degraded", "fail_safe", "fail_operational"]

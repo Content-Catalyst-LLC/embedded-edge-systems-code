@@ -1,0 +1,8 @@
+asset_id,site_id,layer,hardware_class,workload_family,connectivity_state,health_state,latency_ms,latency_budget_ms,buffer_backlog,offline_ready,active_version,approved_version,trust_state,runtime_assurance_state,watchdog_resets,cpu_utilization,memory_utilization,storage_utilization,thermal_state,clock_drift_ms,rollback_ready,owner
+dev-001,site-a,device,mcu-sensor,sensing,online,healthy,12,50,0,true,fw-1.0,fw-1.0,verified,ready,0,0.30,0.42,0.20,normal,2,true,embedded-team
+gw-001,site-a,gateway,arm-linux,protocol-translation,online,healthy,35,100,12,true,gw-2.1,gw-2.1,verified,ready,0,0.48,0.56,0.44,normal,8,true,edge-platform-team
+edge-001,site-a,local-edge,x86-industrial,site-analytics,online,healthy,82,150,20,true,edge-3.2,edge-3.2,verified,ready,0,0.61,0.66,0.51,normal,12,true,site-ops
+gw-002,site-b,gateway,arm-linux,buffering,degraded,degraded,140,100,260,true,gw-2.0,gw-2.1,verified,degraded,2,0.88,0.79,0.91,warm,46,true,edge-platform-team
+edge-002,site-b,local-edge,x86-industrial,site-analytics,degraded,degraded,210,150,280,true,edge-3.1,edge-3.2,verified,degraded,1,0.91,0.83,0.82,warm,52,true,site-ops
+gw-003,site-c,gateway,arm-linux,protocol-translation,offline,degraded,0,100,500,false,gw-1.9,gw-2.1,unverified,degraded,3,0.00,0.00,0.00,unknown,0,false,edge-platform-team
+cloud-001,global,cloud,cloud-managed,fleet-governance,online,healthy,450,1000,0,true,cloud-5.0,cloud-5.0,verified,ready,0,0.45,0.55,0.60,normal,1,true,cloud-platform-team

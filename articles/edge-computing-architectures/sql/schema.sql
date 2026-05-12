@@ -1,0 +1,41 @@
+CREATE TABLE IF NOT EXISTS edge_fleet_inventory (
+    asset_id TEXT PRIMARY KEY,
+    site_id TEXT NOT NULL,
+    layer TEXT NOT NULL,
+    hardware_class TEXT NOT NULL,
+    workload_family TEXT NOT NULL,
+    connectivity_state TEXT NOT NULL,
+    health_state TEXT NOT NULL,
+    latency_ms REAL NOT NULL,
+    latency_budget_ms REAL NOT NULL,
+    buffer_backlog INTEGER NOT NULL,
+    offline_ready BOOLEAN NOT NULL,
+    active_version TEXT NOT NULL,
+    approved_version TEXT NOT NULL,
+    trust_state TEXT NOT NULL,
+    runtime_assurance_state TEXT NOT NULL,
+    watchdog_resets INTEGER NOT NULL,
+    cpu_utilization REAL NOT NULL,
+    memory_utilization REAL NOT NULL,
+    storage_utilization REAL NOT NULL,
+    thermal_state TEXT NOT NULL,
+    clock_drift_ms REAL NOT NULL,
+    rollback_ready BOOLEAN NOT NULL,
+    owner TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS workload_placement (
+    workload_id TEXT PRIMARY KEY,
+    workload_name TEXT NOT NULL,
+    workload_family TEXT NOT NULL,
+    latency_sensitivity REAL NOT NULL,
+    raw_data_volume REAL NOT NULL,
+    privacy_requirement REAL NOT NULL,
+    offline_requirement REAL NOT NULL,
+    trust_requirement REAL NOT NULL,
+    management_burden REAL NOT NULL,
+    preferred_layer TEXT NOT NULL,
+    assigned_layer TEXT NOT NULL,
+    approved_version TEXT NOT NULL,
+    active_version TEXT NOT NULL
+);

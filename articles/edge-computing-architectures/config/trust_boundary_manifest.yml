@@ -1,0 +1,16 @@
+trust_boundary_manifest:
+  version: "1.0.0"
+  required_controls:
+    device_identity: true
+    secure_boot: true
+    measured_boot: true
+    attestation: true
+    signed_updates: true
+    signed_workloads: true
+    signed_telemetry: true
+    sbom_required: true
+    provenance_required: true
+    credential_rotation: true
+    least_privilege: true
+    local_authority_boundaries: true
+  trust_states: ["verified", "degraded", "unknown", "unverified"]

@@ -1,0 +1,29 @@
+article:
+  title: "Edge Computing Architectures"
+  slug: "edge-computing-architectures"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/edge-computing-architectures/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/edge-computing-architectures"
+
+technical_level: "engineering-grade embedded and edge architecture scaffold"
+
+workflows:
+  mathematical_lens: "Workload placement, latency, bandwidth, offline operability, version skew, trust, runtime assurance, and management burden"
+  python:
+    - "Edge Workload Placement and Continuity Simulation"
+    - "Runtime Assurance, Watchdog, Degraded-Mode, and Recovery Checks"
+    - "Trust Boundary, SBOM/Provenance, and Security Posture Validation"
+    - "Deployment Readiness Gate"
+    - "Edge Observability and Fleet Health Analysis"
+  r: "Edge Fleet Reporting and Architecture Health Analysis"
+  sql: "Topology, workload placement, fleet inventory, telemetry, trust, rollout, and incident reconstruction"
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - micropython
+    - tinyml
+    - pynq
+    - hdl
+    - bash

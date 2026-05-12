@@ -1,0 +1,13 @@
+security_control_profile:
+  version: "0.1.0"
+  required:
+    secure_boot: true
+    measured_boot: true
+    attestation: true
+    signed_updates: true
+    signed_workloads: true
+    signed_telemetry: true
+    sbom: true
+    provenance: true
+    key_rotation: true
+    least_privilege: true
