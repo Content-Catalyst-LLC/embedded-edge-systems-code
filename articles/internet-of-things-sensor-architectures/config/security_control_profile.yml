@@ -1,0 +1,14 @@
+security_control_profile:
+  version: "1.0.0"
+  required_controls:
+    device_identity: true
+    secure_provisioning: true
+    scoped_topics: true
+    transport_security: true
+    credential_rotation: true
+    revocation: true
+    signed_firmware_updates: true
+    signed_configuration_updates: true
+    gateway_identity: true
+    telemetry_schema_validation: true
+    command_authorization: true

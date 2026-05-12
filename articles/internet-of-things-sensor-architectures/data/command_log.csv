@@ -1,0 +1,5 @@
+command_id,issuer,target_device_id,target_gateway_id,command_type,requested_time,ack_time,trust_state,freshness_required_seconds,observed_freshness_seconds,local_safety_check,authorized,acknowledged,rollback_ready,command_result
+cmd-001,ops-user,dev-env-001,gw-001,configuration_update,2026-03-28T12:01:00Z,2026-03-28T12:01:05Z,verified,300,60,true,true,true,true,applied
+cmd-002,ops-user,dev-temp-001,gw-002,sampling_rate_change,2026-03-28T12:11:00Z,2026-03-28T12:11:30Z,verified,300,1504,true,true,true,true,blocked_stale_state
+cmd-003,unknown-user,dev-vib-002,gw-003,remote_actuation,2026-03-28T12:21:00Z,,unverified,60,8404,false,false,false,false,rejected_untrusted
+cmd-004,platform,dev-edge-001,gw-003,gateway_rule_update,2026-03-28T12:16:00Z,2026-03-28T12:16:10Z,verified,300,3,true,true,true,true,applied

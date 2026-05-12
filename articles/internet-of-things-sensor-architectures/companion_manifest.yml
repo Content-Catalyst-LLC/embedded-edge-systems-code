@@ -1,0 +1,29 @@
+article:
+  title: "Internet of Things Sensor Architectures"
+  slug: "internet-of-things-sensor-architectures"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/internet-of-things-sensor-architectures/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/internet-of-things-sensor-architectures"
+
+technical_level: "engineering-grade IoT sensor architecture scaffold"
+
+workflows:
+  mathematical_lens: "Latency, freshness, delivery, buffer pressure, trust, version skew, command authority, and fleet governability"
+  python:
+    - "IoT Sensor Fleet Architecture and Telemetry Analysis"
+    - "Replay, Idempotency, and Freshness Validation"
+    - "Trust, Identity, and Lifecycle Validation"
+    - "Command Authority and Safety Boundary Evaluation"
+    - "Deployment Readiness Gate"
+  r: "Fleet Reporting and Sensor Architecture Health"
+  sql: "Devices, gateways, telemetry records, identity state, command logs, update logs, and incident reconstruction"
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - micropython
+    - tinyml
+    - pynq
+    - hdl
+    - bash

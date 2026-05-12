@@ -1,0 +1,13 @@
+ota_rollout_policy:
+  version: "1.0.0"
+  rollout_rings:
+    - canary
+    - pilot_site
+    - regional
+    - fleet
+  required_gates:
+    signed_artifact: true
+    compatibility_check: true
+    health_gate: true
+    rollback_ready: true
+    version_compliance_monitoring: true

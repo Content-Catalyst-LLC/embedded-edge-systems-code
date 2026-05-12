@@ -1,0 +1,13 @@
+buffering_replay_policy:
+  version: "1.0.0"
+  queue_capacity_default: 1000
+  freshness_threshold_seconds: 300
+  preserve_event_time: true
+  preserve_upload_time: true
+  preserve_ingestion_time: true
+  preserve_processing_time: true
+  require_sequence_number: true
+  require_idempotency_key: true
+  require_replay_batch_id_for_backfill: true
+  require_drop_reason: true
+  duplicate_detection_enabled: true

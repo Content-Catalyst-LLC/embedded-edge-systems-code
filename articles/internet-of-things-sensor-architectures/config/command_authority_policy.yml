@@ -1,0 +1,30 @@
+command_authority_policy:
+  version: "1.0.0"
+  default_freshness_required_seconds: 300
+  command_types:
+    configuration_update:
+      requires_verified_trust: true
+      requires_local_safety_check: true
+      requires_acknowledgment: true
+      requires_rollback_ready: true
+    firmware_update:
+      requires_verified_trust: true
+      requires_signed_artifact: true
+      requires_rollout_ring: true
+      requires_rollback_ready: true
+    gateway_rule_update:
+      requires_verified_trust: true
+      requires_transformation_manifest: true
+      requires_acknowledgment: true
+      requires_rollback_ready: true
+    sampling_rate_change:
+      requires_verified_trust: true
+      requires_fresh_state: true
+      requires_local_safety_check: true
+      requires_acknowledgment: true
+    remote_actuation:
+      requires_verified_trust: true
+      requires_fresh_state: true
+      requires_local_safety_check: true
+      requires_strict_authorization: true
+      requires_acknowledgment: true

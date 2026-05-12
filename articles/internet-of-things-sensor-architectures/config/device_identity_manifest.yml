@@ -1,0 +1,17 @@
+device_identity_manifest:
+  version: "1.0.0"
+  required_identity_fields:
+    - device_id
+    - site_id
+    - gateway_id
+    - device_class
+    - trust_state
+    - credential_state
+    - lifecycle_state
+  required_controls:
+    unique_device_identity: true
+    secure_provisioning: true
+    certificate_or_key_registry: true
+    credential_rotation: true
+    revocation: true
+    retirement_record: true

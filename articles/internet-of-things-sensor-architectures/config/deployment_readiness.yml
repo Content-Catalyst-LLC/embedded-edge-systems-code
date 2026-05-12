@@ -1,0 +1,14 @@
+deployment_readiness:
+  version: "1.0.0"
+  required_gates:
+    sensor_inventory_complete: true
+    device_identity_provisioned: true
+    telemetry_schema_validated: true
+    protocol_topic_map_reviewed: true
+    offline_behavior_tested: true
+    gateway_transformations_documented: true
+    security_controls_verified: true
+    command_authority_bounded: true
+    ota_configuration_rollout_tested: true
+    observability_implemented: true
+    incident_reconstruction_ready: true

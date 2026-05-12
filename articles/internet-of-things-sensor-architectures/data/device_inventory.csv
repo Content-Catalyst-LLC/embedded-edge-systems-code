@@ -1,0 +1,7 @@
+device_id,site_id,gateway_id,device_class,sensor_family,connectivity_state,trust_state,lifecycle_state,active_firmware,approved_firmware,active_config,approved_config,active_schema,approved_schema,battery_percent,heartbeat_age_seconds,credential_state,calibration_version,owner
+dev-env-001,site-a,gw-001,battery-node,environmental,online,verified,active,fw-1.0,fw-1.0,cfg-1.0,cfg-1.0,schema-1.0,schema-1.0,84,60,valid,cal-2026-01,field-team
+dev-vib-001,site-a,gw-001,wired-node,vibration,online,verified,active,fw-2.1,fw-2.1,cfg-2.0,cfg-2.0,schema-1.0,schema-1.0,100,10,valid,cal-2026-01,maintenance-team
+dev-temp-001,site-b,gw-002,gateway-child,temperature,degraded,verified,active,fw-1.9,fw-2.0,cfg-1.8,cfg-2.0,schema-1.0,schema-1.0,100,900,valid,cal-2025-07,site-ops
+dev-env-002,site-b,gw-002,battery-node,environmental,degraded,verified,active,fw-1.0,fw-1.0,cfg-0.9,cfg-1.0,schema-1.0,schema-1.0,18,1800,valid,cal-2026-01,field-team
+dev-vib-002,site-c,gw-003,wired-node,vibration,offline,unverified,quarantined,fw-2.0,fw-2.1,cfg-2.0,cfg-2.0,schema-0.9,schema-1.0,100,7200,expired,cal-2024-12,maintenance-team
+dev-edge-001,site-c,gw-003,edge-node,mixed,online,verified,active,fw-3.0,fw-3.0,cfg-3.0,cfg-3.0,schema-1.0,schema-1.0,100,20,valid,cal-2026-01,edge-platform-team

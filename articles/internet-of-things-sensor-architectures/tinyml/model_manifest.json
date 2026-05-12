@@ -1,0 +1,32 @@
+{
+  "model_name": "iot_sensor_local_quality_classifier_stub",
+  "model_version": "iot-local-quality-0.1.0",
+  "runtime_target": "tinyml-portable",
+  "quantization": "int8",
+  "input_schema": {
+    "features": [
+      "battery_percent",
+      "queue_pressure",
+      "heartbeat_age_seconds",
+      "signal_quality",
+      "trust_verified",
+      "firmware_compliant",
+      "configuration_compliant"
+    ]
+  },
+  "output_schema": {
+    "labels": [
+      "valid",
+      "low_confidence",
+      "stale",
+      "queue_pressure",
+      "lifecycle_risk"
+    ]
+  },
+  "governance": {
+    "confidence_required": true,
+    "fallback_required": true,
+    "quality_gate_required": true,
+    "command_authority_not_granted_by_model": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_name": "iot_fleet_observability",
+  "schema_version": "1.0.0",
+  "signals": [
+    "heartbeat_age_seconds",
+    "telemetry_freshness_seconds",
+    "queue_depth",
+    "buffer_pressure",
+    "battery_percent",
+    "firmware_version",
+    "configuration_version",
+    "schema_version",
+    "credential_state",
+    "trust_state",
+    "calibration_version",
+    "quality_state",
+    "gateway_child_count",
+    "replay_batch_count",
+    "drop_reason",
+    "command_acknowledgment_rate"
+  ]
+}

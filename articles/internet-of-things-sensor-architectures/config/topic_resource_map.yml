@@ -1,0 +1,14 @@
+topic_resource_map:
+  version: "1.0.0"
+  telemetry_topics:
+    - "sites/{site_id}/gateways/{gateway_id}/devices/{device_id}/telemetry"
+    - "sites/{site_id}/gateways/{gateway_id}/devices/{device_id}/health"
+  command_topics:
+    - "sites/{site_id}/gateways/{gateway_id}/devices/{device_id}/commands"
+    - "sites/{site_id}/gateways/{gateway_id}/commands"
+  state_topics:
+    - "sites/{site_id}/gateways/{gateway_id}/devices/{device_id}/state"
+  rules:
+    command_topics_require_authorization: true
+    telemetry_topics_require_schema_validation: true
+    state_topics_require_lifecycle_state: true

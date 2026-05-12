@@ -1,0 +1,15 @@
+gateway_transformation_manifest:
+  version: "1.0.0"
+  transformations:
+    protocol_translation:
+      preserve_source_protocol: true
+      preserve_source_device_id: true
+      preserve_gateway_id: true
+    aggregation:
+      preserve_quality_state: true
+      preserve_raw_retention_policy: true
+      preserve_aggregation_rule_version: true
+    buffering:
+      preserve_buffer_ledger: true
+      preserve_replay_batch: true
+      preserve_drop_reason: true

@@ -1,0 +1,43 @@
+{
+  "schema_name": "iot_sensor_telemetry",
+  "schema_version": "1.0.0",
+  "required_fields": [
+    "event_id",
+    "device_id",
+    "site_id",
+    "gateway_id",
+    "sensor_family",
+    "event_time",
+    "upload_time",
+    "ingestion_time",
+    "processing_time",
+    "value",
+    "unit",
+    "quality_state",
+    "trust_state",
+    "sequence_number",
+    "idempotency_key",
+    "duplicate_detected",
+    "active_firmware",
+    "approved_firmware",
+    "active_config",
+    "approved_config",
+    "active_schema",
+    "approved_schema"
+  ],
+  "time_semantics": [
+    "event_time",
+    "upload_time",
+    "ingestion_time",
+    "processing_time"
+  ],
+  "quality_states": [
+    "valid",
+    "low_confidence",
+    "stale",
+    "duplicate",
+    "untrusted",
+    "schema_invalid",
+    "dropped"
+  ]
+}

@@ -1,0 +1,20 @@
+incident_reconstruction_policy:
+  version: "1.0.0"
+  required_evidence:
+    - device_inventory_snapshot
+    - gateway_state_snapshot
+    - telemetry_record
+    - event_time
+    - upload_time
+    - ingestion_time
+    - processing_time
+    - idempotency_key
+    - sequence_number
+    - replay_batch_id
+    - command_log
+    - firmware_version
+    - configuration_version
+    - schema_version
+    - trust_state
+    - quality_state
+    - drop_reason

@@ -1,0 +1,4 @@
+gateway_id,site_id,connectivity_state,trust_state,active_rule_version,approved_rule_version,child_device_count,child_devices_reporting,buffer_depth,buffer_capacity,mean_upload_latency_seconds,firmware_version,approved_firmware,local_authority_state
+gw-001,site-a,online,verified,rule-1.0,rule-1.0,2,2,10,1000,2,gw-2.0,gw-2.0,bounded
+gw-002,site-b,degraded,verified,rule-0.9,rule-1.0,2,1,650,1000,300,gw-1.9,gw-2.0,bounded
+gw-003,site-c,online,verified,rule-1.0,rule-1.0,2,1,80,1000,10,gw-2.0,gw-2.0,restricted
