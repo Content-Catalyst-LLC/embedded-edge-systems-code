@@ -1,0 +1,31 @@
+article:
+  title: "Privacy and Local Data Processing at the Edge"
+  slug: "privacy-and-local-data-processing-at-the-edge"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/privacy-and-local-data-processing-at-the-edge/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/privacy-and-local-data-processing-at-the-edge"
+
+workflows:
+  mathematical_lens: "Privacy risk reduction through local transformation"
+  python: "Local Data Minimisation and Privacy Risk Scoring"
+  r: "Edge Privacy Reporting and Retention Governance"
+  sql: "Local processing, retention, and disclosure evidence schema"
+  c: "Constrained edge redaction and event filtering"
+  cpp: "Privacy-aware gateway transformation policy"
+  rust: "Retention and disclosure policy validator"
+  go: "Local privacy gateway service"
+  micropython: "Privacy-aware sensor telemetry prototype"
+  tinyml: "Local-only inference and event-only reporting"
+  pynq: "Accelerated local filtering and feature extraction"
+  hdl: "Hardware stream filtering for privacy-preserving preprocessing"
+
+governance_dimensions:
+  - data_minimisation
+  - local_processing
+  - transformation_before_transfer
+  - retention_control
+  - identity_linkage_control
+  - selective_disclosure
+  - predictability
+  - manageability
+  - disassociability

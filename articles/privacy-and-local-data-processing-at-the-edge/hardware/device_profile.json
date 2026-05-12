@@ -1,0 +1,9 @@
+{
+  "device_id": "privacy-edge-node-001",
+  "device_class": "privacy-preserving-edge-node",
+  "local_processing": true,
+  "raw_transfer_default": false,
+  "tinyml_supported": true,
+  "pynq_or_fpga_acceleration_supported": true,
+  "ephemeral_processing_supported": true
+}

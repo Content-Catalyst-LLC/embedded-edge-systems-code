@@ -1,0 +1,25 @@
+deployment:
+  article_slug: "privacy-and-local-data-processing-at-the-edge"
+  deployment_name: "privacy-preserving-edge-reference"
+  environment: "local-simulation"
+  requires_manifest_validation: true
+
+components:
+  - name: "local-minimisation-workflow"
+    path: "python/"
+    role: "privacy risk scoring and local minimisation"
+  - name: "privacy-reporting-workflow"
+    path: "r/"
+    role: "fleet-level privacy reporting"
+  - name: "privacy-gateway-service"
+    path: "go/"
+    role: "local event transformation and disclosure filtering"
+  - name: "tinyml-local-inference"
+    path: "tinyml/"
+    role: "event-only reporting after local inference"
+  - name: "pynq-local-filter"
+    path: "pynq/"
+    role: "accelerated local filtering scaffold"
+  - name: "hdl-stream-filter"
+    path: "hdl/"
+    role: "hardware-level stream reduction"

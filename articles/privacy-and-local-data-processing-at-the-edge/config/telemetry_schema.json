@@ -1,0 +1,24 @@
+{
+  "schema_name": "privacy_preserving_edge_event",
+  "schema_version": "1.0.0",
+  "required_fields": [
+    "event_id",
+    "timestamp",
+    "device_id",
+    "site",
+    "output_type",
+    "privacy_transform",
+    "retention_hours",
+    "upstream_transfer"
+  ],
+  "field_definitions": {
+    "event_id": "stable event identifier",
+    "timestamp": "ISO-8601 event timestamp",
+    "device_id": "device or gateway identifier",
+    "site": "deployment site or operational domain",
+    "output_type": "transformed or disclosed data type",
+    "privacy_transform": "local transformation applied before disclosure",
+    "retention_hours": "maximum retention duration",
+    "upstream_transfer": "whether the transformed event can leave the local environment"
+  }
+}

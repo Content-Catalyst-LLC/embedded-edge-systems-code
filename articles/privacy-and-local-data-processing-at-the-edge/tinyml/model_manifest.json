@@ -1,0 +1,19 @@
+{
+  "model_name": "local_privacy_event_classifier",
+  "model_version": "0.1.0",
+  "runtime_target": "tinyml-portable",
+  "quantization": "int8",
+  "input_schema": {
+    "features": [
+      {"name": "signal_value", "type": "float32", "unit": "normalized"},
+      {"name": "context_score", "type": "float32", "unit": "normalized"}
+    ]
+  },
+  "governance": {
+    "local_only_default": true,
+    "raw_input_transfer_allowed": false,
+    "event_only_reporting": true,
+    "fallback_required": true,
+    "requires_manifest_validation": true
+  }
+}

@@ -1,0 +1,7 @@
+data_class,default_retention_hours,raw_retention_allowed,upstream_transfer_allowed,requires_user_notice
+raw_video,0,false,false,true
+raw_audio,0,false,false,true
+derived_event,24,true,true,true
+aggregate_count,168,true,true,false
+device_health,720,true,true,false
+local_model_score,24,true,false,true

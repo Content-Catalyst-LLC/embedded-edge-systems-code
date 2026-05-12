@@ -1,0 +1,12 @@
+{
+  "device_profile": {
+    "device_class": "privacy-preserving-edge-node",
+    "supports_local_processing": true,
+    "supports_event_only_reporting": true,
+    "supports_ephemeral_processing": true,
+    "supports_tinyml": true,
+    "supports_accelerated_filtering": true,
+    "raw_data_transfer_default": false,
+    "governance_metadata_required": true
+  }
+}

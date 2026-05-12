@@ -1,0 +1,6 @@
+event_id,site,device_id,signal_type,raw_collection,identifiability,retention_hours,linkability,sharing_scope,minimisation,local_transformation,ephemeral_processing,output_type
+evt-001,chicago,cam-001,video,0.95,0.92,24,0.80,0.70,0.65,0.72,0.40,zone_count
+evt-002,chicago,audio-014,audio,0.88,0.86,2,0.62,0.40,0.78,0.83,0.70,wake_word_event
+evt-003,detroit,env-022,environmental,0.35,0.18,168,0.30,0.42,0.70,0.56,0.30,aggregate_telemetry
+evt-004,stlouis,wear-007,physiological,0.80,0.90,12,0.84,0.62,0.76,0.78,0.65,risk_score
+evt-005,newyork,bldg-031,occupancy,0.60,0.55,48,0.68,0.55,0.74,0.80,0.55,occupancy_band

@@ -1,0 +1,17 @@
+privacy_policy:
+  policy_version: "1.0.0"
+  local_processing_preferred: true
+  raw_data_transfer_default: false
+  raw_audio_retention_hours: 0
+  raw_video_retention_hours: 0
+  derived_event_retention_hours: 24
+  aggregate_retention_hours: 168
+  user_notice_required_for_person_revealing_signals: true
+  purpose_limitation_required: true
+  downstream_disclosure_evidence_required: true
+  deletion_or_expiration_required: true
+
+privacy_objectives:
+  predictability: true
+  manageability: true
+  disassociability: true
