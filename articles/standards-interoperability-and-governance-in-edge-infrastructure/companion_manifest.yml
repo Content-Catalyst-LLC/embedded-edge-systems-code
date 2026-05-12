@@ -27,3 +27,9 @@ governance_dimensions:
 companion_code_extensions:
   tinyml: "Constrained on-device inference, model metadata, fallback behavior, and TinyML lifecycle governance"
   pynq: "FPGA-backed edge acceleration, overlay metadata, bitstream compatibility, interface contracts, and acceleration lifecycle governance"
+
+expanded_companion_stack:
+  hdl: "Verilog and VHDL scaffolds for hardware/software co-design and stream processing"
+  micropython: "Microcontroller-oriented telemetry and edge prototype code"
+  bash: "Repeatable local workflow scripts"
+  config: "YAML and JSON manifests for device, telemetry, deployment, lifecycle, and update governance"

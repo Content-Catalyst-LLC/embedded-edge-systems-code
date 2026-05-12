@@ -1,0 +1,21 @@
+{
+  "article_slug": "standards-interoperability-and-governance-in-edge-infrastructure",
+  "device_profile": {
+    "device_class": "edge-node",
+    "processor_class": "microcontroller-or-edge-gateway",
+    "memory_profile": "constrained-to-moderate",
+    "connectivity": ["ethernet", "wifi", "cellular", "fieldbus"],
+    "supports_ota": true,
+    "supports_local_processing": true,
+    "supports_tinyml": true,
+    "supports_acceleration": true,
+    "governance_metadata_required": true
+  },
+  "evidence": {
+    "requires_device_identity": true,
+    "requires_firmware_version": true,
+    "requires_configuration_version": true,
+    "requires_update_history": true,
+    "requires_support_state": true
+  }
+}

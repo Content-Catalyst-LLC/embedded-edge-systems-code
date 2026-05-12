@@ -1,0 +1,27 @@
+{
+  "schema_name": "edge_telemetry_schema",
+  "schema_version": "1.0.0",
+  "article_slug": "device-lifecycle-management-and-over-the-air-updating",
+  "required_fields": [
+    "timestamp",
+    "device_id",
+    "site",
+    "metric",
+    "value",
+    "unit",
+    "quality_flag",
+    "firmware_version",
+    "configuration_version"
+  ],
+  "field_definitions": {
+    "timestamp": "ISO-8601 event timestamp",
+    "device_id": "stable device or gateway identifier",
+    "site": "deployment site or operational domain",
+    "metric": "telemetry measurement name",
+    "value": "numeric measurement value",
+    "unit": "measurement unit",
+    "quality_flag": "quality, warning, or error state",
+    "firmware_version": "reported firmware version",
+    "configuration_version": "reported configuration version"
+  }
+}

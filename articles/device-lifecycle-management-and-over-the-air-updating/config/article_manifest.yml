@@ -1,0 +1,38 @@
+article:
+  title: "Device Lifecycle Management and Over-the-Air Updating"
+  slug: "device-lifecycle-management-and-over-the-air-updating"
+  series: "Embedded and Edge Systems"
+  repository_root: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code"
+  article_repository_path: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/device-lifecycle-management-and-over-the-air-updating"
+
+companion_stack:
+  analytics:
+    - python
+    - r
+    - sql
+    - notebooks
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - bash
+  embedded:
+    - firmware
+    - hardware
+    - micropython
+    - tinyml
+  acceleration:
+    - pynq
+    - hdl
+  governance:
+    - yaml
+    - json
+    - tests
+    - documentation
+
+reproducibility:
+  license: "MIT"
+  outputs_directory: "outputs/"
+  data_directory: "data/"
+  config_directory: "config/"

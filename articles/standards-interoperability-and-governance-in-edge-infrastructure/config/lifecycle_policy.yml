@@ -1,0 +1,22 @@
+lifecycle_policy:
+  article_slug: "standards-interoperability-and-governance-in-edge-infrastructure"
+  policy_version: "1.0.0"
+  identity_required: true
+  configuration_tracking_required: true
+  firmware_tracking_required: true
+  telemetry_quality_tracking_required: true
+  support_state_tracking_required: true
+  rollback_or_fallback_required: true
+  decommissioning_record_required: true
+
+support_states:
+  - supported
+  - limited-support
+  - end-of-support
+  - decommissioned
+
+exception_handling:
+  exceptions_allowed: true
+  approval_required: true
+  expiration_required: true
+  evidence_required: true

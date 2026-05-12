@@ -23,3 +23,12 @@ This article directory includes TinyML and PYNQ scaffolds as part of the Embedde
 
 - `tinyml/` represents constrained on-device inference, model metadata, fallback behavior, and TinyML lifecycle governance.
 - `pynq/` represents FPGA-backed edge acceleration, overlay metadata, bitstream compatibility, interface contracts, and acceleration lifecycle governance.
+
+## Expanded Embedded & Edge Systems companion stack
+
+This article directory now includes HDL, MicroPython, Bash, and YAML/JSON configuration scaffolds in addition to the standard analytics, systems programming, TinyML, PYNQ, firmware, hardware, and testing folders.
+
+- `hdl/` provides Verilog/VHDL scaffolds for hardware/software co-design and stream processing.
+- `micropython/` provides microcontroller-oriented telemetry and edge prototype code.
+- `bash/` provides repeatable local workflow scripts.
+- `config/` provides YAML and JSON manifests for device profiles, telemetry schemas, deployment metadata, lifecycle policy, and update policy.

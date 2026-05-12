@@ -1,0 +1,22 @@
+update_policy:
+  article_slug: "standards-interoperability-and-governance-in-edge-infrastructure"
+  policy_version: "1.0.0"
+  signed_packages_required: true
+  compatibility_check_required: true
+  staged_rollout_required: true
+  rollback_plan_required: true
+  post_update_validation_required: true
+  failed_update_evidence_required: true
+
+rings:
+  - development
+  - canary
+  - pilot
+  - production
+
+hold_conditions:
+  - unsupported_device
+  - failed_identity_check
+  - incompatible_hardware_revision
+  - missing_rollback_plan
+  - failed_validation
