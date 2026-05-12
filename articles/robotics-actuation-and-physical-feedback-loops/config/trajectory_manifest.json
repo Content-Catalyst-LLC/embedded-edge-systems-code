@@ -1,0 +1,17 @@
+{
+  "trajectory_name": "linear-position-reference-demo",
+  "version": "1.0.0",
+  "units": {
+    "position": "radians",
+    "velocity": "radians_per_second",
+    "acceleration": "radians_per_second_squared"
+  },
+  "constraints": {
+    "max_velocity": 1.5,
+    "max_acceleration": 3.0,
+    "max_jerk": 10.0,
+    "position_min": -1.0,
+    "position_max": 1.0
+  },
+  "source_file": "data/reference_trajectory.csv"
+}

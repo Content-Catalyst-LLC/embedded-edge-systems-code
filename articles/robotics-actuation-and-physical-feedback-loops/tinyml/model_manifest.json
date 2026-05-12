@@ -1,0 +1,23 @@
+{
+  "model_name": "robotics_local_fault_detector",
+  "model_version": "0.1.0",
+  "runtime_target": "tinyml-portable",
+  "quantization": "int8",
+  "input_schema": {
+    "features": [
+      {"name": "tracking_error_abs", "type": "float32", "unit": "radians"},
+      {"name": "loop_jitter_ms", "type": "float32", "unit": "milliseconds"},
+      {"name": "actuator_current_a", "type": "float32", "unit": "amperes"},
+      {"name": "saturation_flag", "type": "float32", "unit": "binary"}
+    ]
+  },
+  "output_schema": {
+    "labels": ["normal", "warning", "fault"]
+  },
+  "governance": {
+    "local_only_default": true,
+    "fallback_required": true,
+    "requires_manifest_validation": true,
+    "requires_lifecycle_record": true
+  }
+}

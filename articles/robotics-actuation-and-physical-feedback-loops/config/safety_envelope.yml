@@ -1,0 +1,18 @@
+safety_envelope:
+  version: "1.0.0"
+  position_min: -1.0
+  position_max: 1.0
+  velocity_max_abs: 1.5
+  command_max_abs: 1.0
+  current_max_a: 4.0
+  temperature_max_c: 80.0
+  tracking_error_warning: 0.08
+  tracking_error_fault: 0.15
+  loop_jitter_warning_ms: 2.0
+  loop_jitter_fault_ms: 5.0
+
+failure_behavior:
+  tracking_error_fault: "safe_stop"
+  excessive_jitter: "degraded_mode"
+  command_bound_violation: "reject_command"
+  stale_sensor: "hold_position_then_safe_stop"

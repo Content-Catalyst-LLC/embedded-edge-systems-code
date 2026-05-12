@@ -1,0 +1,26 @@
+{
+  "schema_name": "robotic_control_loop_event",
+  "schema_version": "1.0.0",
+  "required_fields": [
+    "timestamp",
+    "robot_id",
+    "joint_id",
+    "task_mode",
+    "setpoint",
+    "measured_position",
+    "estimated_position",
+    "tracking_error",
+    "command",
+    "loop_jitter_ms",
+    "saturated",
+    "safety_state",
+    "fault_state"
+  ],
+  "field_definitions": {
+    "tracking_error": "setpoint minus measured or estimated position",
+    "loop_jitter_ms": "control-loop timing variation in milliseconds",
+    "saturated": "whether actuator command was clipped by limits",
+    "safety_state": "normal, warning, degraded, stopped, recovery",
+    "fault_state": "normal or fault descriptor"
+  }
+}

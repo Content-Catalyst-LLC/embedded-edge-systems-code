@@ -1,0 +1,4 @@
+actuator_id,joint_id,max_torque_nm,max_speed_rad_s,max_current_a,thermal_limit_c,position_resolution_rad,backlash_rad,command_limit
+act-001,joint-1,12.0,5.0,4.0,80.0,0.001,0.006,1.0
+act-002,joint-2,8.0,4.0,3.5,75.0,0.0015,0.008,0.9
+act-003,joint-3,5.0,3.0,2.5,70.0,0.002,0.010,0.7

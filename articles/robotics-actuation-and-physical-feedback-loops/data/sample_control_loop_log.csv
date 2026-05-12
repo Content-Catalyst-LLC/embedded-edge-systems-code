@@ -1,0 +1,8 @@
+timestamp,robot_id,joint_id,task_mode,setpoint,measured_position,estimated_position,tracking_error,command,actuator_current_a,loop_jitter_ms,saturated,safety_state,fault_state
+2026-03-28T12:00:00Z,robot-001,joint-1,pick_place,0.10,0.09,0.091,0.010,0.42,1.8,0.30,false,normal,normal
+2026-03-28T12:00:01Z,robot-001,joint-1,pick_place,0.20,0.18,0.181,0.020,0.61,2.0,0.35,false,normal,normal
+2026-03-28T12:00:02Z,robot-001,joint-1,pick_place,0.30,0.27,0.271,0.030,0.80,2.4,0.60,false,normal,normal
+2026-03-28T12:00:03Z,robot-001,joint-1,pick_place,0.40,0.35,0.352,0.050,1.00,3.1,1.40,true,warning,normal
+2026-03-28T12:00:04Z,robot-002,joint-2,inspection,0.15,0.13,0.132,0.020,0.44,1.5,0.40,false,normal,normal
+2026-03-28T12:00:05Z,robot-002,joint-2,inspection,0.25,0.21,0.214,0.040,0.76,2.2,0.90,false,normal,normal
+2026-03-28T12:00:06Z,robot-002,joint-2,inspection,0.35,0.29,0.294,0.060,1.00,3.4,2.10,true,warning,timing_jitter

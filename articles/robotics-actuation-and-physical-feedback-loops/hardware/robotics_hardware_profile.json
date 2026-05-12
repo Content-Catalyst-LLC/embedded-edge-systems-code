@@ -1,0 +1,12 @@
+{
+  "robot_id": "robot-001",
+  "hardware_class": "two-joint-feedback-demo",
+  "actuators": ["act-001", "act-002"],
+  "sensors": ["enc-001", "enc-002"],
+  "pwm_outputs": 2,
+  "encoder_inputs": 2,
+  "pynq_or_fpga_acceleration_supported": true,
+  "tinyml_fault_detection_supported": true,
+  "watchdog_supported": true,
+  "emergency_stop_supported": true
+}

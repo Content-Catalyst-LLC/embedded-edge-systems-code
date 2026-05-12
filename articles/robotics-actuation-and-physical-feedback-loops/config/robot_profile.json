@@ -1,0 +1,20 @@
+{
+  "robot_id": "robot-001",
+  "robot_class": "two-joint-feedback-demo",
+  "control_mode": "position_tracking",
+  "joints": [
+    {"joint_id": "joint-1", "actuator_id": "act-001", "sensor_id": "enc-001"},
+    {"joint_id": "joint-2", "actuator_id": "act-002", "sensor_id": "enc-002"}
+  ],
+  "runtime": {
+    "target_loop_period_ms": 10,
+    "max_allowed_jitter_ms": 2.0,
+    "hard_realtime_required": false,
+    "watchdog_enabled": true
+  },
+  "safety": {
+    "requires_safety_envelope": true,
+    "requires_command_bounds": true,
+    "requires_fault_state_reporting": true
+  }
+}

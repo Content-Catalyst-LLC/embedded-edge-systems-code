@@ -1,0 +1,35 @@
+article:
+  title: "Robotics, Actuation, and Physical Feedback Loops"
+  slug: "robotics-actuation-and-physical-feedback-loops"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/robotics-actuation-and-physical-feedback-loops/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/robotics-actuation-and-physical-feedback-loops"
+
+technical_level: "advanced public engineering / graduate-oriented scaffold"
+
+workflows:
+  mathematical_lens: "State-space feedback, tracking error, saturation, timing, estimation, and safety constraints"
+  python:
+    - "State-Space Feedback Simulation with Saturation, Delay, and Jitter"
+    - "Kalman-Style State Estimation and Residual Monitoring"
+    - "Safety Envelope and Command-Bound Validation"
+  r: "Actuator Performance, Tracking Error, and Reliability Reporting"
+  sql: "Robot telemetry, actuator states, control logs, estimator residuals, and safety events"
+  c: "Embedded PID control loop with saturation and anti-windup"
+  cpp: "Robotic state machine and command validation"
+  rust: "Safety-envelope and command-bound validator"
+  go: "Robot telemetry gateway and control-event router"
+  micropython: "Servo feedback prototype with sensor state and safety check"
+  tinyml: "Local actuator anomaly and vibration fault-detection scaffold"
+  pynq: "Low-latency robotics stream filter and overlay validation"
+  hdl: "PWM generator and quadrature encoder scaffolds"
+
+governance_dimensions:
+  - tracking_error
+  - timing_jitter
+  - actuator_saturation
+  - estimator_residual
+  - safety_margin
+  - command_bounds
+  - fault_state
+  - recovery_behavior

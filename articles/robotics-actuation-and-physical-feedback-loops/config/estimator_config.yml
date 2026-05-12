@@ -1,0 +1,16 @@
+estimator:
+  name: "linear-kalman-style-estimator"
+  version: "1.0.0"
+  state_vector:
+    - position
+    - velocity
+  observation_vector:
+    - position
+  update_period_s: 0.01
+  process_noise:
+    position: 0.0005
+    velocity: 0.002
+  measurement_noise:
+    position: 0.01
+  residual_warning_threshold: 0.08
+  residual_fault_threshold: 0.15

@@ -1,0 +1,19 @@
+actuators:
+  - actuator_id: "act-001"
+    joint_id: "joint-1"
+    max_torque_nm: 12.0
+    max_speed_rad_s: 5.0
+    max_current_a: 4.0
+    thermal_limit_c: 80.0
+    position_resolution_rad: 0.001
+    backlash_rad: 0.006
+    command_limit: 1.0
+  - actuator_id: "act-002"
+    joint_id: "joint-2"
+    max_torque_nm: 8.0
+    max_speed_rad_s: 4.0
+    max_current_a: 3.5
+    thermal_limit_c: 75.0
+    position_resolution_rad: 0.0015
+    backlash_rad: 0.008
+    command_limit: 0.9
