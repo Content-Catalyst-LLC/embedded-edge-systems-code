@@ -1,0 +1,25 @@
+selective_forwarding_policy:
+  version: "1.0.0"
+  defaults:
+    routine_forwarding_interval_s: 60
+    incident_forwarding_immediate: true
+    retain_raw_local_s: 3600
+  rules:
+    incident_events:
+      forward_immediately: true
+      retain_raw_local: true
+      priority: "incident"
+    site_state_summary:
+      forward_immediately: false
+      interval_s: 60
+      retain_raw_local: false
+      priority: "summary"
+    routine_telemetry:
+      forward_immediately: false
+      interval_s: 300
+      retain_raw_local: false
+      priority: "routine"
+    protocol_errors:
+      forward_immediately: true
+      retain_raw_local: true
+      priority: "diagnostic"

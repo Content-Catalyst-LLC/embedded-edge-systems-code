@@ -1,0 +1,15 @@
+gateway_slo:
+  version: "1.0.0"
+  child_device_freshness_target: 0.95
+  max_buffer_backlog_events: 200
+  max_replay_lag_s: 120
+  max_protocol_error_rate: 0.05
+  min_lineage_completeness_rate: 0.98
+  min_site_quality_score: 0.80
+  max_duplicate_replay_rate: 0.01
+  max_missing_child_rate: 0.05
+  max_stale_device_rate: 0.10
+  runtime_capacity:
+    max_cpu_utilization: 0.80
+    max_memory_utilization: 0.80
+    max_disk_utilization: 0.85

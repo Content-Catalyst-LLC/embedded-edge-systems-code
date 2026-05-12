@@ -1,0 +1,36 @@
+{
+  "schema_name": "gateway_event",
+  "schema_version": "1.0.0",
+  "required_fields": [
+    "event_id",
+    "timestamp",
+    "site_id",
+    "gateway_id",
+    "device_id",
+    "protocol_family",
+    "local_acquisition_time",
+    "gateway_receipt_time",
+    "aggregation_time",
+    "upload_time",
+    "upstream_ingest_time",
+    "measurement",
+    "unit",
+    "quality_flag",
+    "device_freshness_s",
+    "child_device_status",
+    "protocol_error",
+    "buffer_backlog",
+    "replay_lag_s",
+    "forwarded_upstream",
+    "lineage_complete",
+    "policy_version"
+  ],
+  "field_definitions": {
+    "local_acquisition_time": "time measurement was acquired at or near the child device",
+    "gateway_receipt_time": "time gateway received the event",
+    "aggregation_time": "time event contributed to site-state computation",
+    "upload_time": "time event left the gateway or local edge layer",
+    "upstream_ingest_time": "time upstream platform ingested the event",
+    "lineage_complete": "whether identity, timing, quality, and transformation metadata are complete"
+  }
+}

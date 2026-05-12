@@ -1,0 +1,6 @@
+timestamp,site_id,gateway_id,device_id,protocol_family,error_type,error_count,retry_count,resolved
+2026-03-28T12:00:00Z,site-a,gw-001,dev-temp-001,i2c,none,0,0,true
+2026-03-28T12:00:01Z,site-a,gw-001,dev-vib-001,spi,crc_warning,1,1,true
+2026-03-28T12:00:02Z,site-b,gw-002,dev-humidity-001,i2c,timeout,4,3,false
+2026-03-28T12:00:03Z,site-b,gw-002,dev-motor-001,can,bus_off,2,2,false
+2026-03-28T12:00:04Z,site-c,gw-003,dev-flow-001,modbus,none,0,0,true

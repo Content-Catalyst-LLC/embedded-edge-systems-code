@@ -1,0 +1,26 @@
+aggregation_contract:
+  version: "1.0.0"
+  aggregation_window_s: 60
+  required_inputs:
+    - child_device_registry
+    - normalized_gateway_events
+    - protocol_error_log
+    - buffer_status
+  site_state_outputs:
+    - contributing_devices
+    - expected_devices
+    - missing_child_count
+    - stale_device_count
+    - protocol_error_count
+    - lineage_gap_count
+    - site_quality_score
+    - aggregation_confidence
+  quality_score_weights:
+    missing_devices: 0.30
+    stale_inputs: 0.25
+    protocol_errors: 0.20
+    lineage_gaps: 0.25
+  freshness_thresholds_s:
+    high_criticality: 15
+    medium_criticality: 60
+    low_criticality: 300

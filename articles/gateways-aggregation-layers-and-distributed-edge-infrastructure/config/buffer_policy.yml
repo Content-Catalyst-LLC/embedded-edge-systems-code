@@ -1,0 +1,19 @@
+buffer_policy:
+  version: "1.0.0"
+  max_buffer_events: 500
+  high_watermark_events: 200
+  priority_queues:
+    incident:
+      retention_s: 86400
+      drop_policy: "never_drop_before_routine"
+    diagnostic:
+      retention_s: 21600
+      drop_policy: "drop_after_incident_and_summary"
+    routine:
+      retention_s: 3600
+      drop_policy: "drop_oldest_under_pressure"
+  replay_order: "event_time_then_sequence"
+  preserve_lineage: true
+  backpressure_behavior:
+    high_watermark: "reduce_routine_uplink"
+    full_buffer: "drop_oldest_routine_and_record_gap"

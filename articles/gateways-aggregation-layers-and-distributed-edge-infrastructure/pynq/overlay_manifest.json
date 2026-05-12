@@ -1,0 +1,21 @@
+{
+  "overlay_name": "gateway_stream_preprocessor",
+  "overlay_version": "0.1.0",
+  "bitstream_file": "gateway_stream_preprocessor.bit",
+  "hardware_target": "pynq-compatible",
+  "interfaces": [
+    {"name": "sensor_stream", "type": "AXI-Stream", "direction": "input"},
+    {"name": "normalized_feature_stream", "type": "AXI-Stream", "direction": "output"},
+    {"name": "timestamp_counter", "type": "AXI-Lite", "direction": "bidirectional"},
+    {"name": "buffer_watermark", "type": "GPIO", "direction": "output"},
+    {"name": "selective_uplink_trigger", "type": "GPIO", "direction": "output"}
+  ],
+  "governance": {
+    "requires_overlay_validation": true,
+    "records_timing_evidence": true,
+    "records_lineage_evidence": true,
+    "records_lifecycle_evidence": true,
+    "buffer_policy_required": true,
+    "selective_uplink_policy_required": true
+  }
+}

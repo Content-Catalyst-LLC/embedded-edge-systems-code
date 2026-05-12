@@ -1,0 +1,59 @@
+protocol_map:
+  version: "1.0.0"
+  mappings:
+    i2c_temperature:
+      protocol_family: "i2c"
+      source_fields:
+        raw_register: "temperature_register"
+        address: "i2c_address"
+      normalized_fields:
+        measurement: "temperature_c"
+        unit: "celsius"
+        quality_flag: "sensor_quality"
+      required_metadata:
+        - device_id
+        - gateway_id
+        - acquisition_time
+        - protocol_address
+    spi_vibration:
+      protocol_family: "spi"
+      source_fields:
+        raw_samples: "vibration_samples"
+        chip_select: "spi_cs"
+      normalized_fields:
+        measurement: "vibration_g"
+        unit: "g"
+        quality_flag: "sample_quality"
+      required_metadata:
+        - device_id
+        - gateway_id
+        - acquisition_time
+        - protocol_address
+    modbus_power:
+      protocol_family: "modbus"
+      source_fields:
+        register: "power_register"
+        unit_id: "modbus_unit_id"
+      normalized_fields:
+        measurement: "power_kw"
+        unit: "kW"
+        quality_flag: "register_quality"
+      required_metadata:
+        - device_id
+        - gateway_id
+        - acquisition_time
+        - protocol_address
+    can_motor:
+      protocol_family: "can"
+      source_fields:
+        arbitration_id: "can_id"
+        payload: "motor_status_payload"
+      normalized_fields:
+        measurement: "motor_speed_rpm"
+        unit: "rpm"
+        quality_flag: "message_quality"
+      required_metadata:
+        - device_id
+        - gateway_id
+        - acquisition_time
+        - protocol_address

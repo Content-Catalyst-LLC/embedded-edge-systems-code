@@ -1,0 +1,6 @@
+event_id,replay_batch_id,idempotency_key,sequence_number,local_acquisition_time,upstream_ingest_time,late_arrival,duplicate_detected,gap_detected,reconciliation_status
+evt-001,batch-001,gw-001-dev-temp-001-001,1,2026-03-28T11:59:57Z,2026-03-28T12:00:01Z,false,false,false,none
+evt-002,batch-001,gw-001-dev-vib-001-002,2,2026-03-28T11:59:58Z,2026-03-28T12:00:02Z,false,false,false,none
+evt-003,batch-002,gw-001-dev-power-001-003,3,2026-03-28T11:59:30Z,2026-03-28T12:00:05Z,true,false,false,late_accepted
+evt-004,batch-003,gw-002-dev-motor-001-004,1,2026-03-28T11:55:00Z,2026-03-28T12:00:07Z,true,false,false,replayed
+evt-004-dup,batch-003,gw-002-dev-motor-001-004,1,2026-03-28T11:55:00Z,2026-03-28T12:00:08Z,true,true,false,deduplicated

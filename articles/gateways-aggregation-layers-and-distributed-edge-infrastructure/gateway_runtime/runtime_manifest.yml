@@ -1,0 +1,18 @@
+gateway_runtime:
+  gateway_id: "gw-001"
+  version: "0.1.0"
+  components:
+    - protocol_normalizer
+    - child_device_monitor
+    - gateway_buffer
+    - replay_manager
+    - selective_uplink_service
+    - local_policy_engine
+    - gateway_health_monitor
+  required_outputs:
+    - gateway_events
+    - site_state_events
+    - buffer_records
+    - protocol_error_records
+    - replay_records
+    - slo_records

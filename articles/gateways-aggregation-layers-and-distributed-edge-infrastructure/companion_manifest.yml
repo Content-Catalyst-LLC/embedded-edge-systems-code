@@ -1,0 +1,42 @@
+article:
+  title: "Gateways, Aggregation Layers, and Distributed Edge Infrastructure"
+  slug: "gateways-aggregation-layers-and-distributed-edge-infrastructure"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/gateways-aggregation-layers-and-distributed-edge-infrastructure/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/gateways-aggregation-layers-and-distributed-edge-infrastructure"
+
+technical_level: "engineering-grade gateway and aggregation scaffold"
+
+workflows:
+  mathematical_lens: "Aggregation, freshness, buffer backlog, gateway utilization, context-loss cost, site-state quality"
+  python:
+    - "Gateway Buffering, Aggregation, and Selective Uplink Simulation"
+    - "Replay, Deduplication, and Late-Arrival Validation"
+    - "Gateway SLO and Capacity-Budget Checks"
+    - "Protocol Mediation and Aggregation Quality Analysis"
+  r: "Gateway Fleet Reliability and Aggregation Reporting"
+  sql: "Child-device registry, gateway events, site state, buffer records, protocol errors, replay events"
+  c: "Telemetry packet formation, child heartbeat, buffer watermark checking"
+  cpp: "Gateway runtime state machine and aggregation-health abstraction"
+  rust: "Protocol-map, buffer-policy, replay-policy, and lineage validator"
+  go: "Gateway event router, selective uplink service, and health API scaffold"
+  micropython: "Child-device heartbeat and local telemetry prototype"
+  tinyml: "Gateway-side anomaly or device-health classification"
+  pynq: "Low-latency preprocessing, stream timestamping, and buffer-watermark validation"
+  hdl: "Stream timestamping, buffer watermarks, sync pulses, and telemetry framing"
+
+engineering_dimensions:
+  - gateway_manifest
+  - child_device_registry
+  - protocol_mediation
+  - aggregation_contract
+  - buffer_policy
+  - replay_policy
+  - deduplication
+  - selective_forwarding
+  - local_policy
+  - gateway_slo
+  - site_state_quality
+  - gateway_security
+  - observability
+  - recovery

@@ -1,0 +1,24 @@
+local_policy_manifest:
+  version: "policy-1.0"
+  authority_window_s: 300
+  rules:
+    high_vibration_alarm:
+      input: "vibration_g"
+      threshold: 0.75
+      action: "local_alarm_and_priority_uplink"
+      evidence_required:
+        - model_version
+        - input_window
+        - confidence
+        - policy_version
+    stale_device_alarm:
+      input: "device_freshness_s"
+      threshold_by_criticality:
+        high: 15
+        medium: 60
+        low: 300
+      action: "mark_site_state_degraded"
+    buffer_high_watermark:
+      input: "buffer_backlog"
+      threshold: 200
+      action: "reduce_routine_forwarding"

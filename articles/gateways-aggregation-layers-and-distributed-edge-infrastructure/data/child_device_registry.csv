@@ -1,0 +1,7 @@
+device_id,gateway_id,site_id,protocol_family,protocol_address,expected_heartbeat_s,firmware_version,physical_unit,device_role,criticality
+dev-temp-001,gw-001,site-a,i2c,0x48,30,fw-1.2,celsius,temperature_sensor,medium
+dev-vib-001,gw-001,site-a,spi,cs0,10,fw-2.0,g,vibration_sensor,high
+dev-power-001,gw-001,site-a,modbus,40001,15,fw-1.5,kW,power_meter,high
+dev-motor-001,gw-002,site-b,can,0x120,5,fw-3.1,rpm,motor_controller,high
+dev-humidity-001,gw-002,site-b,i2c,0x40,60,fw-1.0,percent,humidity_sensor,low
+dev-flow-001,gw-003,site-c,modbus,40020,20,fw-2.3,lpm,flow_meter,medium

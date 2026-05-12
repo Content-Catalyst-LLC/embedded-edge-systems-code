@@ -1,0 +1,30 @@
+gateway_manifest:
+  gateway_id: "gw-001"
+  site_id: "site-a"
+  hardware_class: "industrial_edge_gateway"
+  runtime_version: "gateway-runtime-0.1.0"
+  location: "site-a-mechanical-room"
+  upstream_targets:
+    - cloud_ingestion
+    - fleet_observability
+  downstream_protocols:
+    - i2c
+    - spi
+    - modbus
+    - can
+  managed_components:
+    - protocol_normalizer
+    - gateway_buffer
+    - aggregation_service
+    - selective_uplink_service
+    - local_policy_engine
+    - health_monitor
+  required_evidence:
+    - child_device_identity
+    - acquisition_time
+    - gateway_receipt_time
+    - aggregation_time
+    - upload_time
+    - upstream_ingest_time
+    - quality_flag
+    - protocol_map_version

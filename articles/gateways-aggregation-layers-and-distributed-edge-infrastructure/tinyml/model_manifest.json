@@ -1,0 +1,25 @@
+{
+  "model_name": "gateway_health_anomaly_classifier",
+  "model_version": "gateway-health-0.1.0",
+  "runtime_target": "tinyml-portable",
+  "quantization": "int8",
+  "input_schema": {
+    "features": [
+      {"name": "device_freshness_s", "type": "float32"},
+      {"name": "buffer_backlog", "type": "float32"},
+      {"name": "protocol_error_rate", "type": "float32"},
+      {"name": "replay_lag_s", "type": "float32"},
+      {"name": "lineage_complete", "type": "float32"},
+      {"name": "site_quality_score", "type": "float32"}
+    ]
+  },
+  "output_schema": {
+    "labels": ["normal", "warning", "fault"]
+  },
+  "governance": {
+    "model_version_telemetry_required": true,
+    "fallback_required": true,
+    "gateway_slo_required": true,
+    "local_decision_logging_required": true
+  }
+}

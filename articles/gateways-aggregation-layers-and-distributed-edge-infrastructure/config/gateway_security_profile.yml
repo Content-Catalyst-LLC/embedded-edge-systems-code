@@ -1,0 +1,20 @@
+gateway_security_profile:
+  version: "1.0.0"
+  identity:
+    gateway_identity_required: true
+    child_device_identity_required: true
+    scoped_upstream_credentials: true
+  controls:
+    credential_rotation: true
+    signed_updates: true
+    signed_policy_bundles: true
+    protocol_validation: true
+    schema_enforcement: true
+    local_buffer_encryption: true
+    retention_limits: true
+    access_control: true
+  trust_boundaries:
+    - child_device_to_gateway
+    - gateway_to_cloud
+    - local_policy_engine
+    - gateway_runtime_update_path

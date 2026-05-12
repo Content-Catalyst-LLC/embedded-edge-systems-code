@@ -1,0 +1,4 @@
+site_state_id,timestamp,site_id,gateway_id,aggregation_window_s,contributing_devices,expected_devices,missing_child_count,stale_device_count,protocol_error_count,lineage_gap_count,site_quality_score,aggregation_confidence,forwarded_upstream
+state-001,2026-03-28T12:00:00Z,site-a,gw-001,60,3,3,0,1,0,0,0.88,0.90,true
+state-002,2026-03-28T12:00:00Z,site-b,gw-002,60,2,2,2,2,1,1,0.42,0.45,true
+state-003,2026-03-28T12:00:00Z,site-c,gw-003,60,1,1,0,0,0,0,0.95,0.96,true
