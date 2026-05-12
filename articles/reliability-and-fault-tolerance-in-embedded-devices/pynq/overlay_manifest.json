@@ -1,0 +1,6 @@
+{
+  "overlay_name": "watchdog_heartbeat_monitor_overlay",
+  "purpose": "Demonstrate hardware-assisted heartbeat monitoring, timeout detection, and safe-output gating.",
+  "interfaces": ["AXI Lite", "GPIO heartbeat", "GPIO safe_output"],
+  "outputs": ["heartbeat_count", "timeout_count", "safe_state_signal"]
+}

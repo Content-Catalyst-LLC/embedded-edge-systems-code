@@ -1,0 +1,25 @@
+article:
+  title: "Reliability and Fault Tolerance in Embedded Devices"
+  slug: "reliability-and-fault-tolerance-in-embedded-devices"
+  series: "Embedded and Edge Systems"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/reliability-and-fault-tolerance-in-embedded-devices"
+
+technical_level: "engineering-grade embedded dependability scaffold"
+
+workflows:
+  mathematical_lens: "Reliability, failure rate, detection coverage, recovery coverage, recovery time, and availability"
+  python:
+    - "Fault Injection, Recovery Coverage, and Availability Simulation"
+    - "Reset, degraded-mode, safe-state, and diagnostic-event modeling"
+  r: "Fleet Reliability, Reset Patterns, and Fault-Tolerance Reporting"
+  sql: "Fault model, reset cause, diagnostic telemetry, recovery evidence, and lifecycle-response schema"
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - micropython
+    - tinyml
+    - pynq
+    - hdl
+    - bash

@@ -1,0 +1,14 @@
+{
+  "model_name": "reliability_anomaly_screening_stub",
+  "purpose": "Screen local diagnostic telemetry for possible reliability anomalies",
+  "input_features": [
+    "reset_rate",
+    "watchdog_count",
+    "brownout_count",
+    "queue_overrun_count",
+    "crc_failure_count",
+    "uptime_before_reset_s"
+  ],
+  "classes": ["normal", "degraded", "escalate"],
+  "notes": "TinyML anomaly screening should complement explicit watchdog, fault, and safe-state logic, not replace it."
+}

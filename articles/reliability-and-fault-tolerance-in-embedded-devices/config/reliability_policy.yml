@@ -1,0 +1,25 @@
+reliability_policy:
+  version: "1.0.0"
+  watchdog:
+    type: "health_consensus"
+    require_critical_task_heartbeat: true
+    require_queue_below_threshold: true
+    require_state_validation: true
+    max_consecutive_watchdog_resets: 3
+  recovery_hierarchy:
+    - retry
+    - local_reset
+    - subsystem_restart
+    - degraded_mode
+    - full_reboot
+    - safe_shutdown
+  thresholds:
+    max_recovery_time_ms: 10000
+    max_service_loss_s: 60
+    max_consecutive_resets_before_safe_state: 3
+    min_detection_coverage_target: 0.90
+    min_recovery_coverage_target: 0.85
+  safe_state:
+    preserve_diagnostics: true
+    disable_hazardous_outputs: true
+    maintain_heartbeat_if_possible: true

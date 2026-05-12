@@ -1,0 +1,5 @@
+reset_id,device_id,reset_time,reset_cause,firmware_version,uptime_before_reset_s,brownout_count,watchdog_count,last_fault_class,persistent_state_valid
+rst-001,node-003,2026-03-28T12:10:04Z,brownout,fw-2.0.1,86400,1,0,transient,true
+rst-002,node-005,2026-03-28T12:20:03Z,watchdog,fw-2.1.0,345600,0,1,intermittent,true
+rst-003,node-005,2026-03-28T12:30:03Z,watchdog,fw-2.1.0,600,0,2,intermittent,true
+rst-004,node-005,2026-03-28T12:35:05Z,watchdog,fw-2.1.0,300,0,3,intermittent,true

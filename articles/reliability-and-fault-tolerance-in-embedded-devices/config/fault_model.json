@@ -1,0 +1,29 @@
+{
+  "manifest_version": "1.0.0",
+  "article": "reliability-and-fault-tolerance-in-embedded-devices",
+  "fault_classes": [
+    {
+      "class": "transient",
+      "examples": ["comm_timeout", "emi_bit_flip", "temporary_sensor_glitch"],
+      "preferred_response": ["retry", "local_reset"]
+    },
+    {
+      "class": "intermittent",
+      "examples": ["watchdog_timeout", "connector_intermittency", "rare_timing_race"],
+      "preferred_response": ["subsystem_restart", "degraded_mode", "service_escalation"]
+    },
+    {
+      "class": "permanent",
+      "examples": ["flash_crc_failure", "failed_sensor", "damaged_peripheral"],
+      "preferred_response": ["failover", "safe_shutdown", "replacement"]
+    }
+  ],
+  "required_evidence": [
+    "reset_cause",
+    "fault_counter",
+    "recovery_action",
+    "recovery_success",
+    "degraded_mode",
+    "persistent_state_valid"
+  ]
+}

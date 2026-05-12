@@ -1,0 +1,7 @@
+device_id,device_class,site_id,firmware_version,install_date,last_service_date,criticality,watchdog_policy,safe_state_policy
+node-001,environmental_node,site-a,fw-1.4.0,2026-01-05,2026-03-01,medium,health_consensus,heartbeat_only
+node-002,industrial_sensor,site-b,fw-1.4.0,2026-01-12,2026-02-28,medium,health_consensus,degraded_sampling
+node-003,edge_gateway,site-c,fw-2.0.1,2025-12-15,2026-03-03,high,windowed_watchdog,local_buffering
+node-004,actuator_controller,site-d,fw-2.0.1,2025-11-20,2026-02-20,high,windowed_watchdog,output_clamp
+node-005,edge_gateway,site-e,fw-2.1.0,2026-02-01,2026-03-10,high,health_consensus,local_buffering
+node-006,remote_logger,site-f,fw-2.1.0,2026-02-11,2026-03-12,low,basic_watchdog,degraded_logging

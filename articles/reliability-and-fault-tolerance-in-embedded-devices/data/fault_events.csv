@@ -1,0 +1,9 @@
+event_id,device_id,firmware_version,event_time,fault_class,fault_source,detection_mechanism,detected,recovery_action,recovery_success,recovery_time_ms,degraded_mode,safe_state_entered,service_loss_s
+evt-001,node-001,fw-1.4.0,2026-03-28T12:00:00Z,transient,comm_timeout,timeout_monitor,true,retry,true,120,false,false,0
+evt-002,node-002,fw-1.4.0,2026-03-28T12:05:00Z,intermittent,sensor_stale,plausibility_check,true,local_reset,true,840,true,false,3
+evt-003,node-003,fw-2.0.1,2026-03-28T12:10:00Z,transient,brownout,brownout_detector,true,full_reboot,true,4200,true,false,12
+evt-004,node-004,fw-2.0.1,2026-03-28T12:15:00Z,permanent,flash_crc,crc_check,true,safe_shutdown,true,6000,true,true,60
+evt-005,node-005,fw-2.1.0,2026-03-28T12:20:00Z,intermittent,watchdog_timeout,watchdog,true,full_reboot,true,3500,true,false,10
+evt-006,node-006,fw-2.1.0,2026-03-28T12:25:00Z,latent,queue_overflow,not_detected,false,none,false,0,false,false,120
+evt-007,node-005,fw-2.1.0,2026-03-28T12:30:00Z,intermittent,watchdog_timeout,watchdog,true,full_reboot,true,3600,true,false,10
+evt-008,node-005,fw-2.1.0,2026-03-28T12:35:00Z,intermittent,watchdog_timeout,watchdog,true,safe_shutdown,true,5200,true,true,300
