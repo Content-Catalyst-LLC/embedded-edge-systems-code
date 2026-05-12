@@ -1,0 +1,21 @@
+{
+  "article_slug": "device-lifecycle-management-and-over-the-air-updating",
+  "model_name": "edge_policy_anomaly_model",
+  "model_version": "0.1.0",
+  "runtime_target": "tinyml-portable",
+  "quantization": "int8",
+  "input_schema": {
+    "features": [
+      {"name": "sensor_value", "type": "float32", "unit": "normalized"},
+      {"name": "device_temperature", "type": "float32", "unit": "celsius"},
+      {"name": "voltage_state", "type": "float32", "unit": "normalized"}
+    ]
+  },
+  "governance": {
+    "local_only_default": true,
+    "fallback_required": true,
+    "rollback_model_version": "0.0.1",
+    "requires_manifest_validation": true,
+    "requires_lifecycle_record": true
+  }
+}

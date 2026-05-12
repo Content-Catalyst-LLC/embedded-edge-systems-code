@@ -24,3 +24,7 @@ governance_dimensions:
   - rollback_readiness
   - observability
   - lifecycle_drift
+
+companion_code_extensions:
+  tinyml: "Constrained on-device inference, model metadata, fallback behavior, and TinyML lifecycle governance"
+  pynq: "FPGA-backed edge acceleration, overlay metadata, bitstream compatibility, interface contracts, and acceleration lifecycle governance"

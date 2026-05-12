@@ -16,3 +16,10 @@ The workflows model interoperability as a governance capacity across heterogeneo
 - Device metadata and profile examples
 
 The goal is not to represent one vendor stack. It is to show how standards, APIs, schemas, lifecycle state, support status, and governance evidence can be represented computationally across a heterogeneous edge estate.
+
+## TinyML and PYNQ companion code
+
+This article directory includes TinyML and PYNQ scaffolds as part of the Embedded & Edge Systems companion-code standard.
+
+- `tinyml/` represents constrained on-device inference, model metadata, fallback behavior, and TinyML lifecycle governance.
+- `pynq/` represents FPGA-backed edge acceleration, overlay metadata, bitstream compatibility, interface contracts, and acceleration lifecycle governance.

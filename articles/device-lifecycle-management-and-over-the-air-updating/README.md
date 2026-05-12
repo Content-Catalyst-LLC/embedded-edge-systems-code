@@ -16,3 +16,10 @@ The workflows model device lifecycle management and OTA updating as a trust-pres
 - Hardware/device profiles for compatibility and support-state modeling
 
 The goal is to show how identity, compatibility, validation, rollout staging, rollback, observability, and retirement can be represented as reproducible evidence rather than informal operational knowledge.
+
+## TinyML and PYNQ companion code
+
+This article directory includes TinyML and PYNQ scaffolds as part of the Embedded & Edge Systems companion-code standard.
+
+- `tinyml/` represents constrained on-device inference, model metadata, fallback behavior, and TinyML lifecycle governance.
+- `pynq/` represents FPGA-backed edge acceleration, overlay metadata, bitstream compatibility, interface contracts, and acceleration lifecycle governance.

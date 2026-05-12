@@ -23,3 +23,7 @@ governance_dimensions:
   - trust_security_baseline
   - operational_accountability
   - unmanaged_divergence
+
+companion_code_extensions:
+  tinyml: "Constrained on-device inference, model metadata, fallback behavior, and TinyML lifecycle governance"
+  pynq: "FPGA-backed edge acceleration, overlay metadata, bitstream compatibility, interface contracts, and acceleration lifecycle governance"
