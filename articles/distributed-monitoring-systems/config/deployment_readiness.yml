@@ -1,0 +1,16 @@
+deployment_readiness:
+  version: "1.0.0"
+  required_gates:
+    monitoring_objective_defined: true
+    topology_reviewed: true
+    inference_boundaries_documented: true
+    node_inventory_complete: true
+    timing_policy_validated: true
+    transport_path_tested: true
+    buffering_and_replay_tested: true
+    quality_policy_implemented: true
+    fault_containment_implemented: true
+    gateway_behavior_documented: true
+    aggregation_lineage_preserved: true
+    monitoring_observability_implemented: true
+    incident_reconstruction_ready: true

@@ -1,0 +1,24 @@
+{
+  "schema_name": "distributed_monitoring_node_inventory",
+  "required_fields": [
+    "node_id",
+    "site_id",
+    "coverage_zone",
+    "node_role",
+    "node_class",
+    "sensor_family",
+    "connectivity_state",
+    "health_state",
+    "calibration_state",
+    "clock_state",
+    "firmware_version",
+    "configuration_version",
+    "owner",
+    "latitude",
+    "longitude",
+    "battery_percent",
+    "heartbeat_age_seconds",
+    "expected_reporting_interval_seconds",
+    "node_authority"
+  ]
+}

@@ -1,0 +1,7 @@
+coverage_zone,site_id,required_nodes,min_reference_nodes,criticality,claim_scope,area_required,notes
+zone-upstream,site-water,1,1,high,node_and_zone,1.0,Upstream reference observation for propagation analysis
+zone-midstream,site-water,1,0,medium,zone,1.0,Midstream gradient detection
+zone-downstream,site-water,1,0,high,zone_and_propagation,1.0,Downstream event propagation check
+zone-industrial-boundary,site-air,1,1,high,node_and_zone,1.0,Boundary air quality reference monitoring
+zone-neighborhood,site-air,1,0,medium,zone,1.0,Neighborhood exposure monitoring
+zone-facility-a,site-industrial,2,0,high,asset_and_site,1.0,Industrial asset health monitoring

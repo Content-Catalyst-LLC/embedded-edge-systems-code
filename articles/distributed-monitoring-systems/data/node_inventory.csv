@@ -1,0 +1,9 @@
+node_id,site_id,coverage_zone,node_role,node_class,sensor_family,connectivity_state,health_state,calibration_state,clock_state,firmware_version,configuration_version,owner,latitude,longitude,battery_percent,heartbeat_age_seconds,expected_reporting_interval_seconds,node_authority
+node-water-upstream-001,site-water,zone-upstream,reference,fixed,water_quality,online,healthy,valid,synchronized,fw-1.0,cfg-1.0,water-team,38.6101,-90.2011,100,30,60,high
+node-water-midstream-001,site-water,zone-midstream,field,fixed,water_quality,online,healthy,valid,synchronized,fw-1.0,cfg-1.0,water-team,38.6201,-90.2111,88,45,60,medium
+node-water-downstream-001,site-water,zone-downstream,field,fixed,water_quality,degraded,healthy,valid,sync_degraded,fw-1.0,cfg-1.0,water-team,38.6301,-90.2211,76,480,60,medium
+node-air-boundary-001,site-air,zone-industrial-boundary,reference,fixed,air_quality,online,healthy,valid,synchronized,fw-2.0,cfg-2.0,air-team,38.6401,-90.2311,100,20,60,high
+node-air-neighborhood-001,site-air,zone-neighborhood,field,battery,air_quality,offline,unknown,valid,unknown,fw-2.0,cfg-2.0,air-team,38.6501,-90.2411,12,7200,300,medium
+node-vib-facility-001,site-industrial,zone-facility-a,field,wired,vibration,online,degraded,drift_warning,synchronized,fw-3.1,cfg-3.0,maintenance-team,38.6601,-90.2511,100,10,30,medium
+node-temp-facility-001,site-industrial,zone-facility-a,field,wired,temperature,online,healthy,valid,synchronized,fw-3.1,cfg-3.0,maintenance-team,38.6602,-90.2512,100,15,30,medium
+node-edge-gateway-observer-001,site-industrial,zone-facility-a,gateway_observer,edge,mixed,online,healthy,valid,synchronized,fw-4.0,cfg-4.0,edge-team,38.6603,-90.2513,100,5,30,high

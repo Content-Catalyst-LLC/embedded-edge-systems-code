@@ -1,0 +1,18 @@
+{
+  "schema_name": "distributed_monitoring_health",
+  "schema_version": "1.0.0",
+  "signals": [
+    "node_heartbeat_age",
+    "telemetry_freshness_seconds",
+    "coverage_completeness",
+    "clock_synchronization_status",
+    "queue_depth",
+    "sequence_gaps",
+    "calibration_status",
+    "gateway_child_node_reporting_rate",
+    "quality_state_distribution",
+    "aggregation_confidence",
+    "monitoring_state",
+    "inference_boundary"
+  ]
+}

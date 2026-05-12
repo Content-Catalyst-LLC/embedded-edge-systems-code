@@ -1,0 +1,20 @@
+incident_reconstruction_policy:
+  version: "1.0.0"
+  required_evidence:
+    - node_inventory_snapshot
+    - topology_zone
+    - gateway_state
+    - event_time
+    - upload_time
+    - ingestion_time
+    - processing_time
+    - quality_state
+    - calibration_state
+    - clock_skew_ms
+    - sequence_number
+    - replay_batch_id
+    - idempotency_key
+    - aggregation_id
+    - source_event_ids
+    - inference_boundary
+    - monitoring_state

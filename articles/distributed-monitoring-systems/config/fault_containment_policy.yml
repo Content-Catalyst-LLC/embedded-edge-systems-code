@@ -1,0 +1,37 @@
+fault_containment_policy:
+  version: "1.0.0"
+  allowed_uses:
+    valid_fresh_synchronized:
+      - normal_monitoring
+      - aggregation
+      - alerts
+      - operational_reporting
+    stale:
+      - historical_reconstruction
+      - trend_backfill
+    low_confidence:
+      - diagnostic_review
+      - qualified_trend_context
+    sync_degraded:
+      - slow_trend_if_allowed
+    coverage_degraded:
+      - local_observed_zone_claims_only
+    gateway_replay:
+      - historical_recovery
+    node_drift_warning:
+      - diagnostic_review
+      - provisional_monitoring
+    visibility_lost: []
+  blocked_uses:
+    stale:
+      - live_dashboard_state
+      - real_time_alerting
+      - control_decisions
+    sync_degraded:
+      - event_propagation_analysis
+      - synchronized_fusion
+    coverage_degraded:
+      - unqualified_system_level_claims
+    visibility_lost:
+      - current_state_claims
+      - system_level_claims

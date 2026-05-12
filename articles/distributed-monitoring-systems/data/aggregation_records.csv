@@ -1,0 +1,4 @@
+aggregation_id,site_id,coverage_zone,aggregation_type,source_event_ids,source_node_count,required_node_count,quality_state,confidence,aggregation_time,lineage_complete,inference_boundary
+agg-water-propagation-001,site-water,zone-downstream,propagation_check,"evt-water-001|evt-water-002|evt-water-003",3,3,sync_degraded,0.45,2026-03-28T12:10:30Z,true,not_for_time_sensitive_propagation
+agg-air-boundary-001,site-air,zone-industrial-boundary,zone_summary,"evt-air-001|evt-air-002",2,2,coverage_degraded,0.50,2026-03-28T12:20:30Z,true,zone_claim_qualified
+agg-industrial-001,site-industrial,zone-facility-a,asset_summary,"evt-vib-001|evt-temp-001",2,2,low_confidence,0.70,2026-03-28T12:16:00Z,true,diagnostic_only

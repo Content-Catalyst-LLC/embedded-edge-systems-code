@@ -1,0 +1,32 @@
+{
+  "model_name": "distributed_monitoring_state_classifier_stub",
+  "model_version": "monitoring-state-0.1.0",
+  "runtime_target": "tinyml-portable",
+  "quantization": "int8",
+  "input_schema": {
+    "features": [
+      "heartbeat_age_seconds",
+      "expected_reporting_interval_seconds",
+      "clock_skew_ms",
+      "battery_percent",
+      "queue_pressure",
+      "signal_quality",
+      "calibration_valid"
+    ]
+  },
+  "output_schema": {
+    "labels": [
+      "observed_valid",
+      "observed_low_confidence",
+      "observed_stale",
+      "sync_degraded",
+      "visibility_lost"
+    ]
+  },
+  "governance": {
+    "confidence_required": true,
+    "fallback_required": true,
+    "quality_gate_required": true,
+    "cannot_override_fault_containment": true
+  }
+}

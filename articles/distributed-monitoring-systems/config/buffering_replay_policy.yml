@@ -1,0 +1,9 @@
+buffering_replay_policy:
+  version: "1.0.0"
+  require_replay_batch_id_for_backfill: true
+  require_idempotency_key: true
+  require_event_time_ordering: true
+  duplicate_detection_enabled: true
+  backfill_blocks_live_alerts: true
+  preserve_drop_reason: true
+  preserve_queue_depth: true

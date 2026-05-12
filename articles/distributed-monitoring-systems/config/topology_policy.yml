@@ -1,0 +1,11 @@
+topology_policy:
+  version: "1.0.0"
+  required_fields:
+    - coverage_zone
+    - required_nodes
+    - min_reference_nodes
+    - criticality
+    - claim_scope
+  coverage_complete_requires_active_node_per_required_zone: true
+  high_criticality_requires_reference_or_explicit_exception: true
+  topology_change_requires_record: true

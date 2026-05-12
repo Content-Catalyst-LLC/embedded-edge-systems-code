@@ -1,0 +1,4 @@
+gateway_id,site_id,coverage_zone,connectivity_state,health_state,child_node_count,child_nodes_reporting,buffer_depth,buffer_capacity,mean_upload_latency_seconds,active_rule_version,approved_rule_version,transformation_lineage_preserved
+gw-water-001,site-water,zone-midstream,online,healthy,3,3,20,1000,4,rule-1.0,rule-1.0,true
+gw-air-001,site-air,zone-industrial-boundary,degraded,degraded,2,1,720,1000,600,rule-0.9,rule-1.0,true
+gw-industrial-001,site-industrial,zone-facility-a,online,healthy,3,3,70,1000,8,rule-1.0,rule-1.0,true

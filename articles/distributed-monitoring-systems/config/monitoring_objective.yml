@@ -1,0 +1,17 @@
+monitoring_objective:
+  version: "1.0.0"
+  purpose:
+    - early_warning
+    - trend_analysis
+    - diagnostics
+    - situational_awareness
+  current_state_claims_require:
+    freshness: true
+    synchronization: true
+    quality_valid: true
+    coverage_complete: true
+  historical_claims_require:
+    event_time: true
+    lineage: true
+    idempotency: true
+    quality_state: true

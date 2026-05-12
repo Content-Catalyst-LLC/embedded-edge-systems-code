@@ -1,0 +1,4 @@
+incident_id,site_id,coverage_zone,incident_type,detected_time,linked_events,monitoring_state,operator_action
+inc-air-001,site-air,zone-neighborhood,visibility_gap,2026-03-28T12:20:10Z,evt-air-002|evt-air-002-dup,visibility_lost,escalate_gateway_and_node_maintenance
+inc-water-001,site-water,zone-downstream,sync_degraded,2026-03-28T12:10:04Z,evt-water-003,sync_degraded,exclude_from_propagation_analysis_until_resync
+inc-industrial-001,site-industrial,zone-facility-a,node_drift_warning,2026-03-28T12:15:03Z,evt-vib-001,observed_low_confidence,schedule_recalibration

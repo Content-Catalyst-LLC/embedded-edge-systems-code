@@ -1,0 +1,14 @@
+aggregation_manifest:
+  version: "1.0.0"
+  aggregation_requires:
+    source_event_ids: true
+    source_node_count: true
+    required_node_count: true
+    quality_state: true
+    confidence: true
+    lineage_complete: true
+    inference_boundary: true
+  confidence_weighting_enabled: true
+  low_confidence_records_reduce_weight: true
+  stale_records_block_live_aggregation: true
+  sync_degraded_records_block_propagation_analysis: true

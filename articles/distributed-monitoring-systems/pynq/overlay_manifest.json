@@ -1,0 +1,45 @@
+{
+  "overlay_name": "distributed_monitoring_gateway_quality_overlay",
+  "overlay_version": "0.1.0",
+  "bitstream_file": "distributed_monitoring_gateway_quality.bit",
+  "hardware_target": "pynq-compatible",
+  "interfaces": [
+    {
+      "name": "monitoring_stream_in",
+      "type": "AXI-Stream",
+      "direction": "input"
+    },
+    {
+      "name": "monitoring_stream_out",
+      "type": "AXI-Stream",
+      "direction": "output"
+    },
+    {
+      "name": "timestamp_counter",
+      "type": "AXI-Lite",
+      "direction": "bidirectional"
+    },
+    {
+      "name": "event_trigger",
+      "type": "GPIO",
+      "direction": "output"
+    },
+    {
+      "name": "queue_pressure_signal",
+      "type": "GPIO",
+      "direction": "output"
+    },
+    {
+      "name": "quality_state_frame",
+      "type": "AXI-Stream",
+      "direction": "output"
+    }
+  ],
+  "validation": {
+    "records_timestamp": true,
+    "records_event_trigger": true,
+    "records_queue_pressure": true,
+    "records_quality_frame": true,
+    "preserves_node_lineage": true
+  }
+}

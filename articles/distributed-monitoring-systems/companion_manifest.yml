@@ -1,0 +1,29 @@
+article:
+  title: "Distributed Monitoring Systems"
+  slug: "distributed-monitoring-systems"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/distributed-monitoring-systems/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/distributed-monitoring-systems"
+
+technical_level: "engineering-grade distributed monitoring scaffold"
+
+workflows:
+  mathematical_lens: "Coverage, freshness, synchronization, delivery, quality gating, fault containment, and monitoring health"
+  python:
+    - "Distributed Monitoring Health and Coverage Analysis"
+    - "Inference Boundary and Fault Containment Evaluation"
+    - "Replay, Freshness, and Synchronization Validation"
+    - "Aggregation Lineage and Confidence Evaluation"
+    - "Deployment Readiness Gate"
+  r: "Fleet-Level Monitoring Quality Reporting"
+  sql: "Nodes, topology zones, telemetry records, gateway state, aggregation lineage, and incident reconstruction"
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - micropython
+    - tinyml
+    - pynq
+    - hdl
+    - bash

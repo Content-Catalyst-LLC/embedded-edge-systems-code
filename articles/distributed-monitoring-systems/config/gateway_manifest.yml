@@ -1,0 +1,17 @@
+gateway_manifest:
+  version: "1.0.0"
+  required_evidence:
+    - gateway_id
+    - child_node_count
+    - child_nodes_reporting
+    - buffer_depth
+    - buffer_capacity
+    - transformation_lineage_preserved
+    - active_rule_version
+    - approved_rule_version
+  transformations:
+    preserve_source_node_id: true
+    preserve_event_time: true
+    preserve_quality_state: true
+    preserve_coverage_zone: true
+    preserve_gateway_id: true

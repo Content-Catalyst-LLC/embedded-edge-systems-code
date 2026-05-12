@@ -1,0 +1,8 @@
+transport_policy:
+  version: "1.0.0"
+  require_sequence_number: true
+  require_delivery_metadata: true
+  require_drop_reason: true
+  require_retry_count: true
+  require_gateway_receive_time: true
+  loss_visibility_required: true

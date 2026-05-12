@@ -1,0 +1,14 @@
+quality_policy:
+  version: "1.0.0"
+  valid_quality_states:
+    - valid
+    - low_confidence
+    - stale
+    - sync_degraded
+    - coverage_degraded
+    - gateway_replay
+    - node_drift_warning
+    - visibility_lost
+  calibration_valid_required_for_normal_use: true
+  drift_warning_reduces_node_authority: true
+  uncertainty_or_confidence_required_for_aggregation: true

@@ -1,0 +1,10 @@
+timing_policy:
+  version: "1.0.0"
+  freshness_threshold_seconds: 300
+  max_allowed_clock_skew_ms: 1000
+  propagation_analysis_max_skew_ms: 250
+  require_event_time: true
+  require_upload_time: true
+  require_ingestion_time: true
+  require_processing_time: true
+  stale_blocks_real_time_use: true
