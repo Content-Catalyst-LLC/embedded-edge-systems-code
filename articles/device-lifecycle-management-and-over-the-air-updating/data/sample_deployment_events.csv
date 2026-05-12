@@ -1,0 +1,8 @@
+timestamp,device_id,package_id,phase,status,error_code
+2026-03-28T12:00:00Z,edge-gw-001,ota-3-5-0,download,succeeded,
+2026-03-28T12:03:00Z,edge-gw-001,ota-3-5-0,install,succeeded,
+2026-03-28T12:05:00Z,edge-gw-001,ota-3-5-0,apply,succeeded,
+2026-03-28T12:10:00Z,sensor-014,ota-2-2-0,download,succeeded,
+2026-03-28T12:13:00Z,sensor-014,ota-2-2-0,install,deferred,LOW_BATTERY
+2026-03-28T12:20:00Z,plc-007,ota-5-9-1,download,succeeded,
+2026-03-28T12:23:00Z,plc-007,ota-5-9-1,install,failed,ROLLBACK_NOT_READY

@@ -1,0 +1,26 @@
+article:
+  title: "Device Lifecycle Management and Over-the-Air Updating"
+  slug: "device-lifecycle-management-and-over-the-air-updating"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/device-lifecycle-management-and-over-the-air-updating/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/device-lifecycle-management-and-over-the-air-updating"
+
+workflows:
+  mathematical_lens: "OTA readiness as lifecycle trust capacity"
+  python: "OTA Fleet Readiness and Rollout Risk Scoring"
+  r: "Lifecycle Compliance and Update Status Reporting Across Device Fleets"
+  sql: "Device lifecycle and OTA evidence data model"
+  c: "A/B update slot and rollback-state simulation"
+  cpp: "Staged rollout planner for edge device groups"
+  rust: "Lifecycle policy validator for support state and rollback readiness"
+  go: "OTA deployment status service"
+  tinyml: "TinyML update-gating stub for constrained inference devices"
+
+governance_dimensions:
+  - device_identity
+  - compatibility_match
+  - package_integrity
+  - validation_status
+  - rollback_readiness
+  - observability
+  - lifecycle_drift

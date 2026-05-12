@@ -1,0 +1,6 @@
+device_id,site,vendor,device_class,hardware_rev,current_firmware,target_firmware,support_state,rollout_ring,identity_assurance,compatibility_match,package_integrity,validation_status,rollback_readiness,observability,lifecycle_drift,last_checkin_hours
+edge-gw-001,chicago,VendorA,gateway,revC,3.4.1,3.5.0,supported,canary,0.95,0.92,0.98,0.90,0.88,0.91,0.08,2
+sensor-014,chicago,VendorB,sensor,revB,2.1.8,2.2.0,supported,ring-1,0.88,0.86,0.96,0.82,0.74,0.80,0.18,7
+plc-007,detroit,VendorC,controller,revD,5.8.0,5.9.1,limited-support,ring-2,0.91,0.78,0.97,0.76,0.68,0.72,0.28,19
+camera-021,stlouis,VendorD,edge-ai-device,revA,1.9.2,2.0.0,end-of-support,blocked,0.62,0.40,0.90,0.35,0.20,0.44,0.52,84
+gw-nyc-009,newyork,VendorA,gateway,revC,3.4.1,3.5.0,supported,ring-1,0.94,0.91,0.98,0.89,0.86,0.90,0.10,3

@@ -1,0 +1,5 @@
+package_id,target_firmware,device_class,hardware_rev_required,package_type,signature_valid,rollback_supported,release_channel
+ota-3-5-0,3.5.0,gateway,revC,image,true,true,stable
+ota-2-2-0,2.2.0,sensor,revB,package,true,true,stable
+ota-5-9-1,5.9.1,controller,revD,package,true,false,maintenance
+ota-2-0-0-ai,2.0.0,edge-ai-device,revB,image,true,true,preview

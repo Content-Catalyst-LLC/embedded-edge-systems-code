@@ -1,0 +1,17 @@
+{
+  "device_profile": {
+    "device_id": "edge-gw-001",
+    "device_class": "gateway",
+    "hardware_rev": "revC",
+    "processor": "ARM Cortex-A class",
+    "memory_mb": 2048,
+    "storage_gb": 32,
+    "network_interfaces": ["ethernet", "wifi", "lte"],
+    "secure_boot": true,
+    "remote_update": true,
+    "ab_slots": true,
+    "rollback_supported": true,
+    "local_inference": true,
+    "update_evidence_required": true
+  }
+}
