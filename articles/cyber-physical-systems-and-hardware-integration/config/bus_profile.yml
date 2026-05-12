@@ -1,0 +1,20 @@
+bus_profile:
+  buses:
+    - bus_id: "can0"
+      protocol: "CAN FD"
+      role: "distributed_motor_status"
+      deterministic_priority_required: true
+      max_message_age_ms: 5.0
+      max_bus_load_percent: 70
+      retry_limit: 2
+      error_handling:
+        stale_message: "degrade"
+        repeated_error_frames: "safe_stop"
+    - bus_id: "i2c1"
+      protocol: "I2C"
+      role: "temperature_sensor_bus"
+      max_message_age_ms: 250.0
+      retry_limit: 3
+      error_handling:
+        timeout: "use_last_valid_then_degrade"
+        repeated_timeout: "safe_stop"

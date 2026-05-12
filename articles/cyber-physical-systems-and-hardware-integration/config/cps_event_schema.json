@@ -1,0 +1,30 @@
+{
+  "schema_name": "cyber_physical_system_event",
+  "schema_version": "1.0.0",
+  "required_fields": [
+    "timestamp",
+    "device_id",
+    "subsystem",
+    "operating_mode",
+    "sensor_age_ms",
+    "measurement",
+    "estimate",
+    "candidate_command",
+    "filtered_command",
+    "actuator_saturated",
+    "deadline_missed",
+    "loop_jitter_ms",
+    "deadline_slack_ms",
+    "interface_error",
+    "safety_state",
+    "total_uncertainty",
+    "uncertainty_budget"
+  ],
+  "field_definitions": {
+    "measurement": "calibrated sensor measurement",
+    "estimate": "estimated physical state used by cyber logic",
+    "candidate_command": "command proposed by controller or decision function",
+    "filtered_command": "command allowed after runtime assurance",
+    "total_uncertainty": "combined measurement, calibration, quantization, estimation, and model uncertainty"
+  }
+}

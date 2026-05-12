@@ -1,0 +1,14 @@
+{
+  "device_id": "cps-node-001",
+  "hardware_class": "cyber_physical_embedded_control_node",
+  "sensors": ["quadrature_encoder", "current_sensor", "temperature_sensor"],
+  "actuators": ["pwm_motor_driver"],
+  "interfaces": ["pwm", "adc", "quadrature_encoder", "can_fd", "i2c"],
+  "timers": ["control_loop_timer", "watchdog_timer", "timestamp_counter"],
+  "pynq_or_fpga_acceleration_supported": true,
+  "tinyml_anomaly_detection_supported": true,
+  "watchdog_supported": true,
+  "emergency_stop_supported": true,
+  "safety_gate_supported": true,
+  "interface_contracts_required": true
+}

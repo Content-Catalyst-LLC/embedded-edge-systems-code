@@ -1,0 +1,11 @@
+uncertainty_budget:
+  signal: "motor_speed_rpm"
+  total_budget_rpm: 35.0
+  components:
+    sensor_noise_rpm: 8.0
+    calibration_error_rpm: 6.0
+    quantization_error_rpm: 3.0
+    estimation_error_rpm: 10.0
+    model_error_rpm: 8.0
+  warning_fraction: 0.80
+  fault_fraction: 1.00

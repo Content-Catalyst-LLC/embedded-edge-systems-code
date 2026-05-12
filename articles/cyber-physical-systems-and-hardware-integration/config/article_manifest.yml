@@ -1,0 +1,34 @@
+article:
+  title: "Cyber-Physical Systems and Hardware Integration"
+  slug: "cyber-physical-systems-and-hardware-integration"
+  series: "Embedded and Edge Systems"
+  repository_root: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code"
+  article_repository_path: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/cyber-physical-systems-and-hardware-integration"
+
+companion_stack:
+  analytics:
+    - python
+    - r
+    - sql
+    - notebooks
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - bash
+  embedded:
+    - firmware
+    - hardware
+    - micropython
+    - tinyml
+  acceleration:
+    - pynq
+    - hdl
+  research_grade_artifacts:
+    - interface_contracts
+    - uncertainty_budgets
+    - requirements_traceability_matrix
+    - digital_twin
+    - hardware_in_the_loop
+    - validation_reports

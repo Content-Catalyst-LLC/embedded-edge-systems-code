@@ -1,0 +1,20 @@
+digital_twin:
+  name: "motor_control_cps_digital_twin"
+  version: "0.1.0"
+  purpose: "Compare modeled CPS assumptions with observed telemetry"
+  model_links:
+    physical_process: "config/physical_interface_spec.yml"
+    sensors: "config/sensor_manifest.json"
+    actuators: "config/actuator_profile.yml"
+    timing: "config/timing_budget.yml"
+    uncertainty: "config/uncertainty_budget.yml"
+  required_evidence:
+    - measurements
+    - estimates
+    - candidate_commands
+    - filtered_commands
+    - timing_records
+    - uncertainty_records
+    - safety_states
+  warning:
+    digital_twin_is_not_valid_without_operational_evidence: true

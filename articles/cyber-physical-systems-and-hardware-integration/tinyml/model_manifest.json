@@ -1,0 +1,25 @@
+{
+  "model_name": "cps_integration_anomaly_detector",
+  "model_version": "0.1.0",
+  "runtime_target": "tinyml-portable",
+  "quantization": "int8",
+  "input_schema": {
+    "features": [
+      {"name": "sensor_age_ms", "type": "float32"},
+      {"name": "deadline_slack_ms", "type": "float32"},
+      {"name": "loop_jitter_ms", "type": "float32"},
+      {"name": "actuator_saturated", "type": "float32"},
+      {"name": "interface_error", "type": "float32"},
+      {"name": "uncertainty_fraction", "type": "float32"}
+    ]
+  },
+  "output_schema": {
+    "labels": ["normal", "warning", "fault"]
+  },
+  "governance": {
+    "runtime_assurance_required": true,
+    "fallback_required": true,
+    "requires_manifest_validation": true,
+    "records_lifecycle_evidence": true
+  }
+}

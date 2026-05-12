@@ -1,0 +1,19 @@
+timing_budget:
+  system: "embedded_motor_control_cps"
+  deadline_ms: 1.5
+  stages:
+    sense_ms: 0.20
+    convert_ms: 0.15
+    estimate_ms: 0.20
+    compute_ms: 0.20
+    safety_filter_ms: 0.10
+    communicate_ms: 0.20
+    actuate_ms: 0.15
+    watchdog_margin_ms: 0.30
+  jitter:
+    warning_ms: 0.25
+    maximum_ms: 0.35
+    fault_ms: 0.50
+  synchronization:
+    clock_sync_required: true
+    max_clock_offset_ms: 0.20

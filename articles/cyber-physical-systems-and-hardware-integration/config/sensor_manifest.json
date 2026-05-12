@@ -1,0 +1,35 @@
+{
+  "sensor_manifest": {
+    "system": "embedded_motor_control_cps",
+    "version": "1.0.0",
+    "sensors": [
+      {
+        "sensor_id": "encoder-001",
+        "type": "quadrature_encoder",
+        "signal": "motor_speed_rpm",
+        "sampling_hz": 1000,
+        "maximum_age_ms": 3.0,
+        "calibration_required": true,
+        "uncertainty_rpm": 8.0
+      },
+      {
+        "sensor_id": "current-001",
+        "type": "current_sensor",
+        "signal": "motor_current_a",
+        "sampling_hz": 500,
+        "maximum_age_ms": 5.0,
+        "calibration_required": true,
+        "uncertainty_a": 0.08
+      },
+      {
+        "sensor_id": "temperature-001",
+        "type": "temperature_sensor",
+        "signal": "driver_temperature_c",
+        "sampling_hz": 10,
+        "maximum_age_ms": 250.0,
+        "calibration_required": true,
+        "uncertainty_c": 1.5
+      }
+    ]
+  }
+}

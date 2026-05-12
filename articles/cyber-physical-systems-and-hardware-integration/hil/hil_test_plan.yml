@@ -1,0 +1,19 @@
+hil_test_plan:
+  version: "0.1.0"
+  target_system: "embedded_motor_control_cps"
+  tests:
+    - id: HIL-001
+      name: "stale sensor safe stop"
+      expected_behavior: "safe_stop"
+    - id: HIL-002
+      name: "deadline miss safe stop"
+      expected_behavior: "safe_stop"
+    - id: HIL-003
+      name: "actuator saturation command clipping"
+      expected_behavior: "command_clipped"
+    - id: HIL-004
+      name: "thermal warning derating"
+      expected_behavior: "thermal_derate"
+    - id: HIL-005
+      name: "uncertainty budget violation"
+      expected_behavior: "degraded_control"

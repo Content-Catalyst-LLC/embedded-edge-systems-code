@@ -1,0 +1,11 @@
+model_assumptions:
+  physical_process: "first-order motor speed response"
+  sensor_model: "noisy calibrated encoder-derived speed"
+  actuator_model: "bounded PWM command with saturation and slew limits"
+  timing_model: "fixed deadline with stochastic jitter"
+  uncertainty_model: "additive budget across sensor, calibration, quantization, estimation, and model error"
+validation_required:
+  - compare_simulation_to_hil
+  - compare_hil_to_field_data
+  - record_model_drift
+  - record_assumption_changes

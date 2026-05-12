@@ -1,0 +1,21 @@
+runtime_assurance:
+  name: "cps_command_filter"
+  version: "1.0.0"
+  checks:
+    sensor_freshness: true
+    timing_validity: true
+    actuator_bounds: true
+    thermal_limits: true
+    current_limits: true
+    uncertainty_budget: true
+    interface_contract_validity: true
+  reason_codes:
+    - allowed
+    - command_clipped
+    - slew_rate_limited
+    - stale_sensor_safe_stop
+    - deadline_miss_safe_stop
+    - thermal_derate
+    - thermal_fault_safe_stop
+    - uncertainty_budget_violation
+    - interface_contract_violation

@@ -1,0 +1,17 @@
+state_estimator:
+  name: "motor_speed_state_estimator"
+  version: "1.0.0"
+  state_vector:
+    - motor_speed_rpm
+    - current_a
+    - driver_temperature_c
+  filter:
+    type: "first_order_low_pass"
+    alpha: 0.25
+  residual_thresholds:
+    warning_rpm: 80
+    fault_rpm: 160
+  freshness_thresholds:
+    motor_speed_ms: 3.0
+    current_ms: 5.0
+    temperature_ms: 250.0

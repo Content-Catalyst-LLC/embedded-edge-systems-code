@@ -1,0 +1,5 @@
+timestamp,device_id,interface_name,error_type,retry_count,bus_load_percent,message_age_ms,clock_sync_valid
+2026-03-28T12:00:00Z,cps-001,can0,none,0,41,0.8,true
+2026-03-28T12:00:01Z,cps-001,can0,none,0,44,1.0,true
+2026-03-28T12:00:02Z,cps-001,can0,retry,1,62,1.8,true
+2026-03-28T12:00:03Z,cps-002,i2c1,timeout,2,70,4.6,false

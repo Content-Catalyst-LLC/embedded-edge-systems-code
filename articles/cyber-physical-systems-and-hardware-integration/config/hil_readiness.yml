@@ -1,0 +1,20 @@
+hardware_in_the_loop_readiness:
+  version: "1.0.0"
+  required:
+    target_firmware_available: true
+    hardware_interface_contracts_available: true
+    sensor_simulation_available: true
+    actuator_simulation_available: true
+    timing_measurement_available: true
+    watchdog_behavior_defined: true
+    fault_injection_cases_defined: true
+    safe_stop_test_defined: true
+    telemetry_capture_available: true
+  fault_injection_cases:
+    - stale_sensor
+    - actuator_saturation
+    - bus_timeout
+    - deadline_miss
+    - thermal_warning
+    - thermal_fault
+    - uncertainty_budget_violation

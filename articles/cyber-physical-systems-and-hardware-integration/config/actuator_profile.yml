@@ -1,0 +1,16 @@
+actuators:
+  - actuator_id: "motor-driver-001"
+    signal: "pwm_duty_cycle"
+    interface: "pwm"
+    command_min: 0.0
+    command_max: 1.0
+    slew_rate_limit_per_cycle: 0.25
+    max_current_a: 4.0
+    thermal_warning_c: 70.0
+    thermal_limit_c: 80.0
+    driver_latency_ms: 0.2
+    failure_behavior:
+      stale_command: "safe_stop"
+      thermal_warning: "thermal_derate"
+      thermal_fault: "safe_stop"
+      current_limit: "hold_or_clip"

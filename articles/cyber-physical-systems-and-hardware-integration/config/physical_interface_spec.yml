@@ -1,0 +1,34 @@
+physical_interface_spec:
+  system_name: "embedded_motor_control_cps"
+  version: "1.0.0"
+  physical_process:
+    description: "DC motor speed-control cyber-physical demonstration"
+    controlled_variable: "motor_speed_rpm"
+    environment: "bench-scale embedded control"
+  sensors:
+    - sensor_id: "encoder-001"
+      signal: "motor_speed_rpm"
+      interface: "quadrature_encoder"
+      unit: "rpm"
+      sampling_period_ms: 1.0
+      maximum_age_ms: 3.0
+    - sensor_id: "current-001"
+      signal: "motor_current_a"
+      interface: "adc"
+      unit: "ampere"
+      sampling_period_ms: 2.0
+      maximum_age_ms: 5.0
+    - sensor_id: "temperature-001"
+      signal: "driver_temperature_c"
+      interface: "i2c"
+      unit: "celsius"
+      sampling_period_ms: 100.0
+      maximum_age_ms: 250.0
+  actuators:
+    - actuator_id: "motor-driver-001"
+      signal: "pwm_duty_cycle"
+      interface: "pwm"
+      unit: "ratio"
+      command_min: 0.0
+      command_max: 1.0
+      safety_relevant: true

@@ -1,0 +1,7 @@
+requirement_id,requirement,implementation_artifact,validation_test,operational_signal,status
+CPS-REQ-001,Sensor readings must be fresh enough for control,config/sensor_manifest.json,tests/test_cps_stack.py,sensor_age_ms,covered
+CPS-REQ-002,Actuator commands must remain inside safe limits,config/actuator_profile.yml,python/cps_timing_sensing_actuation_simulation.py,filtered_command,covered
+CPS-REQ-003,End-to-end CPS loop must meet deadline,config/timing_budget.yml,python/hil_digital_twin_readiness.py,deadline_slack_ms,covered
+CPS-REQ-004,Distributed interfaces must preserve message freshness,config/bus_profile.yml,python/traceability_matrix_validation.py,interface_error,covered
+CPS-REQ-005,System must fail safely under invalid assumptions,config/safety_envelope.yml,python/cps_timing_sensing_actuation_simulation.py,safety_state,covered
+CPS-REQ-006,Uncertainty must remain inside decision tolerance,config/uncertainty_budget.yml,python/uncertainty_budget_analysis.py,total_uncertainty,covered

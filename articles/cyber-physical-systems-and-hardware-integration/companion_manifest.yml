@@ -1,0 +1,38 @@
+article:
+  title: "Cyber-Physical Systems and Hardware Integration"
+  slug: "cyber-physical-systems-and-hardware-integration"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/cyber-physical-systems-and-hardware-integration/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/cyber-physical-systems-and-hardware-integration"
+
+technical_level: "research-grade public engineering / graduate-oriented scaffold"
+
+workflows:
+  mathematical_lens: "Coupled cyber-physical state, timing, uncertainty, and safe action"
+  python:
+    - "CPS Timing, Sensing, and Actuation Simulation"
+    - "Uncertainty Budget Analysis"
+    - "Requirements Traceability Matrix Validation"
+    - "Digital Twin and HIL Readiness Checks"
+  r: "CPS Reliability, Timing, Traceability, and Integration Reporting"
+  sql: "Measurements, estimates, commands, timing, interface events, uncertainty, traceability, faults, and recovery records"
+  c: "Sensor read, command filter, watchdog, actuator update, and timing checks"
+  cpp: "CPS integration state machine and hardware-interface abstraction"
+  rust: "Interface-contract, command-bound, uncertainty-budget, and timing-budget validator"
+  go: "CPS event gateway and interface telemetry router"
+  micropython: "Sensor-to-actuator CPS prototype with local checks"
+  tinyml: "Local CPS anomaly detection scaffold"
+  pynq: "Low-latency signal preprocessing and overlay validation"
+  hdl: "PWM, encoder, ADC sampler, timing monitor, and safety gate scaffolds"
+
+research_grade_dimensions:
+  - interface_contracts
+  - uncertainty_budgets
+  - timing_budgets
+  - traceability_matrix
+  - digital_twin_readiness
+  - hardware_in_the_loop_readiness
+  - runtime_assurance
+  - evidence_generation
+  - compositional_validation
+  - lifecycle_validation

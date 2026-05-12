@@ -1,0 +1,57 @@
+interface_contracts:
+  version: "1.0.0"
+  contracts:
+    - signal_name: "motor_speed_rpm"
+      physical_unit: "rpm"
+      valid_range: [0, 1800]
+      timing_contract:
+        sampling_period_ms: 1.0
+        maximum_age_ms: 3.0
+        timestamp_required: true
+      quality_metadata:
+        calibration_required: true
+        residual_required: true
+        plausibility_check_required: true
+      failure_behavior: "safe_stop_if_stale"
+      safety_semantics: "control_relevant"
+      evidence_record:
+        - timestamp
+        - raw_count
+        - estimated_speed
+        - residual
+        - sample_age_ms
+    - signal_name: "pwm_duty_cycle"
+      physical_unit: "ratio"
+      valid_range: [0, 1]
+      timing_contract:
+        update_period_ms: 1.0
+        maximum_command_age_ms: 3.0
+        timestamp_required: true
+      quality_metadata:
+        command_filter_reason_required: true
+        actuator_status_required: true
+      failure_behavior: "clip_or_safe_stop"
+      safety_semantics: "safety_relevant"
+      evidence_record:
+        - timestamp
+        - candidate_command
+        - filtered_command
+        - reason_code
+        - actuator_status
+    - signal_name: "can_motor_status"
+      physical_unit: "message"
+      valid_range: ["valid_message"]
+      timing_contract:
+        maximum_message_age_ms: 5.0
+        clock_sync_required: true
+      quality_metadata:
+        retry_count_required: true
+        bus_load_required: true
+      failure_behavior: "degrade_if_stale"
+      safety_semantics: "coordination_relevant"
+      evidence_record:
+        - timestamp
+        - message_id
+        - message_age_ms
+        - retry_count
+        - bus_load_percent

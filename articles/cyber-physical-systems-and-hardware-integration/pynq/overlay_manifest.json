@@ -1,0 +1,21 @@
+{
+  "overlay_name": "cps_signal_preprocessor",
+  "overlay_version": "0.1.0",
+  "bitstream_file": "cps_signal_preprocessor.bit",
+  "hardware_target": "pynq-compatible",
+  "interfaces": [
+    {"name": "adc_stream", "type": "AXI-Stream", "direction": "input"},
+    {"name": "encoder_stream", "type": "AXI-Stream", "direction": "input"},
+    {"name": "filtered_state_stream", "type": "AXI-Stream", "direction": "output"},
+    {"name": "pwm_command_stream", "type": "AXI-Stream", "direction": "output"},
+    {"name": "safety_gate", "type": "GPIO", "direction": "output"},
+    {"name": "control", "type": "AXI-Lite", "direction": "bidirectional"}
+  ],
+  "governance": {
+    "requires_overlay_validation": true,
+    "requires_runtime_compatibility_check": true,
+    "records_timing_evidence": true,
+    "records_lifecycle_evidence": true,
+    "runtime_assurance_required": true
+  }
+}
