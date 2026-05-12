@@ -1,0 +1,6 @@
+calibration_version,node_id,parameter,calibrated_at,valid_until,method,reference,technician,status
+cal-turb-2026-01,node-001,turbidity,2026-01-15,2026-07-15,bench_standard,formazin_standard,field-team-a,current
+cal-turb-2025-11,node-002,turbidity,2025-11-20,2026-02-20,bench_standard,formazin_standard,field-team-a,expired
+cal-air-2026-02,node-003,pm25,2026-02-05,2026-08-05,collocation,reference_air_monitor,field-team-b,current
+cal-soil-2026-02,node-004,soil_moisture,2026-02-15,2027-02-15,gravimetric_check,soil_lab,field-team-c,current
+cal-weather-2026-01,node-005,air_temperature,2026-01-18,2027-01-18,reference_probe,traceable_temp_probe,field-team-b,current

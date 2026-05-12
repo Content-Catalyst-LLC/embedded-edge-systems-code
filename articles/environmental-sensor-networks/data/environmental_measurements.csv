@@ -1,0 +1,8 @@
+event_id,node_id,site_id,parameter,units,acquisition_time,processing_time,value,quality_flag,calibration_version,battery_v,link_quality,packet_retries,buffer_age_s,event_mode
+evt-001,node-001,site-a,turbidity,ntu,2026-03-28T12:00:00Z,2026-03-28T12:00:10Z,4.8,valid,cal-turb-2026-01,12.4,0.92,0,3,baseline
+evt-002,node-002,site-b,turbidity,ntu,2026-03-28T12:00:00Z,2026-03-28T12:04:45Z,5.1,stale_warning,cal-turb-2025-11,11.9,0.61,3,260,event
+evt-003,node-002,site-b,turbidity,ntu,2026-03-28T12:05:00Z,2026-03-28T12:05:12Z,38.5,event_valid,cal-turb-2025-11,11.8,0.66,2,5,event
+evt-004,node-003,site-c,pm25,ug_m3,2026-03-28T12:00:00Z,2026-03-28T12:00:30Z,17.2,valid,cal-air-2026-02,3.9,0.81,1,10,baseline
+evt-005,node-004,site-d,soil_moisture,percent,2026-03-28T12:00:00Z,2026-03-28T12:00:15Z,21.4,valid,cal-soil-2026-02,12.8,0.88,0,4,baseline
+evt-006,node-005,site-e,air_temperature,celsius,2026-03-28T12:00:00Z,2026-03-28T12:00:25Z,23.6,valid,cal-weather-2026-01,12.2,0.75,1,6,baseline
+evt-007,node-005,site-e,wind_speed,m_s,2026-03-28T12:00:00Z,2026-03-28T12:03:10Z,4.2,link_delay_warning,cal-weather-2026-01,12.2,0.40,5,180,baseline

@@ -1,0 +1,13 @@
+{
+  "model_name": "environmental_event_screening_stub",
+  "purpose": "Screen local environmental windows for possible event-triggered sampling",
+  "input_features": [
+    "parameter_delta",
+    "recent_variance",
+    "battery_v",
+    "link_quality",
+    "seasonal_context_code"
+  ],
+  "classes": ["baseline", "event_candidate", "sensor_quality_warning"],
+  "notes": "TinyML event screening should complement explicit quality checks, not replace calibration or provenance."
+}

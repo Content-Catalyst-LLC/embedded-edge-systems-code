@@ -1,0 +1,6 @@
+site_id,site_name,site_type,latitude,longitude,representativeness,access_risk,notes
+site-a,Upstream Wetland,water_quality,41.881,-87.623,upstream_reference,medium,low flow during dry periods
+site-b,Urban Creek Bend,water_quality,41.885,-87.640,event_sensitive,high,possible stormwater influence
+site-c,Community Air Node,air_quality,41.890,-87.650,neighborhood_screening,low,near school and transit corridor
+site-d,Irrigated Field Edge,soil_moisture,41.870,-87.670,field_management,medium,root-zone moisture monitoring
+site-e,Riparian Weather Mast,weather,41.876,-87.660,microclimate_context,low,solar exposure varies seasonally

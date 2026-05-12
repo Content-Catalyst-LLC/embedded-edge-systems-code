@@ -1,0 +1,21 @@
+network_policy:
+  version: "1.0.0"
+  minimum_link_quality: 0.60
+  maximum_packet_retries: 3
+  maximum_buffer_age_s: 240
+  low_battery_voltage_warning: 11.8
+  stale_calibration_action: "flag_and_prioritize_field_visit"
+  event_sampling:
+    baseline_interval_s: 900
+    event_interval_s: 60
+    trigger_parameters:
+      turbidity_ntu_delta: 15
+      pm25_ug_m3_threshold: 35
+      soil_moisture_percent_threshold: 15
+  data_status_values:
+    - raw
+    - corrected
+    - provisional
+    - validated
+    - degraded
+    - excluded

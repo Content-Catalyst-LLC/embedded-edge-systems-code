@@ -1,0 +1,22 @@
+{
+  "manifest_version": "1.0.0",
+  "article": "environmental-sensor-networks",
+  "nodes": [
+    {
+      "node_id": "node-001",
+      "site_id": "site-a",
+      "parameters": ["turbidity", "water_temperature", "specific_conductance"],
+      "radio": "lora",
+      "power": "solar_battery",
+      "quality_checks": ["calibration_age", "battery_voltage", "link_quality", "buffer_age", "plausibility"]
+    },
+    {
+      "node_id": "node-003",
+      "site_id": "site-c",
+      "parameters": ["pm25", "air_temperature", "relative_humidity"],
+      "radio": "cellular",
+      "power": "battery",
+      "quality_checks": ["collocation_status", "humidity_sensitivity", "link_quality", "battery_voltage"]
+    }
+  ]
+}

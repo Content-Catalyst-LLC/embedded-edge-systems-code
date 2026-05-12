@@ -1,0 +1,25 @@
+article:
+  title: "Environmental Sensor Networks"
+  slug: "environmental-sensor-networks"
+  series: "Embedded and Edge Systems"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/environmental-sensor-networks"
+
+technical_level: "engineering-grade distributed environmental sensing scaffold"
+
+workflows:
+  mathematical_lens: "Coverage, sampling, drift, power, completeness, and network quality"
+  python:
+    - "Environmental Network Coverage, Sampling, and Quality Simulation"
+    - "Battery, communications, data completeness, and event-capture modeling"
+  r: "Environmental Sensor Network Reporting and Data-Quality Review"
+  sql: "Site, node, sensor, calibration, telemetry, maintenance, and quality-evidence schema"
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - micropython
+    - tinyml
+    - pynq
+    - hdl
+    - bash

@@ -1,0 +1,6 @@
+{
+  "overlay_name": "environmental_stream_timestamp_overlay",
+  "purpose": "Demonstrate hardware-assisted timestamping, stream-valid framing, and event-window buffering for higher-rate environmental signals.",
+  "interfaces": ["AXI Stream", "GPIO trigger", "DMA"],
+  "outputs": ["timestamp_counter", "sample_counter", "event_window_count", "drop_count"]
+}
