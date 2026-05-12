@@ -1,0 +1,16 @@
+gateway_runtime:
+  gateway_id: "gw-001"
+  version: "0.1.0"
+  responsibilities:
+    - protocol_translation
+    - local_buffering
+    - selective_uplink
+    - local_anomaly_inference
+    - offline_authority_tracking
+    - state_lineage_preservation
+  required_outputs:
+    - hybrid_event_stream
+    - buffer_backlog_metrics
+    - policy_version_metrics
+    - model_version_metrics
+    - reconciliation_records

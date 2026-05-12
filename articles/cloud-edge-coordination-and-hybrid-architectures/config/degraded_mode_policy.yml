@@ -1,0 +1,21 @@
+degraded_mode_policy:
+  version: "1.0.0"
+  conditions:
+    short_cloud_outage:
+      offline_duration_s_max: 300
+      local_behavior: "continue_within_authority_window"
+      cloud_behavior: "mark_site_delayed"
+      recovery: "replay_buffered_telemetry_with_lineage"
+    long_cloud_outage:
+      offline_duration_s_min: 300
+      local_behavior: "restrict_authority_reduce_nonessential_actions"
+      cloud_behavior: "escalate_incident_block_dependent_rollouts"
+      recovery: "reconcile_policy_state_model_versions_and_event_gaps"
+    stale_local_policy:
+      local_behavior: "continue_only_within_policy_ttl"
+      cloud_behavior: "flag_version_skew"
+      recovery: "record_decisions_using_stale_policy"
+    partial_deployment:
+      local_behavior: "run_assigned_version_report_version_identity"
+      cloud_behavior: "track_rollout_completeness"
+      recovery: "confirm_convergence_or_rollback"

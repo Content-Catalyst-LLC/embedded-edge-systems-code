@@ -1,0 +1,33 @@
+rollout_policy:
+  version: "1.0.0"
+  stages:
+    - ring: "lab"
+      required_evidence:
+        - unit_tests
+        - manifest_validation
+        - simulation_output
+    - ring: "canary"
+      required_evidence:
+        - health_metrics
+        - rollback_ready
+        - no_critical_incidents
+    - ring: "pilot"
+      required_evidence:
+        - sync_lag_within_slo
+        - buffer_backlog_within_slo
+        - local_decision_evidence
+    - ring: "regional"
+      required_evidence:
+        - drift_metrics_stable
+        - policy_skew_below_threshold
+        - incident_rate_below_threshold
+    - ring: "fleet"
+      required_evidence:
+        - version_convergence
+        - rollback_status_ready
+        - monitoring_active
+  halt_conditions:
+    max_critical_incidents: 0
+    max_policy_drift_rate: 0.05
+    max_model_skew_rate: 0.10
+    max_sync_lag_s: 120

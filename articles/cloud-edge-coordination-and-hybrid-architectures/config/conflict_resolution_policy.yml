@@ -1,0 +1,21 @@
+conflict_resolution_policy:
+  version: "1.0.0"
+  rules:
+    safety_state:
+      consistency_requirement: "conservative_local_truth_dominates"
+      resolution: "preserve_local_fault_or_safe_stop; cloud_cannot_silently_clear"
+    telemetry_summary:
+      consistency_requirement: "eventual_consistency"
+      resolution: "replay_with_acquisition_time_and_ingest_time"
+    policy_version:
+      consistency_requirement: "cloud_approved_authoritative_with_edge_ttl"
+      resolution: "flag_drift; restrict_local_action_after_authority_ttl"
+    model_version:
+      consistency_requirement: "approved_registry_authoritative"
+      resolution: "track_rollout_ring_edge_version_approved_version_and_rollback"
+    local_decision_record:
+      consistency_requirement: "append_only_evidence"
+      resolution: "never_overwrite; add_cloud_interpretation"
+    configuration_update:
+      consistency_requirement: "signed_versioned_ordered"
+      resolution: "reject_unsigned_or_out_of_order; rollback_if_validation_fails"

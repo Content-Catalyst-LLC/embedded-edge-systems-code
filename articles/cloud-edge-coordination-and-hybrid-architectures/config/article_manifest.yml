@@ -1,0 +1,37 @@
+article:
+  title: "Cloud-Edge Coordination and Hybrid Architectures"
+  slug: "cloud-edge-coordination-and-hybrid-architectures"
+  series: "Embedded and Edge Systems"
+  repository_root: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code"
+  article_repository_path: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/cloud-edge-coordination-and-hybrid-architectures"
+
+companion_stack:
+  analytics:
+    - python
+    - r
+    - sql
+    - notebooks
+  systems:
+    - c
+    - cpp
+    - rust
+    - go
+    - bash
+  embedded:
+    - gateway
+    - edge_runtime
+    - micropython
+    - tinyml
+  acceleration:
+    - pynq
+    - hdl
+  hybrid_coordination:
+    - layer_responsibility_matrix
+    - authority_policy
+    - workload_placement
+    - synchronization_contract
+    - conflict_resolution
+    - degraded_mode
+    - rollout_policy
+    - model_lifecycle
+    - security_policy

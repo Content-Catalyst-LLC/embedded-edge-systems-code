@@ -1,0 +1,30 @@
+{
+  "schema_name": "hybrid_cloud_edge_event",
+  "schema_version": "1.0.0",
+  "required_fields": [
+    "timestamp",
+    "site_id",
+    "gateway_id",
+    "device_id",
+    "operating_mode",
+    "cloud_reachable",
+    "offline_duration_s",
+    "state_age_s",
+    "sync_lag_s",
+    "buffer_backlog",
+    "edge_policy_version",
+    "cloud_policy_version",
+    "edge_model_version",
+    "approved_model_version",
+    "target_version",
+    "active_version",
+    "reconciliation_status",
+    "authority_valid"
+  ],
+  "field_definitions": {
+    "state_age_s": "time between local acquisition and cloud interpretation or ingestion",
+    "sync_lag_s": "time between local persistence and cloud ingestion",
+    "authority_valid": "whether local action is still inside its authority window",
+    "reconciliation_status": "none, merged, conflict, hold_for_review, rollback_required"
+  }
+}

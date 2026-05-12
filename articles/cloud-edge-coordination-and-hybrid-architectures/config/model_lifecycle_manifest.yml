@@ -1,0 +1,20 @@
+model_lifecycle:
+  model_name: "industrial_edge_anomaly_detector"
+  approved_model_version: "model-2.1"
+  previous_model_version: "model-2.0"
+  rollout_target_version: "model-2.1"
+  deployment_scope: "gateway_edge_runtime"
+  local_inference_authority: true
+  rollback_policy:
+    rollback_to: "model-2.0"
+    trigger_conditions:
+      - "incident_rate_increase"
+      - "drift_metric_exceeds_threshold"
+      - "rollout_convergence_failure"
+      - "edge_runtime_validation_failure"
+  monitoring_signals:
+    - model_version_skew
+    - confidence_distribution
+    - drift_score
+    - local_decision_rate
+    - false_positive_review_count

@@ -1,0 +1,37 @@
+authority_policy:
+  version: "1.0.0"
+  default_authority_window_s: 300
+  decisions:
+    local_anomaly_alert:
+      authority_layer: "gateway"
+      offline_allowed: true
+      authority_window_s: 600
+      evidence_required:
+        - edge_policy_version
+        - edge_model_version
+        - confidence
+        - state_age_s
+        - offline_duration_s
+    local_safety_fallback:
+      authority_layer: "device_or_gateway"
+      offline_allowed: true
+      authority_window_s: 86400
+      evidence_required:
+        - local_state
+        - fallback_reason
+        - safety_state
+    fleet_policy_update:
+      authority_layer: "cloud"
+      offline_allowed: false
+      evidence_required:
+        - approval_id
+        - signed_policy_bundle
+        - rollout_ring
+    model_promotion:
+      authority_layer: "cloud"
+      offline_allowed: false
+      evidence_required:
+        - model_card
+        - evaluation_report
+        - approval_record
+        - rollback_policy

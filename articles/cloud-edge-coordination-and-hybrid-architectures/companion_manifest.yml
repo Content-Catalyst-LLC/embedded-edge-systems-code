@@ -1,0 +1,41 @@
+article:
+  title: "Cloud-Edge Coordination and Hybrid Architectures"
+  slug: "cloud-edge-coordination-and-hybrid-architectures"
+  series: "Embedded and Edge Systems"
+  site_url: "https://sustainablecatalyst.com/cloud-edge-coordination-and-hybrid-architectures/"
+  repository_url: "https://github.com/Content-Catalyst-LLC/embedded-edge-systems-code/tree/main/articles/cloud-edge-coordination-and-hybrid-architectures"
+
+technical_level: "engineering-grade public systems scaffold"
+
+workflows:
+  mathematical_lens: "Placement cost, state age, authority windows, policy drift, model skew, rollout convergence"
+  python:
+    - "Cloud-Edge Placement, Synchronization, and Degraded-Mode Simulation"
+    - "Rollout Ring and Version-Convergence Analysis"
+    - "Synchronization and Conflict-Reconciliation Validation"
+    - "Hybrid SLO and Authority-Window Checks"
+  r: "Hybrid Fleet Reliability and Synchronization Reporting"
+  sql: "State lineage, sync events, local decisions, cloud ingestion, policy/model versions, conflicts, rollouts"
+  c: "Offline authority timer, local fallback, telemetry packet formation"
+  cpp: "Gateway sync state machine and buffer management"
+  rust: "Authority-window, sync-contract, version-skew, and rollout validator"
+  go: "Gateway sync service and cloud-edge health event router"
+  micropython: "Bounded offline telemetry prototype"
+  tinyml: "Local anomaly classification with model-version telemetry"
+  pynq: "Low-latency preprocessing and selective uplink validation"
+  hdl: "Stream timestamping, buffer watermarking, sync pulse, and telemetry framing"
+
+engineering_dimensions:
+  - responsibility_boundaries
+  - workload_placement
+  - authority_ttl
+  - synchronization_contracts
+  - state_lineage
+  - conflict_resolution
+  - degraded_modes
+  - rollout_rings
+  - policy_version_drift
+  - model_version_skew
+  - selective_uplink
+  - hybrid_observability
+  - security_trust_boundaries

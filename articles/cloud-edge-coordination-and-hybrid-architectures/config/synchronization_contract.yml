@@ -1,0 +1,22 @@
+synchronization_contract:
+  version: "1.0.0"
+  streams:
+    anomaly_summary:
+      direction: "edge_to_cloud"
+      max_state_age_s: 120
+      max_sync_lag_s: 60
+      retry_policy: "exponential_backoff"
+      conflict_behavior: "append_and_reconcile"
+      preserve_lineage: true
+    policy_bundle:
+      direction: "cloud_to_edge"
+      max_policy_drift_s: 300
+      requires_signature: true
+      activation_rule: "validate_then_stage"
+      conflict_behavior: "cloud_policy_authoritative_with_edge_ttl"
+    model_artifact:
+      direction: "cloud_to_edge"
+      requires_signature: true
+      rollout_ring_required: true
+      activation_rule: "download_validate_stage_activate"
+      conflict_behavior: "model_registry_authoritative"

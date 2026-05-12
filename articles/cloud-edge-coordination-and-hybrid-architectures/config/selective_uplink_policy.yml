@@ -1,0 +1,25 @@
+selective_uplink_policy:
+  version: "1.0.0"
+  defaults:
+    raw_data_retention_local_s: 3600
+    summary_upload_interval_s: 60
+    incident_upload_immediate: true
+  rules:
+    vibration_raw_window:
+      stays_local: true
+      upload_condition: "incident_or_debug_request"
+      redaction_required: false
+    anomaly_summary:
+      stays_local: false
+      aggregate: true
+      upload_condition: "always"
+      required_context:
+        - model_version
+        - policy_version
+        - confidence
+        - state_age_s
+        - raw_data_retention_pointer
+    health_metrics:
+      stays_local: false
+      aggregate: true
+      upload_condition: "periodic"

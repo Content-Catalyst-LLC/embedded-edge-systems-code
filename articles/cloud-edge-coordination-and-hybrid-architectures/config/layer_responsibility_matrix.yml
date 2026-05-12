@@ -1,0 +1,39 @@
+layer_responsibility_matrix:
+  version: "1.0.0"
+  layers:
+    device:
+      responsibilities:
+        - local_sensing
+        - firmware_safety_behavior
+        - low_level_telemetry_packet
+      prohibited:
+        - fleet_policy_approval
+        - model_promotion
+    gateway:
+      responsibilities:
+        - protocol_translation
+        - buffering
+        - selective_uplink
+        - local_rules
+        - edge_inference
+        - offline_authority_tracking
+      prohibited:
+        - fleet_wide_policy_change
+    site_edge:
+      responsibilities:
+        - local_analytics
+        - site_dashboard
+        - local_coordination
+        - degraded_mode_enforcement
+    regional_edge:
+      responsibilities:
+        - multi_site_aggregation
+        - regional_failover
+        - latency_sensitive_coordination
+    cloud:
+      responsibilities:
+        - policy_approval
+        - model_lifecycle_governance
+        - fleet_observability
+        - rollout_coordination
+        - long_horizon_storage

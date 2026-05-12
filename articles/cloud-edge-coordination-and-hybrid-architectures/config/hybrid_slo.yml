@@ -1,0 +1,11 @@
+hybrid_slo:
+  version: "1.0.0"
+  max_state_age_s: 120
+  max_sync_lag_s: 60
+  max_buffer_backlog_events: 200
+  max_policy_drift_rate: 0.05
+  max_model_skew_rate: 0.10
+  min_rollout_convergence_rate: 0.95
+  max_degraded_mode_rate: 0.05
+  max_reconciliation_conflict_rate: 0.02
+  authority_window_default_s: 300

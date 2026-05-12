@@ -1,0 +1,24 @@
+{
+  "model_name": "hybrid_edge_anomaly_detector",
+  "model_version": "model-2.1",
+  "runtime_target": "tinyml-portable",
+  "quantization": "int8",
+  "input_schema": {
+    "features": [
+      {"name": "sensor_feature_mean", "type": "float32"},
+      {"name": "sensor_feature_std", "type": "float32"},
+      {"name": "temperature_c", "type": "float32"},
+      {"name": "offline_duration_s", "type": "float32"},
+      {"name": "buffer_backlog", "type": "float32"}
+    ]
+  },
+  "output_schema": {
+    "labels": ["normal", "warning", "fault"]
+  },
+  "governance": {
+    "model_version_telemetry_required": true,
+    "cloud_lifecycle_governance_required": true,
+    "fallback_required": true,
+    "local_authority_window_required": true
+  }
+}

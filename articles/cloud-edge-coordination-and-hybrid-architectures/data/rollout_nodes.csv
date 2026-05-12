@@ -1,0 +1,6 @@
+node_id,site_id,rollout_ring,eligible,target_version,deployed_version,active_version,decision_used_version,health_status,cloud_reachable
+gw-001,site-a,canary,true,model-2.1,model-2.1,model-2.1,model-2.1,healthy,true
+gw-002,site-b,pilot,true,model-2.1,model-2.1,model-2.0,model-2.0,degraded,false
+gw-003,site-c,regional,true,model-2.1,model-2.1,model-2.1,model-2.1,healthy,true
+gw-004,site-d,fleet,true,model-2.1,model-2.0,model-2.0,model-2.0,healthy,true
+gw-005,site-e,fleet,false,model-2.1,model-2.0,model-2.0,model-2.0,maintenance,false

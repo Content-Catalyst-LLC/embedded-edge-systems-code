@@ -1,0 +1,32 @@
+hybrid_security_policy:
+  version: "1.0.0"
+  trust_boundaries:
+    device_to_gateway:
+      controls:
+        - mutual_authentication
+        - protocol_validation
+        - device_identity
+    gateway_to_cloud:
+      controls:
+        - credential_rotation
+        - signed_messages
+        - encrypted_channel
+        - replay_protection
+    cloud_to_edge_policy:
+      controls:
+        - signed_policy_bundle
+        - staged_rollout
+        - approval_workflow
+        - rollback
+    model_registry_to_edge_runtime:
+      controls:
+        - signed_model_artifact
+        - version_pinning
+        - deployment_manifest
+        - runtime_monitoring
+    offline_edge_authority:
+      controls:
+        - authority_expiration
+        - safe_fallback
+        - local_attestation
+        - incident_flagging
