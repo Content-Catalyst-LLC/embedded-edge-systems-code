@@ -1,0 +1,26 @@
+article_slug: "wide-area-iot-disaster-recovery"
+repository: "embedded-edge-systems-code"
+default_reporting_modes:
+  routine:
+    messages_per_day: 24
+    retries: 2
+  hazard:
+    messages_per_day: 72
+    retries: 3
+  emergency:
+    messages_per_day: 144
+    retries: 3
+required_telemetry_fields:
+  - device_id
+  - timestamp
+  - location_code
+  - alert_state
+  - battery_percent
+  - signal_quality
+  - firmware_version
+  - sequence_number
+responsible_use:
+  synthetic_data_only: true
+  not_for_operational_alerting: true
+  requires_field_testing: true
+  requires_local_governance: true

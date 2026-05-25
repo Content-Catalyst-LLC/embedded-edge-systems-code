@@ -1,0 +1,11 @@
+scenario_id,protocol,hazard_context,node_type,battery_wh,messages_per_day,sensing_energy_wh,processing_energy_wh,transmit_energy_wh,receive_energy_wh,sleep_energy_wh_per_day,single_attempt_success,retries,sense_latency_s,queue_latency_s,tx_latency_s,backhaul_latency_s,process_latency_s,notify_latency_s,terrain_difficulty,community_priority
+S001,LoRaWAN,flood,river_gauge,20,24,0.0010,0.0005,0.0030,0.0010,0.020,0.80,2,30,3,2,15,5,30,medium,high
+S002,LoRaWAN,landslide,slope_sensor,24,48,0.0015,0.0007,0.0035,0.0010,0.025,0.76,3,20,4,2,25,5,40,high,high
+S003,NB-IoT,clinic_outage,clinic_status_node,30,24,0.0010,0.0007,0.0040,0.0015,0.030,0.86,2,60,5,3,20,5,60,medium,high
+S004,LTE-M,medical_logistics,cold_chain_tracker,22,96,0.0010,0.0005,0.0060,0.0020,0.035,0.88,2,15,2,2,10,5,30,medium,high
+S005,Satellite IoT,island_storm,village_beacon,40,12,0.0012,0.0008,0.0250,0.0040,0.050,0.92,1,120,10,8,90,10,120,high,high
+S006,LoRaWAN,wildfire,air_quality_node,18,48,0.0010,0.0005,0.0032,0.0010,0.022,0.78,2,30,3,2,20,5,45,high,medium
+S007,LTE-M,bridge_damage,mobile_inspection_tracker,28,72,0.0010,0.0007,0.0065,0.0020,0.040,0.84,3,20,2,2,18,5,45,medium,high
+S008,Satellite IoT,remote_reservoir,water_system_node,45,8,0.0014,0.0008,0.0280,0.0045,0.055,0.91,1,300,20,10,120,10,180,high,medium
+S009,NB-IoT,shelter_status,shelter_telemetry,26,36,0.0010,0.0006,0.0045,0.0015,0.030,0.83,2,60,5,3,25,5,60,low,high
+S010,LoRaWAN,road_washout,culvert_sensor,20,24,0.0011,0.0005,0.0034,0.0011,0.024,0.74,3,45,5,2,30,5,60,high,high
